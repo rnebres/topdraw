@@ -1,0 +1,41 @@
+.btn{
+
+	&:hover,
+	&:focus,
+	&:active:focus{
+		color: $white;
+		outline: 0;
+	}
+}
+.form-control{
+	padding: 15px;
+	height: auto;
+	border: 1px solid $greyLight;
+	border-radius: 0;
+
+	&:focus{
+		border-color: $darkLight;
+		box-shadow: none;
+	}
+
+	&[disabled]{
+		background-color: $grey;
+	}
+
+}
+.has-error{
+	.form-control{
+		border-color: $greyLight;
+
+		&:focus{
+			border-color: $darkLight;
+			box-shadow: none;
+		}
+	}
+
+	label ~ .form-control-feedback{
+		top: 40px;
+		font-size:  20px;
+		color: $maroon;
+	}
+}

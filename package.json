@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/rnebres/topdraw/issues"
   },
-  "homepage": "https://github.com/rnebres/topdraw"
+  "homepage": "https://github.com/rnebres/topdraw",
+  "devDependencies": {
+    "gulp-cssnano": "^2.1.1",
+    "gulp-uglify": "^1.5.3"
+  }
 }
