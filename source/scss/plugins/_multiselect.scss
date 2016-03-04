@@ -1,0 +1,137 @@
+.ms-options-wrap {
+  box-sizing: border-box;
+  * {
+    box-sizing: border-box;
+  }
+  > {
+    button {
+
+      &[disabled]{
+        background-color: $grey;
+        color: #767676;
+        cursor: not-allowed;
+      }
+      &:focus {
+        position: relative;
+        width: 100%;
+        text-align: left;
+        border: 1px solid $greyLight;
+        background-color: $white;
+        padding: 15px;
+        margin-top: 1px;
+        font-size: $font-size-normal;
+        color: $font-color;
+        outline: none;
+        white-space: nowrap;
+      }
+      position: relative;
+      width: 100%;
+      text-align: left;
+      border: 1px solid $greyLight;
+      background-color: $white;
+      padding: 15px;
+      margin-top: 1px;
+      font-size: $font-size-normal;
+      color: $font-color;
+      outline: none;
+      white-space: nowrap;
+      &:after {
+        font-family: FontAwesome;
+        font-size: $font-size-larger;
+        font-weight: bold;
+        content: '\f107';
+        height: 0;
+        position: absolute;
+        top: 25%;
+        right: 25px;
+        width: 0;
+        border-top-color: #999;
+        margin-top: -3px;
+      }
+    }
+    .ms-options {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      margin-top: 0;
+      margin-bottom: 20px;
+      border-top: 0;
+      background: white;
+      z-index: 2000;
+      border: 1px solid $greyLight;
+      border-top: 0;
+      > .ms-search input {
+        padding: 15px;
+        height: auto;
+        border: 0;
+        border-bottom: 1px solid $greyLight;
+        border-radius: 0;
+        display: block;
+        width: 100%;
+        font-size: 14px;
+        line-height: 1.42857143;
+        background-color: $white;
+        background-image: none;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+
+      }
+      .ms-selectall {
+        display: inline-block;
+        font-size: .9em;
+        text-transform: lowercase;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      > {
+        .ms-selectall.global {
+          margin: 4px 5px;
+        }
+        ul {
+          > li{
+            padding-left: 15px;
+          }
+          margin-bottom: 0;
+          > li.optgroup {
+            padding: 5px 15px;
+            border-top: 1px solid $greyLight;
+            + li.optgroup {
+              border-top: 1px solid $greyLight;
+            }
+            .label {
+              display: block;
+              padding: 5px 0 0 0;
+              text-align: left;
+              font-size: $font-size-normal;
+              color: $font-color;
+            }
+          }
+          label {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            padding: 15px 4px;
+            margin: 1px 0;
+          }
+          li.selected label, label:hover {
+            background-color: transparent;
+
+          }
+          label{
+            font-weight: normal;
+          }
+          input[type="checkbox"] {
+            margin-right: 5px;
+            position: absolute;
+            left: 4px;
+          }
+        }
+      }
+    }
+  }
+}

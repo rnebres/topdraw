@@ -1,0 +1,1 @@
+{"version":3,"file":"plugins/variables.css","sources":["plugins/variables.scss"],"sourcesContent":["$color-red-error: rgb(185, 74, 72);\n$color-grey-arrow: rgba(204, 204, 204, 0.2);\n\n$width-default: 220px; // 3 960px-grid columns\n\n$zindex-select-dropdown: 1060; // must be higher than a modal background (1050)\n"],"mappings":"","names":[],"sourceRoot":"/source/"}

@@ -21,9 +21,45 @@
 	&[disabled]{
 		background-color: $grey;
 	}
-
+}
+.form-group{
+	&__message{
+		display: none;
+	}
+	.input-group-addon{
+	    padding: 14px 20px;
+	    border: 0;
+		border-radius: 0;
+	}
+	.form-control-feedback{
+		display: none;
+	}
 }
 .has-error{
+	.form-group{
+		&__message{
+			position: absolute;
+			top: 80px;
+			right: 5px;
+		    z-index: 10;
+			display: inline-block;
+			padding: 4px 10px;
+			background-color: $maroon;
+			color: $white;
+
+			&:before{
+				position: absolute;
+				top: -21px;
+				right: 13px;
+				font-family: FontAwesome;
+				font-size: 24px;
+				content: "\f0d8";
+				color: $maroon;
+				
+			}
+		}
+	}
+
 	.form-control{
 		border-color: $greyLight;
 
@@ -31,11 +67,34 @@
 			border-color: $darkLight;
 			box-shadow: none;
 		}
+
+		&-feedback{
+			display: inline-block;
+		}
 	}
 
 	label ~ .form-control-feedback{
 		top: 40px;
+		right: 8px;
 		font-size:  20px;
 		color: $maroon;
+	}
+
+
+}
+.datetimepicker{
+	.dpicker{
+		cursor: pointer;
+
+		&:focus{
+			border: 1px solid $greyLight;
+		}
+	}
+	.input-group-addon{
+		background-color: $greyLighter;
+	    padding: 14px 15px;
+		.glyphicon{
+			color: $greyDark;
+		}
 	}
 }

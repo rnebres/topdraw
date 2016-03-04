@@ -7,7 +7,7 @@
     <title>Components | Top Draw Animation</title>
   
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/bootstrap.css" >
+  <!-- <link rel="stylesheet" href="css/bootstrap.css" > -->
   <link rel="stylesheet" href="css/app.css" >
 
   </head>
@@ -33,9 +33,11 @@
           <br><br>
           <div class="row">
             <div class="col-xs-6">
-              <div class="form-group">
+              <div class="form-group has-feedback">
                 <label for="normal">Normal</label>
                 <input type="text" id="normal" class="form-control" placeholder="Normal">
+                <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                <small class="form-group__message">Enter Valid Normal Input</small>
               </div>
             </div>
             <div class="col-xs-6">
@@ -47,11 +49,12 @@
           </div>
           <div class="row">
             <div class="col-xs-6">
+            <!-- ADD "has-error" classes to show the invalid state-->
               <div class="form-group has-error has-feedback">
                 <label for="validation">Validation</label>
                 <input type="text" id="validation" class="form-control" placeholder="Validation">
                 <i class="fa fa-exclamation-circle form-control-feedback"></i>
-                <small>Enter Valid Username</small>
+                <small class="form-group__message">Enter Valid Username</small>
               </div>
             </div>
             <div class="col-xs-6">
@@ -61,7 +64,146 @@
               </div>
             </div>
           </div>
-         
+          <br>
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="form-group login-group">
+                <div class="input-group">
+                  <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                  <input type="text" class="form-control" placeholder="Username">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="form-group">
+                <label for="dropdown">Single Select</label>
+                <select name="" id="dropdown" class="form-control selectpicker">
+                  <option value> Select Value</option>
+                  <option value="1">Value 1</option>
+                  <option value="2">Value 2</option>
+                  <option value="3">Value 3</option>
+                  <option value="4">Value 4</option>
+                  <option value="5">Value 5</option>
+                  <optgroup label="Swedish Cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+
+             <div class="col-xs-6">
+              <div class="form-group">
+                <label for="multidropdown">Multiple Select</label>
+                <select name="" id="multidropdown" multiple class="form-control">
+                  <option value="1" selected>Value 1</option>
+                  <option value="2">Value 2</option>
+                  <option value="3">Value 3</option>
+                  <option value="4">Value 4</option>
+                  <option value="5" selected>Value 5</option>
+
+                  <option value="6">Value 6</option>
+                  <option value="7">Value 7</option>
+                  <option value="8">Value 8</option>
+                  <option value="9">Value 9</option>
+                  <option value="10">Value 10</option>
+
+
+                  <option value="11">Value 11</option>
+                  <option value="12">Value 12</option>
+                  <option value="13">Value 13</option>
+                  <option value="14">Value 14</option>
+                  <option value="15">Value 15</option>
+
+                  <option value="16">Value 16</option>
+                  <option value="17">Value 17</option>
+                  <option value="18">Value 18</option>
+                  <option value="19">Value 19</option>
+                  <option value="20">Value 20</option>
+
+                  <optgroup label="Swedish Cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                  </optgroup>
+
+                </select>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="form-group">
+                <label for="dropdown">Disabled Single Select</label>
+                <select name="" id="dropdown" disabled class="form-control selectpicker">
+                  <option value> Select Value</option>
+                  <option value="1">Value 1</option>
+                  <option value="2">Value 2</option>
+                  <option value="3">Value 3</option>
+                  <option value="4">Value 4</option>
+                  <option value="5">Value 5</option>
+                  <optgroup label="Swedish Cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+
+             <div class="col-xs-6">
+              <div class="form-group">
+                <label for="multidropdown">Disabled Multiple Select</label>
+                <select name="" id="multidropdown" disabled multiple class="form-control">
+                  <option value="1" selected>Value 1</option>
+                  <option value="2">Value 2</option>
+                  <option value="3">Value 3</option>
+                  <option value="4">Value 4</option>
+                  <option value="5" selected>Value 5</option>
+
+                  <option value="6">Value 6</option>
+                  <option value="7">Value 7</option>
+                  <option value="8">Value 8</option>
+                  <option value="9">Value 9</option>
+                  <option value="10">Value 10</option>
+
+
+                  <option value="11">Value 11</option>
+                  <option value="12">Value 12</option>
+                  <option value="13">Value 13</option>
+                  <option value="14">Value 14</option>
+                  <option value="15">Value 15</option>
+
+                  <option value="16">Value 16</option>
+                  <option value="17">Value 17</option>
+                  <option value="18">Value 18</option>
+                  <option value="19">Value 19</option>
+                  <option value="20">Value 20</option>
+
+                  <optgroup label="Swedish Cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                  </optgroup>
+
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class='col-sm-6'>
+                <div class="form-group">
+                    <div class='input-group datetimepicker'>
+                        <input type='text' class="form-control dpicker"/>
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+          </div>
 
         </div>
       </div>
@@ -70,6 +212,10 @@
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.multiselect.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

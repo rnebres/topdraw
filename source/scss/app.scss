@@ -1,3 +1,8 @@
+/*
+ * BOOTSTRAP
+ */
+@import "plugins/bootstrap";
+
 /* 
  * TOOLS
  */
@@ -10,7 +15,6 @@
 @import "settings/colors";
 @import "settings/fonts";
 @import "settings/buttons";
-
 
 /* 
  * GENERIC
@@ -34,15 +38,22 @@
  * COMPONENTS
  */
 
-/* 
+@import "components/login";
+
+ /* 
  * TRUMPS
  */
 
  @import "trumps/overrides";
-
 
 /* 
  * PLUGINS
  */
 
  @import "plugins/font-awesome/font-awesome";
+ @import "plugins/multiselect";
+ @import "plugins/bootstrap-select";
+ @import "plugins/bootstrap-datetimepicker";
+
+
+
