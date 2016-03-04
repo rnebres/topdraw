@@ -8,7 +8,7 @@
 	}
 }
 .form-control{
-	padding: 15px;
+	padding: 10px;
 	height: auto;
 	border: 1px solid $greyLight;
 	border-radius: 0;
@@ -39,7 +39,7 @@
 	.form-group{
 		&__message{
 			position: absolute;
-			top: 80px;
+			top: 68px;
 			right: 5px;
 		    z-index: 10;
 			display: inline-block;
@@ -74,7 +74,7 @@
 	}
 
 	label ~ .form-control-feedback{
-		top: 40px;
+		top: 34px;
 		right: 8px;
 		font-size:  20px;
 		color: $maroon;
@@ -92,7 +92,7 @@
 	}
 	.input-group-addon{
 		background-color: $greyLighter;
-	    padding: 14px 15px;
+	    padding: 12px 15px;
 		.glyphicon{
 			color: $greyDark;
 		}

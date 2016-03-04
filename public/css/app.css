@@ -5913,11 +5913,11 @@ ul {
     position: absolute;
     z-index: 10;
     width: 55px;
-    height: 50px;
-    line-height: 24px;
+    height: 100%;
     background-color: transparent;
     border-right: 1px solid #363637; }
     .login-group .input-group .input-group-addon .fa {
+      margin-top: -1px;
       font-size: 16px;
       color: #858585; }
   .login-group .input-group .form-control {
@@ -5936,7 +5936,7 @@ ul {
   outline: 0; }
 
 .form-control {
-  padding: 15px;
+  padding: 10px;
   height: auto;
   border: 1px solid #D4D4D4;
   border-radius: 0; }
@@ -5959,7 +5959,7 @@ ul {
 
 .has-error .form-group__message {
   position: absolute;
-  top: 80px;
+  top: 68px;
   right: 5px;
   z-index: 10;
   display: inline-block;
@@ -5984,7 +5984,7 @@ ul {
     display: inline-block; }
 
 .has-error label ~ .form-control-feedback {
-  top: 40px;
+  top: 34px;
   right: 8px;
   font-size: 20px;
   color: #9C0000; }
@@ -5996,7 +5996,7 @@ ul {
 
 .datetimepicker .input-group-addon {
   background-color: #D5D5D5;
-  padding: 14px 15px; }
+  padding: 12px 15px; }
   .datetimepicker .input-group-addon .glyphicon {
     color: #292929; }
 
