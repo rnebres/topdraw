@@ -1,0 +1,40 @@
+.topnav {
+	margin-bottom: 0;
+	background-color: $dark;
+}
+
+.mainnav {
+	background-color: $darkLight !important;
+
+	.navbar-nav {
+		.active > a,
+		.active > a:hover,
+		.active > a:focus{
+			background-color: $yellow;
+			color: $dark;
+		}
+
+		.dropdown-menu {
+			background-color: $darkLight;
+			border: none;
+
+			li > a {
+				color: $white;
+
+				&:hover,
+				&:focus {
+					background-color: $yellow !important;
+					color: $dark !important;
+				}
+			}
+		}
+
+		> .open > a,
+		> .open > a:hover,
+		> .open > a:focus {
+			background-color: transparent;
+			color: $white;
+		}
+	}
+}
+

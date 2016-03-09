@@ -1,11 +1,45 @@
-h1{
-	font-size: $font-size-larger;
+html {
+	min-height: 100%;
+	position: relative;
 }
 
-h2{
-	font-size: $font-size-large;
+body {
+	margin-bottom: 60px;
+	background-color: $bodybg;
 }
-ul{
+
+a {
+	color: $darkLight;
+
+	&:hover,
+	&:focus {
+		color: $dark;
+	}
+}
+
+h3 {
+	margin-top: 5px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid $grey;
+	// font-size: $font-size-larger;
+}
+
+h4 {
+	margin-top: 5px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid $grey;
+	// font-size: $font-size-large;
+}
+
+h5 {
+	font-weight: bold;
+}
+
+hr {
+	border-bottom: 1px solid #C2C2C2;
+}
+
+ul {
 	padding: 0;
 	list-style: none;
 }

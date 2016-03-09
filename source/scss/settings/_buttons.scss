@@ -4,12 +4,12 @@
 	@include transition(.3s);
 
 	.fa{
-		margin-right: 5px;
+		// margin-right: 5px;
 	}
 	&--primary{
 		background-color: $red;
 		color: $white;
-		
+
 		&:hover{
 			background-color: $redDark;
 			color: $white;
@@ -21,7 +21,7 @@
 	&--action{
 		background-color: $blue;
 		color: $white;
-		
+
 		&:hover{
 			background-color: $blueDark;
 			color: $white;
@@ -33,7 +33,7 @@
 	&--action--negative{
 		background-color: $skyblue;
 		color: $white;
-		
+
 		&:hover{
 			background-color: $skyblueDark;
 			color: $white;
@@ -41,11 +41,11 @@
 			@include transition(.3s);
 		}
 	}
-	
+
 	&[disabled]{
 		background-color: $grey;
 		color: $white;
-		
+
 		&:hover{
 			background-color: $grey;
 			color: $white;
@@ -63,4 +63,9 @@
 		font-size: $font-size-small;
 		padding: 4px;
 	}
+}
+
+.btn-add-div,
+.btn-remove-div {
+	cursor: pointer;
 }

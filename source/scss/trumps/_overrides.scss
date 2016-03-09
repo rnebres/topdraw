@@ -1,45 +1,91 @@
-.btn{
+.navbar-inverse {
+	border: none;
+	border-radius: 0;
+
+	.navbar-nav {
+		.dropdown-menu {
+			padding: 0;
+			border-radius: 0;
+
+			li > a {
+				padding: 10px 20px;
+
+				&:hover,
+				&:focus {
+					background-color: $dark;
+					color: $white;
+				}
+			}
+
+			.divider {
+				margin: 0;
+				background-color: $grey;
+			}
+		}
+	}
+}
+
+.panel {
+	border-radius: 0;
+}
+
+.breadcrumb {
+	padding: 0 0 10px;
+	font-size: 0.9em;
+	border-bottom: 1px solid $grey;
+	border-radius: 0;
+	background-color: transparent;
+	color: $greyDark;
+}
+
+.btn {
 
 	&:hover,
 	&:focus,
-	&:active:focus{
+	&:active:focus {
 		color: $white;
 		outline: 0;
 	}
 }
-.form-control{
-	padding: 10px;
+
+.form-control {
+	// padding: 10px;
 	height: auto;
 	border: 1px solid $greyLight;
 	border-radius: 0;
 
-	&:focus{
+	&:focus {
 		border-color: $darkLight;
 		box-shadow: none;
 	}
 
-	&[disabled]{
+	&[disabled] {
 		background-color: $grey;
 	}
 }
-.form-group{
-	&__message{
+
+.form-group {
+	&__message {
 		display: none;
 	}
-	.input-group-addon{
-	    padding: 14px 20px;
+	.input-group-addon {
+	    // padding: 14px 20px;
 	    border: 0;
 		border-radius: 0;
 	}
-	.form-control-feedback{
+	.form-control-feedback {
 		display: none;
 	}
+	.form-control-static {
+		min-height: initial;
+	}
 }
-.has-error{
-	.form-group{
-		&__message{
+
+.has-error {
+	.form-group {
+		&__message {
 			position: absolute;
-			top: 68px;
+			top: 65px;
 			right: 5px;
 		    z-index: 10;
 			display: inline-block;
@@ -47,7 +93,7 @@
 			background-color: $maroon;
 			color: $white;
 
-			&:before{
+			&:before {
 				position: absolute;
 				top: -21px;
 				right: 13px;
@@ -55,46 +101,102 @@
 				font-size: 24px;
 				content: "\f0d8";
 				color: $maroon;
-				
+
 			}
 		}
 	}
 
-	.form-control{
+	.form-control {
 		border-color: $greyLight;
 
-		&:focus{
+		&:focus {
 			border-color: $darkLight;
 			box-shadow: none;
 		}
 
-		&-feedback{
+		&-feedback {
 			display: inline-block;
 		}
 	}
 
-	label ~ .form-control-feedback{
-		top: 34px;
+	label ~ .form-control-feedback {
+		top: 32px;
 		right: 8px;
 		font-size:  20px;
 		color: $maroon;
 	}
-
-
 }
-.datetimepicker{
-	.dpicker{
+
+.datetimepicker {
+	.dpicker {
 		cursor: pointer;
 
-		&:focus{
+		&:focus {
 			border: 1px solid $greyLight;
 		}
 	}
-	.input-group-addon{
+	.input-group-addon {
 		background-color: $greyLighter;
-	    padding: 12px 15px;
-		.glyphicon{
+	    // padding: 12px 15px;
+		.glyphicon {
 			color: $greyDark;
 		}
 	}
+}
+
+.pagination {
+	margin-top: 0;
+
+	> li > a {
+		border-radius: 0 !important;
+		color: $darkLight;
+	}
+}
+
+.nav-tabs {
+	border-bottom: none;
+
+	> li > a,
+	> li > a:hover,
+	> li > a:focus {
+		background-color: #eee;
+		border-radius: 0;
+		border-top: 3px solid transparent;
+		border-bottom-color: #ddd;
+	}
+
+	> li.active > a,
+	> li.active > a:hover,
+	> li.active > a:focus {
+		border-top: 3px solid $red;
+	}
+}
+
+.datatables {
+	width: 100% !important;
+}
+
+.dataTables_info {
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+.modal {
+	.modal-content {
+		border-radius: 0;
+
+		.modal-header {
+			background-color: $dark;
+			color: $white;
+
+			.close {
+				color: $white;
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.form-horizontal {
+	.control-label { text-align: left; }
 }

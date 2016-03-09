@@ -3,50 +3,56 @@
  */
 @import "plugins/bootstrap";
 
-/* 
+/*
  * TOOLS
  */
 @import "tools/mixins";
 
 
-/* 
+/*
  * SETTINGS
  */
 @import "settings/colors";
 @import "settings/fonts";
 @import "settings/buttons";
 
-/* 
+/*
  * GENERIC
  */
 @import "generic/generic";
 
 
-/* 
+/*
  * BASE
  */
 
 @import "base/base";
 
-/* 
+/*
  * OBJECTS
  */
 
 
 
-/* 
+/*
  * COMPONENTS
  */
 
 @import "components/login";
+@import "components/header";
+@import "components/footer";
+@import "components/container";
+@import "components/notification";
+@import "components/user-profile";
+@import "components/simple-table";
 
- /* 
+ /*
  * TRUMPS
  */
 
  @import "trumps/overrides";
 
-/* 
+/*
  * PLUGINS
  */
 
@@ -54,6 +60,5 @@
  @import "plugins/multiselect";
  @import "plugins/bootstrap-select";
  @import "plugins/bootstrap-datetimepicker";
-
-
-
+ @import "plugins/datatables";
+ @import "plugins/filestyle";

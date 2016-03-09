@@ -14,8 +14,41 @@ $(document).ready(function(){
 		"columns": 2,
     	"placeholder": 'Select value'
 	});
-	 $('.dpicker').datetimepicker({
-	 	format: 'MM/DD/YYYY'
-	 });
+
+	$('.dpicker').datetimepicker({
+		format: 'MM/DD/YYYY'
+	});
+
+	$('.datatables').DataTable({
+	    dom: '<"pull-left" l><"pull-right"f><"clearfix"><t><"pull-left" i><"pull-right" p>',
+
+		columnDefs: [
+			{ "targets": [5], "orderable": false },
+	    	{ "targets": [5], "width": "70px" }
+	    ],
+
+		aaSorting: [],
+
+		oLanguage: {
+			sSearch: '',
+			sSearchPlaceholder: 'Search for...',
+			sLengthMenu: 'Records to show: _MENU_',
+
+			oPaginate: {
+				sPrevious: '«',
+				sNext: '»'
+			}
+		}
+	});
+
+	$(document).on('click', '.btn-add-div', function () {
+        var form = $(this).parents('.dashboard-settings-content').eq(0);
+	    var formClone = form.clone();
+	    form.after(formClone);
+    });
+
+    $(document).on('click', '.btn-remove-div', function () {
+        $(this).parents('.dashboard-settings-content').eq(0).remove();
+    });
 
 });

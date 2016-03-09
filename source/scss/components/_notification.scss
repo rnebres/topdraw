@@ -1,0 +1,51 @@
+.notification-info {
+	position: relative;
+
+	.badge {
+		padding: 3px;
+		position: absolute;
+		top: 7px;
+		left: 28px;
+		background-color: $yellowLight;
+		font-size: 0.7em;
+		font-weight: normal;
+		color: $dark;
+	}
+}
+
+.notifications-list {
+	max-height: 500px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 400px;
+
+	.notif-item {
+		position: relative;
+		display: block;
+		font-size: .8em;
+		color: $greyDark;
+		text-decoration: none;
+		white-space: normal;
+
+		h6 { margin: 0; }
+
+		.notif-color {
+			width: 10px;
+			height: 100%;
+			top: 0;
+			left: 0;
+			position: absolute;
+
+			&.update { background-color: $cyan; }
+			&.delay { background-color: $yellowLight; }
+			&.assigned { background-color: $skyblue; }
+			&.approved { background-color: $oliveGreen; }
+		}
+
+		.notif-date {
+			display: block;
+			font-weight: bold;
+		}
+	}
+
+}

@@ -1,0 +1,5 @@
+.bootstrap-filestyle .form-control {
+	pointer-events: none;
+
+	&:disabled { background-color: $white; }
+}
