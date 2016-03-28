@@ -45,7 +45,8 @@
 @import "components/notification";
 @import "components/user-profile";
 @import "components/simple-table";
-
+@import "components/panel";
+@import "components/modal";
  /*
  * TRUMPS
  */
@@ -61,4 +62,5 @@
  @import "plugins/bootstrap-select";
  @import "plugins/bootstrap-datetimepicker";
  @import "plugins/datatables";
+ @import "plugins/datatables-responsive";
  @import "plugins/filestyle";

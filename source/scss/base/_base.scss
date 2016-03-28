@@ -1,10 +1,15 @@
 html {
-	min-height: 100%;
-	position: relative;
+	height: 100%;
+	*{
+		font-family: $font-family;
+	}
+	
 }
 
 body {
-	margin-bottom: 60px;
+	position: relative;
+    padding-bottom: 175px;
+	min-height: 100%;
 	background-color: $bodybg;
 }
 
@@ -17,6 +22,12 @@ a {
 	}
 }
 
+h1{
+	font-size: $font-size-larger;
+}
+h2{
+	font-size: $font-size-large;
+}
 h3 {
 	margin-top: 5px;
 	padding-bottom: 15px;
@@ -36,10 +47,14 @@ h5 {
 }
 
 hr {
-	border-bottom: 1px solid #C2C2C2;
+	border-bottom: 1px solid $greyDark;
 }
 
 ul {
 	padding: 0;
 	list-style: none;
+}
+textarea{
+	resize: none;
+	overflow: auto;
 }

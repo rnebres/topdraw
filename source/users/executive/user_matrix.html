@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Top Draw Animation</title>
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/app.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse topnav">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed mainnav" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand"><img src="../../img/topdrawlogo.png" alt="Top-Draw-Animation-Logo" class="login__logo"></a>
+                    <button type="button" class="navbar-toggle collapsed topnav" data-toggle="collapse" data-target="#top-nav" aria-expanded="false" id="topnav-button">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse topnav-toggle" id="top-nav">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle user-profile" data-toggle="dropdown" role="button" aria-expanded="false"><img class="img-circle" src="../../img/profile_user.jpg" alt="">John Smith <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><i class="fa fa-user fa-fw"></i>&nbsp;My profile</a></li>
+                                <li class="divider" role="separator"></li>
+                                <li><a href="#"><i class="fa fa-sign-out fa-fw"></i>&nbsp;Logout</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle notification-info" data-toggle="dropdown" role="button" aria-expanded="false">
+                                <i class="fa fa-bell-o fa-lg fa-fw"></i>
+                                <span class="badge">99</span>
+                                <span class="visible-xs-inline-block notiflabel">Notification</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href=""><b>Your notifications</b></a></li>
+                                <div class="notifications-list">
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color update"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color delay"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color approved"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color assigned"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt, consectetur adipiscing elit.
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                </div>
+                                <li class="divider" role="separator"></li>
+                                <li><a href="#"><b>See all notifications&nbsp;<i class="fa fa-chevron-right fa-fw"></i></b></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </nav>
+        <div class="collapse navbar-collapse mainnav-toggle" id="main-nav">
+            <nav class="navbar navbar-inverse mainnav">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#"><i class="fa fa-desktop fa-fw"></i>&nbsp;Dashboard</a></li>
+                        <li class="active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-stack-overflow fa-fw"></i>&nbsp;User Management</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="user_accounts.html">User Account</a></li>
+                                <li><a href="user_matrix.html">User Matrix</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-film fa-fw"></i>&nbsp;Production Management</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Projects</a></li>
+                                <li><a href="#">Episode</a></li>
+                                <li><a href="#">Scene</a></li>
+                                <li><a href="#">Library</a></li>
+                                <li><a href="#">Lead Sheet</a></li>
+                                <li><a href="#">In-Out Tracker</a></li>
+                                <li><a href="#">Project History</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="fa fa-files-o fa-fw"></i>&nbsp;Reports</a></li>
+                        <li><a href="#"><i class="fa fa-gears fa-fw"></i>&nbsp;CMS</a></li>
+                        <li><a href="#"><i class="fa fa-inbox fa-fw"></i>&nbsp;Data Archive</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="screen-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="page-title page-title-container clearfix">
+                        <h1 class="page-title__title">User Matrix</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="screen-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <div class="form-group p-l-sm">
+                                <label for="user_role">*User Role</label>
+                                <select name="" id="user_role" data-enable-btn-target="#showUserMatrix" class="form-control selectpicker" data-editdisable>
+                                    <option value> Select User Role</option>
+                                    <option value="1">System Administrator</option>
+                                    <option value="2">Executive</option>
+                                    <option value="3">HR</option>
+                                    <option value="4">Finance</option>
+                                    <option value="5">Production Manager</option>
+                                    <option value="6">Project Manager</option>
+                                    <option value="7">Director</option>
+                                    <option value="8">Supervisor</option>
+                                    <option value="9">Artist</option>
+                                    <option value="10">Production Assistant</option>
+                                    <option value="11">Client</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-2">
+                            <button type="button" class="btn btn--primary m-t-md2" id="showUserMatrix" disabled data-show-target="#system_admin_matrix" data-editdisable><i class="fa fa-print fa-check-square-o"></i>&nbsp;Submit</button>
+                        </div>
+                    </div>
+                    <div class="row hide" id="system_admin_matrix">
+                        <div class="col-xs-12">
+                            <hr>
+                            <div class="clearfix">
+                                <div class="m-t-md m-b-sm pull-right" data-edithide>
+                                    <button class="btn btn--primary btn-edit" type="button" id="showUserMatrix" data-formtarget="user-matrix-form"><i class="fa fa-print fa-pencil-square-o"></i>&nbsp;Edit</button>
+                                </div>
+                                <div class="m-t-md m-b-sm pull-right hide" data-editshow>
+                                    <button class="btn btn--primary"><i class="fa fa-print fa-check-square-o"></i>&nbsp;Save</button>
+                                    <button class="btn btn--action--negative" data-canceleditshow data-formtarget="user-matrix-form"><i class="fa fa-share-square-o fa-fw"></i>&nbsp;Cancel</button>
+                                </div>
+
+                               <!--  <button class="btn btn--primary m-t-md m-b-sm pull-right btn-edit" id="showUserMatrix"><i class="fa fa-print fa-check-square-o"></i>&nbsp;Edit</button> -->
+                            </div>
+                            <form action="" name="user-matrix-form">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading"><span class="btn-target-value-text">System Administrator</span> > Modules</div>
+                                    <div class="panel-body">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li role="presentation" class="active"><a href="#dashboard" aria-controls="dashboard" role="tab" data-toggle="tab">Dashboard</a></li>
+                                            <li role="presentation"><a href="#usermgt" aria-controls="usermgt" role="tab" data-toggle="tab">User Management</a></li>
+                                            <li role="presentation"><a href="#prodmgt" aria-controls="prodmgt" role="tab" data-toggle="tab">Production Management</a></li>
+                                            <li role="presentation"><a href="#mytasks" aria-controls="mytasks" role="tab" data-toggle="tab">My Tasks</a></li>
+                                            <li role="presentation"><a href="#reports" aria-controls="reports" role="tab" data-toggle="tab">Reports</a></li>
+                                            <li role="presentation"><a href="#cms" aria-controls="cms" role="tab" data-toggle="tab">Content Management</a></li>
+                                            <li role="presentation"><a href="#archive" aria-controls="archive" role="tab" data-toggle="tab">Data Archive</a></li>
+                                        </ul>
+                                        <!-- Tab panes -->
+                                        <div class="tab-content">
+                                            <div role="tabpanel" class="tab-pane active" id="dashboard">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-body dashboard-settings-wrapper">
+                                                        <div class="row dashboard-settings-content">
+                                                            <div class="col-sm-4">
+                                                                <div class="form-group">
+                                                                    <label for="dropdown">Sub-module</label>
+                                                                    <select name="" id="dropdown" class="form-control selectpicker" disabled>
+                                                                        <option value> Select Sub Module</option>
+                                                                        <option value="1">Audit Trail Summary</option>
+                                                                        <option value="2">Project Summary</option>
+                                                                        <option value="3">Task Summary</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label for="">Function</label>
+                                                                    <div>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Create</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Search</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>View</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Edit</label>
+                                                                    </div>
+                                                                    <div>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Delete</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Reset</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Print</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Deactivate/Reactivate</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-2 m-t-md text-right">
+                                                                <button type="button" class="btn--no-property btn-add-div" disabled><i class="fa fa-plus fa-lg fa-fw"></i></button>
+                                                                <button type="button" class="btn--no-property btn-remove-div" disabled><i class="fa fa-minus fa-lg fa-fw"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="usermgt">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-body dashboard-settings-wrapper">
+                                                        <div class="row dashboard-settings-content">
+                                                            <div class="col-sm-4">
+                                                                <div class="form-group">
+                                                                    <label for="dropdown">Sub-module</label>
+                                                                    <select name="" id="dropdown" class="form-control selectpicker" disabled>
+                                                                        <option value> Select Sub Module</option>
+                                                                        <option value="1">User Accounts</option>
+                                                                        <option value="2">User Matrix</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label for="">Function</label>
+                                                                    <div>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Create</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Search</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>View</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Edit</label>
+                                                                    </div>
+                                                                    <div>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Delete</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Reset</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Print</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Deactivate/Reactivate</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-2 m-t-md text-right">
+                                                                <button type="button" class="btn--no-property btn-add-div" disabled><i class="fa fa-plus fa-lg fa-fw"></i></button>
+                                                                <button type="button" class="btn--no-property btn-remove-div" disabled><i class="fa fa-minus fa-lg fa-fw"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="prodmgt">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-body dashboard-settings-wrapper">
+                                                        <div class="row dashboard-settings-content">
+                                                            <div class="col-sm-4">
+                                                                <div class="form-group">
+                                                                    <label for="dropdown">Sub-module</label>
+                                                                    <select name="" id="dropdown" class="form-control selectpicker" disabled>
+                                                                        <option value> Select Sub Module</option>
+                                                                        <option value="1">Project</option>
+                                                                        <option value="2">Episode</option>
+                                                                        <option value="3">Scene</option>
+                                                                        <option value="4">Library</option>
+                                                                        <option value="5">Lead Sheet</option>
+                                                                        <option value="6">In-out Tracker</option>
+                                                                        <option value="7">Project History</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label for="">Function</label>
+                                                                    <div>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Create</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Search</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>View</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Edit</label>
+                                                                    </div>
+                                                                    <div>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Delete</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Reset</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Print</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Deactivate/Reactivate</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-2 m-t-md text-right">
+                                                                <button type="button" class="btn--no-property btn-add-div" disabled><i class="fa fa-plus fa-lg fa-fw"></i></button>
+                                                                <button type="button" class="btn--no-property btn-remove-div" disabled><i class="fa fa-minus fa-lg fa-fw"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="mytasks">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-body dashboard-settings-wrapper">
+                                                        <div class="row dashboard-settings-content">
+                                                            <div class="col-sm-4">
+                                                                <div class="form-group">
+                                                                    <label for="dropdown">Sub-module</label>
+                                                                    <select name="" id="dropdown" class="form-control selectpicker" disabled>
+                                                                        <option value> Select Sub Module</option>
+                                                                        <option value="1">Assigned Tasks</option>
+                                                                        <option value="2">For Approval</option>
+                                                                        <option value="3">Approved</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label for="">Function</label>
+                                                                    <div>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Create</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Search</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>View</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Edit</label>
+                                                                    </div>
+                                                                    <div>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Delete</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Reset</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Print</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Deactivate/Reactivate</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-2 m-t-md text-right">
+                                                                <button type="button" class="btn--no-property btn-add-div" disabled><i class="fa fa-plus fa-lg fa-fw"></i></button>
+                                                                <button type="button" class="btn--no-property btn-remove-div" disabled><i class="fa fa-minus fa-lg fa-fw"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="reports">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-body dashboard-settings-wrapper">
+                                                        <div class="row dashboard-settings-content">
+                                                            <div class="col-sm-4">
+                                                                <div class="form-group">
+                                                                    <label for="dropdown">Sub-module</label>
+                                                                    <select name="" id="dropdown" class="form-control selectpicker" disabled>
+                                                                        <option value> Select Sub Module</option>
+                                                                        <option value="1">Weekly Take 1 Output by Department</option>
+                                                                        <option value="2">Daily Output by Department</option>
+                                                                        <option value="3">Daily Output by Employee</option>
+                                                                        <option value="4">Internal Status Report - Take 1's</option>
+                                                                        <option value="5">Client Status Report (Percentage of Completion)</option>
+                                                                        <option value="6">Client Status Report (Percentage of Completion)</option>
+                                                                        <option value="7">Episodic Delays by Employee</option>
+                                                                        <option value="8">Scene Delays by Employee</option>
+                                                                        <option value="9">Ongoing Scenes List</option>
+                                                                        <option value="10">Where is Scene</option>
+                                                                        <option value="11">13 Week Output Report - Take 1's</option>
+                                                                        <option value="12">13 Week Output Report - Total Claimable</option>
+                                                                        <option value="13">13 Week Output Report - Unclaimable Fix-ups/Retakes Percentages</option>
+                                                                        <option value="14">Fix -ups and Retakes Statistics per Employee</option>
+                                                                        <option value="15">Fix-ups and Retakes Statistics per Episode</option>
+                                                                        <option value="16">Retakes Statistics by Department</option>
+                                                                        <option value="17">Scenes with Multiple Fix-ups – Episode</option>
+                                                                        <option value="18">Multiple Fix-ups and Retakes by Employee per Episode</option>
+                                                                        <option value="19">Piecework Statistics - Take 1</option>
+                                                                        <option value="20">Payroll Output (Take 1's)</option>
+                                                                        <option value="21">Payroll Output per Project (Take 1's)</option>
+                                                                        <option value="22">Claimable Fix-ups (In Detail)</option>
+                                                                        <option value="23">No. of Registered Artists by Project per Department</option>
+                                                                        <option value="24">No. of Registered Artists by Project</option>
+                                                                        <option value="25">Work Ongoing per Employee</option>
+                                                                        <option value="26">Registered Employees by Project</option>
+                                                                        <option value="27">Non-Active Employees</option>
+                                                                        <option value="28">Audit Trail Report</option>
+                                                                        <option value="29">Client Status Report</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label for="">Function</label>
+                                                                    <div>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Create</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Search</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>View</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Edit</label>
+                                                                    </div>
+                                                                    <div>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Delete</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Reset</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Print</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Deactivate/Reactivate</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-2 m-t-md text-right">
+                                                                <button type="button" class="btn--no-property btn-add-div" disabled><i class="fa fa-plus fa-lg fa-fw"></i></button>
+                                                                <button type="button" class="btn--no-property btn-remove-div" disabled><i class="fa fa-minus fa-lg fa-fw"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="cms">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-body dashboard-settings-wrapper">
+                                                        <div class="row dashboard-settings-content">
+                                                            <div class="col-sm-4">
+                                                                <div class="form-group">
+                                                                    <label for="dropdown">Sub-module</label>
+                                                                    <select name="" id="dropdown" class="form-control selectpicker" disabled>
+                                                                        <option value> Select Sub Module</option>
+                                                                        <option value="1">Dropdown Menu</option>
+                                                                        <option value="2">Calendar</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label for="">Function</label>
+                                                                    <div>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Create</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Search</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>View</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Edit</label>
+                                                                    </div>
+                                                                    <div>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Delete</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Reset</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Print</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Deactivate/Reactivate</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-2 m-t-md text-right">
+                                                                <button type="button" class="btn--no-property btn-add-div" disabled><i class="fa fa-plus fa-lg fa-fw"></i></button>
+                                                                <button type="button" class="btn--no-property btn-remove-div" disabled><i class="fa fa-minus fa-lg fa-fw"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane" id="archive">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-body dashboard-settings-wrapper">
+                                                        <div class="row dashboard-settings-content">
+                                                            <div class="col-sm-4">
+                                                                <div class="form-group">
+                                                                    <label for="dropdown">Sub-module</label>
+                                                                    <select name="" id="dropdown" class="form-control selectpicker" disabled>
+                                                                        <option value> Select Sub Module</option>
+                                                                        <option value="1">Backup Files</option>
+                                                                        <option value="2">Delete Files</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label for="">Function</label>
+                                                                    <div>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Create</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Search</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>View</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Edit</label>
+                                                                    </div>
+                                                                    <div>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Delete</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Reset</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Print</label>
+                                                                        <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="" value="" disabled>Deactivate/Reactivate</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-2 m-t-md text-right">
+                                                                <button type="button" class="btn--no-property btn-add-div" disabled><i class="fa fa-plus fa-lg fa-fw"></i></button>
+                                                                <button type="button" class="btn--no-property btn-remove-div" disabled><i class="fa fa-minus fa-lg fa-fw"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container-fluid">2016 &copy; TopDraw. All Rights Reserved.</div>
+    </footer>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+    <script src="../../js/bootstrap-select.js"></script>
+    <script src="../../js/jquery.multiselect.js"></script>
+    <script src="../../js/datatables.min.js"></script>
+    <script src="../../js/app.js"></script>
+</body>
+
+</html>

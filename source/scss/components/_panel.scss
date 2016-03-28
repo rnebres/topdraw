@@ -1,0 +1,26 @@
+.dashboard-settings-wrapper{
+	padding: 30px 15px!important;
+	
+
+	.dashboard-settings-content{
+		
+		&:first-child{
+			padding: 0 15px 20px;
+		}
+		&:last-child{
+			border-bottom: 0;
+			padding-bottom: 0;
+		}
+		padding: 20px 15px;
+		border-bottom: 1px solid $tablePaginationBorder;
+	}
+}
+.panel-body{
+	&.profile-image-container{
+		min-height: 508px;
+
+		@media only screen and (max-width : 991px) {  
+			min-height: 0;
+		}
+	}
+}

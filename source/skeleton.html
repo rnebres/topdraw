@@ -12,91 +12,112 @@
   </head>
   <body>
     <header>
-
-      <nav class="navbar navbar-inverse topnav">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a href="#" class="navbar-brand"><img src="" alt="">Topdraw logo</a>
-          </div>
-
-
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle notification-info" data-toggle="dropdown" role="button" aria-expanded="false">
-                <i class="fa fa-bell-o fa-lg fa-fw"></i>
-                <span class="badge">99</span>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href=""><b>Your notifications</b></a></li>
-
-                <div class="notifications-list">
-                  <li class="divider" role="separator"></li>
-                  <li><a href="#" class="notif-item">
-                    <span class="notif-color update"></span>
-                    <h6>Project Name</h6>
-                    Lorem ipsum dolor sit amet
-                    <em class="notif-date">December 25, 1999 00:00:00</em>
-                  </a></li>
-
-                  <li class="divider" role="separator"></li>
-                  <li><a href="#" class="notif-item">
-                    <span class="notif-color delay"></span>
-                    <h6>Project Name</h6>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    <em class="notif-date">December 25, 1999 00:00:00</em>
-                  </a></li>
-
-                  <li class="divider" role="separator"></li>
-                  <li><a href="#" class="notif-item">
-                    <span class="notif-color approved"></span>
-                    <h6>Project Name</h6>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    <em class="notif-date">December 25, 1999 00:00:00</em>
-                  </a></li>
-
-                  <li class="divider" role="separator"></li>
-                  <li><a href="#" class="notif-item">
-                    <span class="notif-color assigned"></span>
-                    <h6>Project Name</h6>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt, consectetur adipiscing elit.
-                    <em class="notif-date">December 25, 1999 00:00:00</em>
-                  </a></li>
+        <nav class="navbar navbar-inverse topnav">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed mainnav" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand"><img src="img/topdrawlogo.png" alt="Top-Draw-Animation-Logo" class="login__logo"></a>
+                    <button type="button" class="navbar-toggle collapsed topnav" data-toggle="collapse" data-target="#top-nav" aria-expanded="false" id="topnav-button">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
                 </div>
-
-                <li class="divider" role="separator"></li>
-                <li><a href="#"><b>See all notifications&nbsp;<i class="fa fa-chevron-right fa-fw"></i></b></a></li>
-              </ul>
-            </li>
-
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle user-profile" data-toggle="dropdown" role="button" aria-expanded="false"><img class="img-circle" src="img/profile_user.jpg" alt="">John Smith <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#"><i class="fa fa-user fa-fw"></i>&nbsp;My profile</a></li>
-                <li class="divider" role="separator"></li>
-                <li><a href="#"><i class="fa fa-sign-out fa-fw"></i>&nbsp;Logout</a></li>
-              </ul>
-            </li>
-          </ul>
+                <div class="collapse navbar-collapse topnav-toggle" id="top-nav">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle user-profile" data-toggle="dropdown" role="button" aria-expanded="false"><img class="img-circle" src="img/profile_user.jpg" alt="">John Smith <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../../profile.html"><i class="fa fa-user fa-fw"></i>&nbsp;My profile</a></li>
+                                <li class="divider" role="separator"></li>
+                                <li><a href="#"><i class="fa fa-sign-out fa-fw"></i>&nbsp;Logout</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle notification-info" data-toggle="dropdown" role="button" aria-expanded="false">
+                                <i class="fa fa-bell-o fa-lg fa-fw"></i>
+                                <span class="badge">99</span>
+                                <span class="visible-xs-inline-block notiflabel">Notification</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href=""><b>Your notifications</b></a></li>
+                                <div class="notifications-list">
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color update"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color delay"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color approved"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color assigned"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt, consectetur adipiscing elit.
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                </div>
+                                <li class="divider" role="separator"></li>
+                                <li><a href="notifications.html"><b>See all notifications&nbsp;<i class="fa fa-chevron-right fa-fw"></i></b></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </nav>
+        <div class="collapse navbar-collapse mainnav-toggle" id="main-nav">
+            <nav class="navbar navbar-inverse mainnav">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#"><i class="fa fa-desktop fa-fw"></i>&nbsp;Dashboard</a></li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-stack-overflow fa-fw"></i>&nbsp;User Management</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="user_accounts.html">User Account</a></li>
+                                <li><a href="user_matrix.html">User Matrix</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-film fa-fw"></i>&nbsp;Production Management</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="projects.html">Projects</a></li>
+                                <li><a href="episode.html">Episode</a></li>
+                                <li><a href="scene.html">Scene</a></li>
+                                <li><a href="library.html">Library</a></li>
+                                <li><a href="leadsheet.html">Lead Sheet</a></li>
+                                <li><a href="#">In-Out Tracker</a></li>
+                                <li><a href="#">Project History</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="fa fa-files-o fa-fw"></i>&nbsp;Reports</a></li>
+                        <li><a href="#"><i class="fa fa-gears fa-fw"></i>&nbsp;CMS</a></li>
+                        <li><a href="#"><i class="fa fa-inbox fa-fw"></i>&nbsp;Data Archive</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-      </nav>
-
-      <nav class="navbar navbar-inverse mainnav">
-        <ul class="nav navbar-nav">
-          <li><a href="#"><i class="fa fa-desktop fa-fw"></i>&nbsp;Dashboard</a></li>
-          <li class="active dropdown"><a href="#"><i class="fa fa-users fa-fw"></i>&nbsp;User Management</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-film fa-fw"></i>&nbsp;Production Management</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">asdf</a></li>
-              <li><a href="#">asdf</a></li>
-            </ul>
-          </li>
-          <li><a href="#"><i class="fa fa-files-o fa-fw"></i>&nbsp;Reports</a></li>
-          <li><a href="#"><i class="fa fa-gears fa-fw"></i>&nbsp;CMS</a></li>
-          <li><a href="#"><i class="fa fa-inbox fa-fw"></i>&nbsp;Data Archive</a></li>
-        </ul>
-      </nav>
-
     </header>
 
     <section class="screen-header">

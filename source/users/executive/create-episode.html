@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Top Draw Animation</title>
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/app.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse topnav">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed mainnav" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand"><img src="../../img/topdrawlogo.png" alt="Top-Draw-Animation-Logo" class="login__logo"></a>
+                    <button type="button" class="navbar-toggle collapsed topnav" data-toggle="collapse" data-target="#top-nav" aria-expanded="false" id="topnav-button">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse topnav-toggle" id="top-nav">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle user-profile" data-toggle="dropdown" role="button" aria-expanded="false"><img class="img-circle" src="../../img/profile_user.jpg" alt="">John Smith <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><i class="fa fa-user fa-fw"></i>&nbsp;My profile</a></li>
+                                <li class="divider" role="separator"></li>
+                                <li><a href="#"><i class="fa fa-sign-out fa-fw"></i>&nbsp;Logout</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle notification-info" data-toggle="dropdown" role="button" aria-expanded="false">
+                                <i class="fa fa-bell-o fa-lg fa-fw"></i>
+                                <span class="badge">99</span>
+                                <span class="visible-xs-inline-block notiflabel">Notification</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href=""><b>Your notifications</b></a></li>
+                                <div class="notifications-list">
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color update"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color delay"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color approved"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color assigned"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt, consectetur adipiscing elit.
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                </div>
+                                <li class="divider" role="separator"></li>
+                                <li><a href="#"><b>See all notifications&nbsp;<i class="fa fa-chevron-right fa-fw"></i></b></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </nav>
+        <div class="collapse navbar-collapse mainnav-toggle" id="main-nav">
+            <nav class="navbar navbar-inverse mainnav">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#"><i class="fa fa-desktop fa-fw"></i>&nbsp;Dashboard</a></li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-stack-overflow fa-fw"></i>&nbsp;User Management</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="user_accounts.html">User Account</a></li>
+                                <li><a href="user_matrix.html">User Matrix</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-film fa-fw"></i>&nbsp;Production Management</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Projects</a></li>
+                                <li><a href="#">Episode</a></li>
+                                <li><a href="#">Scene</a></li>
+                                <li><a href="#">Library</a></li>
+                                <li><a href="#">Lead Sheet</a></li>
+                                <li><a href="#">In-Out Tracker</a></li>
+                                <li><a href="#">Project History</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="fa fa-files-o fa-fw"></i>&nbsp;Reports</a></li>
+                        <li><a href="#"><i class="fa fa-gears fa-fw"></i>&nbsp;CMS</a></li>
+                        <li><a href="#"><i class="fa fa-inbox fa-fw"></i>&nbsp;Data Archive</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="screen-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="page-title page-title-container page-title-container--breadcrumb clearfix">
+                        <h1 class="page-title__title">Create Episode</h1>
+                    </div>
+                    <ol class="breadcrumb">
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Episode Masterlist</a></li>
+                        <li class="active">Create Episode</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="screen-content">
+        <div class="container-fluid">
+            <form action="">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <a href="#" class="text-uppercase" data-toggle="modal" data-target="#backModal"><i class="fa fa-chevron-left fa-fw"></i>&nbsp;Back</a>
+                        <div class="btn-group-action">
+                            <button class="btn btn--primary"><i class="fa fa-print fa-check-square-o"></i>&nbsp;Save</button>
+                            <button class="btn btn--action--negative"><i class="fa fa-share-square-o fa-fw"></i>&nbsp;Cancel</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group-container">
+                    <label class="m-b-md">*Required Fields</label>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group has-feedback">
+                                <label for="project">*Project</label>
+                                 <select name="" id="project" class="form-control selectpicker">
+                                    <option value> Select Project</option>
+                                    <option value="1">Project 1</option>
+                                    <option value="2">Project 2</option>
+                                    <option value="3">Project 3</option>
+                                    <option value="4">Project 4</option>
+                                    <option value="5">Project 5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group has-feedback">
+                                <label for="blockno">*Block No.</label>
+                                <input type="text" id="blockno" class="form-control" placeholder="Enter Block No.">
+                                <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                <small class="form-group__message">Please supply Block No.</small>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group has-feedback">
+                                <label for="episodeno">*Episode No.</label>
+                                <input type="text" id="episodeno" class="form-control" placeholder="Enter Episode No.">
+                                <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                <small class="form-group__message">Please supply Episode No.</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group has-feedback">
+                                <label for="episode_name">*Episode Name</label>
+                                <input type="text" id="episode_name" class="form-control" placeholder="Enter Episode Name">
+                                <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                <small class="form-group__message">Please supply Episode Name</small>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group has-feedback">
+                                <label for="episode_desc">*Episode Description</label>
+                                <input type="text" id="episode_desc" class="form-control" placeholder="Enter Episode Description">
+                                <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                <small class="form-group__message">Please supply Episode Description</small>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group has-feedback">
+                                <label for="no_scene">*No. of Scene</label>
+                                <input type="text" id="no_scene" class="form-control" placeholder="Enter No. of Scene">
+                                <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                <small class="form-group__message">Please supply No. of Scene</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group has-feedback">
+                                <label for="no_libraries">*No. of Libraries</label>
+                                <input type="text" id="no_libraries" class="form-control" placeholder="Enter No. of Libraries">
+                                <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                <small class="form-group__message">Please supply No. of Libraries</small>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-md-4">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="start_date">*Schedule: Start Date</label>
+                                        <div class='input-group datetimepicker'>
+                                            <input type='text' class="form-control dpicker" id="start_date" />
+                                            <span class="input-group-addon">
+                                          <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="end_date">*Schedule: End Date</label>
+                                        <div class='input-group datetimepicker'>
+                                            <input type='text' class="form-control dpicker" id="end_date" />
+                                            <span class="input-group-addon">
+                                          <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="m-t-lg">Department and Schedule</h4>
+                    <div class="dashboard-settings-wrapper">
+                        <div class="row dashboard-settings-content">
+                            <div class="col-sm-4 col-md-2">
+                                <div class="form-group has-feedback">
+                                    <label for="processno">*Process No.</label>
+                                    <input type="text" id="processno" class="form-control" placeholder="Enter Process No.">
+                                    <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                    <small class="form-group__message">Please supply Process No.</small>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-2">
+                                <div class="form-group">
+                                    <label for="dropdown">*Deparment</label>
+                                    <select name="" id="dropdown" class="form-control selectpicker">
+                                        <option value> Select Department</option>
+                                        <option value="1">Department 1</option>
+                                        <option value="2">Department 2</option>
+                                        <option value="3">Department 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-2">
+                                <div class="form-group has-feedback">
+                                    <label for="sequenceno">*Sequence No.</label>
+                                    <input type="text" id="sequenceno" class="form-control" placeholder="Enter Sequence No.">
+                                    <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                    <small class="form-group__message">Please supply Sequence No.</small>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-2">
+                                <label for="project">*Dependency</label>
+                                <select name="" id="project" class="form-control selectpicker">
+                                    <option value> Select Dependency</option>
+                                    <option value="1">Dependency 1</option>
+                                    <option value="2">Dependency 2</option>
+                                    <option value="3">Dependency 3</option>
+                                    <option value="4">Dependency 4</option>
+                                    <option value="5">Dependency 5</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="start_date">*Start Date</label>
+                                            <div class='input-group datetimepicker'>
+                                                <input type='text' class="form-control dpicker" id="start_date" />
+                                                <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="end_date">*End Date</label>
+                                            <div class='input-group datetimepicker'>
+                                                <input type='text' class="form-control dpicker" id="end_date" />
+                                                <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 col-md-1 m-t-md text-right">
+                                <button type="button" class="btn--no-property btn-add-div btn-add-div--small pull-left"><i class="fa fa-plus fa-lg fa-fw"></i></button>
+                                <button type="button" class="btn--no-property btn-remove-div btn-remove-div--small pull-left"><i class="fa fa-minus fa-lg fa-fw"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="m-t-lg">Client Material</h4>
+                    <div class="dashboard-settings-wrapper">
+                        <div class="row dashboard-settings-content">
+                            <div class="col-sm-4 col-md-4">
+                                <div class="form-group">
+                                    <label for="material">*Material</label>
+                                    <select name="" id="material" class="form-control selectpicker">
+                                        <option value> Select Material</option>
+                                        <option value="1">Material 1</option>
+                                        <option value="2">Material 2</option>
+                                        <option value="3">Material 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-4">
+                                <div class="form-group">
+                                    <label for="status">*Status</label>
+                                    <select name="" id="status" class="form-control selectpicker">
+                                        <option value> Select Status</option>
+                                        <option value="1">Status 1</option>
+                                        <option value="2">Status 2</option>
+                                        <option value="3">Status 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-4">
+                                <div class="form-group">
+                                    <label for="attachedfile">Attached File</label>
+                                    <input type="file" id="attachedfile">
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="target_date">*Target Date</label>
+                                            <div class='input-group datetimepicker'>
+                                                <input type='text' class="form-control dpicker" id="target_date" />
+                                                <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="actual_date">Actual Date</label>
+                                            <div class='input-group datetimepicker'>
+                                                <input type='text' class="form-control dpicker" id="actual_date" />
+                                                <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-4">
+                                <label for="material_department">*Department</label>
+                                <select name="" id="material_department" class="form-control selectpicker">
+                                    <option value> Select Department</option>
+                                    <option value="1">Dependency 1</option>
+                                    <option value="2">Dependency 2</option>
+                                    <option value="3">Dependency 3</option>
+                                    <option value="4">Dependency 4</option>
+                                    <option value="5">Dependency 5</option>
+                                </select>
+                            </div>
+                           
+                            <div class="col-sm-3 col-md-4 m-t-md text-right">
+                                <button type="button" class="btn--no-property btn-add-div"><i class="fa fa-plus fa-lg fa-fw"></i></button>
+                                <button type="button" class="btn--no-property btn-remove-div"><i class="fa fa-minus fa-lg fa-fw"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <a href="#" class="text-uppercase" data-toggle="modal" data-target="#backModal"><i class="fa fa-chevron-left fa-fw" ></i>&nbsp;Back</a>
+                        <div class="btn-group-action">
+                            <button class="btn btn--primary"><i class="fa fa-print fa-check-square-o"></i>&nbsp;Save</button>
+                            <button class="btn btn--action--negative"><i class="fa fa-share-square-o fa-fw"></i>&nbsp;Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container-fluid">2016 &copy; TopDraw. All Rights Reserved.</div>
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="backModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title" id="myModalLabel">Alert</h5>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to exit without saving?
+                </div>
+                <div class="modal-footer">
+                    <a href="episode.html" class="btn btn--primary">Yes</a>
+                    <button type="button" class="btn btn--action--negative" data-dismiss="modal">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+    <script src="../../js/bootstrap-select.js"></script>
+    <script src="../../js/jquery.multiselect.js"></script>
+    <script src="../../js/datatables.min.js"></script>
+    <script src="../../js/moment.min.js"></script>
+    <script src="../../js/bootstrap-datetimepicker.js"></script>
+    <script src="../../js/app.js"></script>
+</body>
+
+</html>

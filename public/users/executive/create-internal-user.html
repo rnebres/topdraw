@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Top Draw Animation</title>
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/app.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse topnav">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed mainnav" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand"><img src="../../img/topdrawlogo.png" alt="Top-Draw-Animation-Logo" class="login__logo"></a>
+                    <button type="button" class="navbar-toggle collapsed topnav" data-toggle="collapse" data-target="#top-nav" aria-expanded="false" id="topnav-button">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse topnav-toggle" id="top-nav">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle user-profile" data-toggle="dropdown" role="button" aria-expanded="false"><img class="img-circle" src="../../img/profile_user.jpg" alt="">John Smith <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><i class="fa fa-user fa-fw"></i>&nbsp;My profile</a></li>
+                                <li class="divider" role="separator"></li>
+                                <li><a href="#"><i class="fa fa-sign-out fa-fw"></i>&nbsp;Logout</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle notification-info" data-toggle="dropdown" role="button" aria-expanded="false">
+                                <i class="fa fa-bell-o fa-lg fa-fw"></i>
+                                <span class="badge">99</span>
+                                <span class="visible-xs-inline-block notiflabel">Notification</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href=""><b>Your notifications</b></a></li>
+                                <div class="notifications-list">
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color update"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color delay"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color approved"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color assigned"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt, consectetur adipiscing elit.
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                </div>
+                                <li class="divider" role="separator"></li>
+                                <li><a href="#"><b>See all notifications&nbsp;<i class="fa fa-chevron-right fa-fw"></i></b></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </nav>
+        <div class="collapse navbar-collapse mainnav-toggle" id="main-nav">
+            <nav class="navbar navbar-inverse mainnav">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#"><i class="fa fa-desktop fa-fw"></i>&nbsp;Dashboard</a></li>
+                        <li class="active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-stack-overflow fa-fw"></i>&nbsp;User Management</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="user_accounts.html">User Account</a></li>
+                                <li><a href="user_matrix.html">User Matrix</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-film fa-fw"></i>&nbsp;Production Management</a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Projects</a></li>
+                              <li><a href="#">Episode</a></li>
+                              <li><a href="#">Scene</a></li>
+                              <li><a href="#">Library</a></li>
+                              <li><a href="#">Lead Sheet</a></li>
+                              <li><a href="#">In-Out Tracker</a></li>
+                              <li><a href="#">Project History</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="fa fa-files-o fa-fw"></i>&nbsp;Reports</a></li>
+                        <li><a href="#"><i class="fa fa-gears fa-fw"></i>&nbsp;CMS</a></li>
+                        <li><a href="#"><i class="fa fa-inbox fa-fw"></i>&nbsp;Data Archive</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="screen-header">
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="page-title page-title-container page-title-container--breadcrumb clearfix">
+                  <h1 class="page-title__title">Create Internal User Accounts</h1>
+                </div>
+                <ol class="breadcrumb">
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">Internal User</a></li>
+                  <li class="active">Create Account</li>
+                </ol>
+
+              </div>
+            </div>
+        </div>
+    </section>
+    <section class="screen-content">
+        <div class="container-fluid">
+        <form action="">
+            <div class="row">
+                <div class="col-xs-12">
+                    <a href="#" class="text-uppercase" data-toggle="modal" data-target="#backModal"><i class="fa fa-chevron-left fa-fw"></i>&nbsp;Back</a>
+                    <div class="btn-group-action">
+                        <button class="btn btn--primary"><i class="fa fa-print fa-check-square-o"></i>&nbsp;Save</button>
+                        <button class="btn btn--action--negative"><i class="fa fa-share-square-o fa-fw"></i>&nbsp;Cancel</button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group-container">
+                <label class="m-b-md">*Required Fields</label>
+
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="form-group">
+                          <label for="user_role">*User Role</label>
+                          <select name="" id="user_role" class="form-control selectpicker">
+                            <option value> Select User Role</option>
+                            <option value="1" selected>System Administrator</option>
+                            <option value="2">Executive</option>
+                            <option value="3">HR</option>
+                            <option value="4">Finance</option>
+                            <option value="5">Production Manager</option>
+                            <option value="6">Project Manager</option>
+                            <option value="7">Director</option>
+                            <option value="8">Supervisor</option>
+                            <option value="9">Artist</option>
+                            <option value="10">Production Assistant</option>                          
+                            <option value="11">Client</option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="form-group has-error has-feedback"> <!-- add "has-error" class to show the validation -->
+                          <label for="username">*User Name</label>
+                          <input type="text" id="username" class="form-control" placeholder="Enter User Name">
+                          <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                          <small class="form-group__message">Enter Valid User Name</small>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <label for="password">*Password</label>
+                        <div class="input-group">
+                          <input type="text" class="form-control" id="password">
+                           <span class="input-group-addon input-group-addon--btn">
+                                <button class="btn btn--addon">Generate Password</button>
+                           </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="form-group has-feedback">
+                          <label for="firstname">*First Name</label>
+                          <input type="text" id="firstname" class="form-control" placeholder="Enter First Name">
+                          <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                          <small class="form-group__message">Enter Valid First Name</small>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="form-group has-feedback">
+                          <label for="lastname">*Last Name</label>
+                          <input type="text" id="lastname" class="form-control" placeholder="Enter Last Name">
+                          <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                          <small class="form-group__message">Enter Valid Last Name</small>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="form-group has-feedback">
+                          <label for="middlename">*Middle Name</label>
+                          <input type="text" id="middlename" class="form-control" placeholder="Enter Middle Name">
+                          <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                          <small class="form-group__message">Enter Valid Middle Name</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="form-group has-feedback">
+                          <label for="employeeno">*Employee No.</label>
+                          <input type="text" id="employeeno" class="form-control" placeholder="Enter Employee No.">
+                          <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                          <small class="form-group__message">Enter Valid Employee No.</small>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="form-group has-feedback">
+                          <label for="contractno">*Contract No.</label>
+                          <input type="text" id="contractno" class="form-control" disabled>
+                          <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                          <small class="form-group__message">Enter Valid Contract Number</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="form-group">
+                          <label for="department">*Department</label>
+                          <select name="" id="department" class="form-control selectpicker">
+                            <option value> Select Department</option>
+                            <option value="1">Department 1</option>
+                            <option value="2">Department 2</option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="form-group">
+                          <label for="position">*Position</label>
+                          <select name="" id="position" class="form-control selectpicker">
+                            <option value> Select Position</option>
+                            <option value="1">Position 1</option>
+                            <option value="2">Position 2</option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="form-group">
+                          <label for="immediate_supervisor">*Immediate Supervisor</label>
+                          <select name="" id="immediate_supervisor" class="form-control selectpicker" disabled>
+                            <option value> </option>
+                          </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="form-group">
+                          <label for="user_category">*User Category</label>
+                          <select name="" id="user_category" class="form-control selectpicker">
+                            <option value> Select User Category</option>
+                            <option value="1">User Category 1</option>
+                            <option value="2">User Category 2</option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="form-group">
+                          <label for="user_status">*User Status</label>
+                          <select name="" id="user_status" class="form-control selectpicker">
+                            <option value> Select User Status</option>
+                            <option value="1">User Status 1</option>
+                            <option value="2">User Status 2</option>
+                          </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="form-group">
+                          <label for="artist_type">*Artist Type</label>
+                          <select name="" id="artist_type" class="form-control selectpicker">
+                            <option value> Select Artist Type</option>
+                            <option value="1">Artist Type 1</option>
+                            <option value="2">Artist Type 2</option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="form-group">
+                          <label for="artist_level">*Artist Level</label>
+                          <select name="" id="artist_level" class="form-control selectpicker">
+                            <option value> Select Artist Level</option>
+                            <option value="1">Artist Level 1</option>
+                            <option value="2">Artist Level 2</option>
+                          </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-8">
+                        <div class="form-group">
+                          <label for="primary_project">Primary Project</label>
+                          <select name="" id="primary_project" multiple class="form-control">
+                            <option value="1">Project 1</option>
+                            <option value="2">Project 2</option>
+                            <option value="3">Project 3</option>
+                            <option value="4">Project 4</option>
+                            <option value="5" >Project 5</option>
+
+                            <option value="6">Project 6</option>
+                            <option value="7">Project 7</option>
+                            <option value="8">Project 8</option>
+                            <option value="9">Project 9</option>
+                            <option value="10">Project 10</option>
+                          </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-8">
+                        <div class="form-group">
+                          <label for="ongoing_project">Ongoing Project</label>
+                          <select name="" id="ongoing_project" multiple class="form-control">
+                            <option value="1">Project 1</option>
+                            <option value="2">Project 2</option>
+                            <option value="3">Project 3</option>
+                            <option value="4">Project 4</option>
+                            <option value="5" >Project 5</option>
+
+                            <option value="6">Project 6</option>
+                            <option value="7">Project 7</option>
+                            <option value="8">Project 8</option>
+                            <option value="9">Project 9</option>
+                            <option value="10">Project 10</option>
+                          </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="form-group has-feedback">
+                          <label for="daily_target_output">*Daily Target Ouput</label>
+                          <input type="text" id="daily_target_output" class="form-control" placeholder="Enter Daily Output">
+                          <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                          <small class="form-group__message">Enter Valid Daily Output</small>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <div class="form-group">
+                          <label for="output_approval">*Output for Approval?</label>
+                          <select name="" id="output_approval" class="form-control selectpicker">
+                            <option value> Select Option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                          </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <a href="#" class="text-uppercase" data-toggle="modal" data-target="#backModal"><i class="fa fa-chevron-left fa-fw" ></i>&nbsp;Back</a>
+                    <div class="btn-group-action">
+                        <button class="btn btn--primary"><i class="fa fa-print fa-check-square-o"></i>&nbsp;Save</button>
+                        <button class="btn btn--action--negative"><i class="fa fa-share-square-o fa-fw"></i>&nbsp;Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container-fluid">2016 &copy; TopDraw. All Rights Reserved.</div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="backModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h5 class="modal-title" id="myModalLabel">Alert</h5>
+          </div>
+          <div class="modal-body">
+            Are you sure you want to exit without saving?
+          </div>
+          <div class="modal-footer">
+            <a href="user_accounts.html" class="btn btn--primary">Yes</a>
+            <button type="button" class="btn btn--action--negative" data-dismiss="modal">No</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+    <script src="../../js/bootstrap-select.js"></script>
+    <script src="../../js/jquery.multiselect.js"></script>
+    <script src="../../js/datatables.min.js"></script>
+    <script src="../../js/app.js"></script>
+</body>
+
+</html>

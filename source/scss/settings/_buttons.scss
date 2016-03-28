@@ -1,11 +1,13 @@
 .btn{
 	border-radius: 0;
-
+	min-width: 100px;
+	
 	@include transition(.3s);
 
 	.fa{
-		// margin-right: 5px;
+		margin-right: 5px;
 	}
+
 	&--primary{
 		background-color: $red;
 		color: $white;
@@ -42,6 +44,39 @@
 		}
 	}
 
+	&--addon{
+		background-color: $darkLight;
+		color: $white;
+
+		&:hover{
+			background-color: $darkLight;
+			color: $white;
+
+			@include transition(.3s);
+		}
+	}
+
+	&--no-property{
+		background-color: transparent;
+		color: $font-color;
+		border: 0;
+		outline: 0;
+
+		&:hover{
+			background-color: transparent;
+			color: $font-color;
+			border: 0;
+			outline: 0;
+
+			@include transition(.3s);
+		}
+
+		&[disabled]{
+			color: $faDisabled;
+		}
+	}
+
+	
 	&[disabled]{
 		background-color: $grey;
 		color: $white;
@@ -63,9 +98,29 @@
 		font-size: $font-size-small;
 		padding: 4px;
 	}
+	
+	&--login{
+		background-color: $yellow;
+		color: $dark2;
+
+		&:hover{
+			background-color: $yellowLight;
+			color: $dark2!important;
+
+			@include transition(.3s);
+		}
+	}
+	&--block{
+		display: block;
+		width: 100%;
+	}
 }
 
 .btn-add-div,
 .btn-remove-div {
 	cursor: pointer;
+
+	&--small{
+		font-size: 12px;
+	}
 }

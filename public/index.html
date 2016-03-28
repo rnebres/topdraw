@@ -7,13 +7,50 @@
     <title>Top Draw Animation</title>
 	
 	<link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/app.css" >
 
   </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <body class="login">
+      
+    <div class="login-container">
+      <div class="login__logo-container">
+        <img src="img/topdrawlogo.png" alt="Top-Draw-Animation-Logo" class="login__logo">
+      </div>
+      <header class="login__greetings">
+        <p>Welcome, Please Login</p>
+      </header>
+      <form action="" class="login__form">
+        <div class="row">
+            <div class="col-xs-12"> 
+              <div class="form-group login-group has-feedback"> <!-- put has-error  class to show the error message -->
+                <div class="input-group">
+                  <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                  <input type="text" class="form-control" placeholder="Username">
+                  <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                  <small class="form-group__message">Enter Valid Username</small>
+                </div>
+              </div>
+              <div class="form-group login-group has-feedback">
+                <div class="input-group">
+                  <div class="input-group-addon"><i class="fa fa-lock"></i></div>
+                  <input type="password" class="form-control" placeholder="Password">
+                  <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                  <small class="form-group__message">Enter Valid Password</small>
+                </div>
+              </div>
+              <button class="btn btn--login btn--block">
+                Sign In
+                <i class="fa fa-angle-right"></i>
+              </button>
 
+            </div>
+          </div>
+      </form>
+      <footer class="login__footer">
+        <p>2016 &#64; TopDraw. All right reserved.</p>
+      </footer>
+    </div>
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>

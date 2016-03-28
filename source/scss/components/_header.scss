@@ -1,12 +1,44 @@
 .topnav {
 	margin-bottom: 0;
 	background-color: $dark;
+
+	.navbar-header{
+		@media only screen and (max-width : 991px) {  
+			position: relative!important;
+			
+			button.mainnav{
+				position:absolute;
+			    z-index: 10;
+			}
+			.navbar-brand{
+				margin-left: 20px!important;
+
+				@media only screen and (max-width : 767px) {  
+					margin-left: 0!important;
+				}		
+			}
+		}
+	}
+
 }
 
 .mainnav {
 	background-color: $darkLight !important;
+	
+	// @media only screen and (max-width : 767px) {
+	// 	display: none;
+ //   	}
 
 	.navbar-nav {
+		@media only screen and (max-width : 991px) {  
+			float: none;
+		}
+    	> li {
+    		@media only screen and (max-width : 991px) {  
+				float: none;
+    		}
+    	}
+
 		.active > a,
 		.active > a:hover,
 		.active > a:focus{
@@ -15,6 +47,7 @@
 		}
 
 		.dropdown-menu {
+		    width: 100%;
 			background-color: $darkLight;
 			border: none;
 
@@ -27,14 +60,36 @@
 					color: $dark !important;
 				}
 			}
+
+			&:before{
+				display: none;
+			}
 		}
+
+		
 
 		> .open > a,
 		> .open > a:hover,
 		> .open > a:focus {
-			background-color: transparent;
-			color: $white;
+			background-color: $yellow;
+			color: $dark;
 		}
 	}
 }
 
+.overlay{
+	position:fixed;
+	top: 66px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 4;
+	background-color: $white;
+    opacity: .5;
+    display: none;
+	&.nav-open{
+		@media only screen and (max-width : 767px) {  
+			display: block;
+		}
+	}
+}

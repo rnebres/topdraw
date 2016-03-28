@@ -218,6 +218,7 @@ select.selectpicker {
       margin: 0;
       border-radius: 0;
       box-shadow: none;
+      overflow-x: hidden!important;
     }
 
     li {
@@ -242,6 +243,7 @@ select.selectpicker {
       a {
         padding: 15px;
         cursor: pointer;
+        white-space: pre-wrap;
         -webkit-user-select: none;
            -moz-user-select: none;
             -ms-user-select: none;

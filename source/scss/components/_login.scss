@@ -10,7 +10,7 @@
 			border-right: 1px solid $darkLight3;
 
 			.fa{
-				margin-top: 3px;
+				margin-top: 5px;
 				color: $darkLighter2;
 			}
 		}
@@ -24,5 +24,69 @@
 		    	background-color: $darkLight2Dark;
 		    }
 		}
+	}
+}
+.login{
+    padding-bottom: 50px;
+	min-height: 0;
+	background-color: $dark;
+	
+	&-container{
+		width: 400px;
+		padding-top: 150px;
+		margin: 0 auto;
+
+
+	    @media only screen and (max-width: 767px) {
+			width: 100%;
+			padding: 200px 15px 0;
+	    }
+	}
+	&__logo-container{
+		width: 250px;
+		margin: 0 auto 35px;
+		overflow: hidden;
+
+		img{
+			max-width: 100%;
+		}
+	}
+	&__greetings{
+		padding: 20px 35px;
+		background-color: $darkLight3;
+		color: $white;
+
+		p{
+			margin: 0;
+		    font-size: 16px;
+		}
+	}
+	&__form{
+		padding: 25px 30px;
+		background-color: $darkbg;
+		.btn--login{
+			padding: 15px 40px;
+			margin-top: 25px;
+			text-align: left;
+			text-transform: uppercase;
+			font-size: $font-size-large;
+			
+			 @media only screen and (max-width: 479px) {
+				padding: 15px;
+		    }
+
+			.fa{
+				float: right;
+				margin-top: 1px;
+				font-size: $font-size-larger;
+				font-weight: bold;
+			}
+		}
+	}
+	&__footer{
+		display: block;
+		margin-top: 45px;
+		text-align: center;
+		color: $darkfooter;
 	}
 }

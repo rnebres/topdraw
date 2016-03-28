@@ -4,8 +4,8 @@
 	.badge {
 		padding: 3px;
 		position: absolute;
-		top: 7px;
-		left: 28px;
+		top: 20px;
+		left: 47px;
 		background-color: $yellowLight;
 		font-size: 0.7em;
 		font-weight: normal;
@@ -18,7 +18,10 @@
 	overflow-x: hidden;
 	overflow-y: auto;
 	width: 400px;
-
+	
+	@media only screen and (max-width : 767px) {
+		width: 100%;
+	}
 	.notif-item {
 		position: relative;
 		display: block;
