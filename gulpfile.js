@@ -48,7 +48,7 @@ gulp.task('sass',function(){
 gulp.task('build-js',function(){
 	return gulp.src('source/js/**/*.js')
 		.pipe(sourcemaps.init())
-			.pipe(concat('app.js'))
+			// .pipe(concat('app.js'))
 			.pipe(util.env.type==='production'?uglify() : util.noop())
 		.pipe(sourcemaps.write('./maps'))
 		.pipe(gulp.dest('public/js'));
