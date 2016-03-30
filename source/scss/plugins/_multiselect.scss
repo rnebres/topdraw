@@ -91,7 +91,11 @@
       }
       > {
         .ms-selectall.global {
-          margin: 4px 5px;
+          margin: 10px 5px;
+          padding-left: 15px;
+          font-size: 14px;
+          text-transform: capitalize;
+          text-decoration: underline;
         }
         ul {
           > li{

@@ -99,7 +99,7 @@
                                 <li><a href="user_matrix.html">User Matrix</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown active">
+                        <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-film fa-fw"></i>&nbsp;Production Management</a>
                             <ul class="dropdown-menu">
                                 <li><a href="projects.html">Projects</a></li>
@@ -120,7 +120,7 @@
                                 <li><a href="cms-targetoutput.html">Departmental Daily Target Output</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown">
+                        <li class="dropdown active">
                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-inbox fa-fw"></i>&nbsp;Data Archive</a>
                           <ul class="dropdown-menu">
                               <li><a href="data-archive.html">Data Archive</a></li>
@@ -136,13 +136,9 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
-                    <div class="page-title page-title-container page-title-container--breadcrumb clearfix">
-                        <h1 class="page-title__title">Scene Masterlist</h1>
+                    <div class="page-title page-title-container clearfix">
+                        <h1 class="page-title__title">Data Archive</h1>
                     </div>
-                    <ol class="breadcrumb">
-                        <li><a href="#">Dashboard</a></li>
-                        <li class="active">Scene Masterlist</li>
-                    </ol>
                 </div>
             </div>
         </div>
@@ -151,92 +147,40 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
-                    <div class="row">
-                        <div class="col-xs-4">
-                            <div class="form-group p-l-sm">
-                                <label for="user_role">Select Project</label>
-                                <select name="" id="user_role" data-enable-btn-target="#showEpisode" class="form-control selectpicker" data-editdisable>
-                                    <option value> Select Project</option>
-                                    <option value="1">Project 1</option>
-                                    <option value="2">Project 2</option>
-                                    <option value="3">Project 3</option>
-                                    <option value="4">Project 4</option>
-                                    <option value="5">Project 5</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-xs-4">
-                            <div class="form-group p-l-sm">
-                                <label for="user_role">Select Episode</label>
-                                <select name="" id="user_role" data-enable-btn-target="#showEpisode" class="form-control selectpicker" data-editdisable>
-                                    <option value> Select Episode</option>
-                                    <option value="1">Episode 1</option>
-                                    <option value="2">Episode 2</option>
-                                    <option value="3">Episode 3</option>
-                                    <option value="4">Episode 4</option>
-                                    <option value="5">Episode 5</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-xs-2">
-                            <button type="button" class="btn btn--primary m-t-md2" id="showEpisode" disabled data-show-target="#system_admin_matrix" data-editdisable><i class="fa fa-print fa-check-square-o"></i>&nbsp;Submit</button>
-                        </div>
-                    </div>
-                    <div class="row hide" id="system_admin_matrix">
-                        <div class="col-xs-12">
-                            <hr>
-                            <div class="clearfix">
-                                <div class="btn-group-action m-t-md m-b-sm">
-                                    <a href="create-scene.html" class="btn btn--primary"><i class="fa fa-file-o fa-fw"></i>&nbsp;Create</a>
-                                    <button class="btn btn--action--negative"><i class="fa fa-print fa-fw"></i>&nbsp;Print</button>
-                                </div>
-                            </div>
-                            <form action="" name="user-matrix-form">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading"><span class="btn-target-value-text"></span> / Scene Masterlist</div>
-                                    <div class="panel-body">
-                                        <table class="table table-striped table-bordered m-t-md datatables">
-                                          <thead>
-                                            <tr>
-                                              <th>Scene No.</th>
-                                              <th>Seconds</th>
-                                              <th>Frames</th>
-                                              <th>Season</th>
-                                              <th>Time of Day</th>
-                                              <th>INT / EXT</th>
-                                              <th class="text-center">Action</th>
-                                            </tr>
-                                          </thead>
-                                          <tbody>
-                                            <tr>
-                                              <td>1</td>
-                                              <td>13</td>
-                                              <td>Ipsum</td>
-                                              <td>Lorem</td>
-                                              <td>1800</td>
-                                              <td>INT</td>
-                                              <td class="text-center">
-                                                <a href="view-scene.html"><i class="fa fa-search-plus fa-fw fa-lg orange"></i></a>
-                                                <a href="view-scene.html"><i class="fa fa-pencil-square-o fa-fw fa-lg orange"></i></a>
-                                              </td>
-                                            </tr>
-                                            <tr>
-                                              <td>1</td>
-                                              <td>3</td>
-                                              <td>Ipsum</td>
-                                              <td>Lorem</td>
-                                              <td>1800</td>
-                                              <td>INT</td>
-                                              <td class="text-center">
-                                                <a href="view-scene.html"><i class="fa fa-search-plus fa-fw fa-lg orange"></i></a>
-                                                <a href="view-scene.html"><i class="fa fa-pencil-square-o fa-fw fa-lg orange"></i></a>
-                                              </td>
-                                            </tr>
-                                          </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </form>
+                    <div class="panel panel-default">
+                        <h2 class="panel-heading">Project Table</h2>
+                        <div class="panel-body">
+                            <table class="table table-striped table-bordered m-t-md datatables dt-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Project</th>
+                                        <th>Client</th>
+                                        <th>Year/s of Inactivity</th>
+                                        <th>File Size</th>
+                                        <th class="text-center">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Project Uno</td>
+                                        <td>Lorem Ipsum</td>
+                                        <td>5</td>
+                                        <td>Lorem Ipsum</td>
+                                        <td class="text-center">
+                                            <a href="#"><i class="fa fa-hdd-o fa-fw fa-lg orange"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Project Uno</td>
+                                        <td>Lorem Ipsum</td>
+                                        <td>5</td>
+                                        <td>Lorem Ipsum</td>
+                                        <td class="text-center">
+                                            <a href="#"><i class="fa fa-hdd-o fa-fw fa-lg orange"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -248,9 +192,8 @@
     </footer>
     <script src="../../js/jquery.js"></script>
     <script src="../../js/bootstrap.js"></script>
-    <script src="../../js/bootstrap-select.js"></script>
-    <script src="../../js/jquery.multiselect.js"></script>
     <script src="../../js/datatables.min.js"></script>
+    <script src="../../js/dataTables.responsive.min.js"></script>
     <script src="../../js/app.js"></script>
 </body>
 

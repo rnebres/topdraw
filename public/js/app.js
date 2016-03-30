@@ -13,7 +13,8 @@ $(document).ready(function(){
 		$('select[multiple]').multiselect({
 			"search": true,
 			"columns": 2,
-	    	"placeholder": 'Select value'
+	    	"placeholder": 'Select Value',
+            "selectAll": true
 		});
 	}
 	
@@ -107,6 +108,32 @@ $(document).ready(function(){
 			
 		});
 	}
+    if($('.datatables-history').length > 0){
+        $('.datatables-history').DataTable({
+            responsive: true,
+            dom: '<"pull-left" l><"pull-right"f><"clearfix"><t><"pull-left" i><"pull-right" p>',
+            columnDefs: [
+                // { "targets": [-1], "orderable": false}
+                // { "targets": [-1], "width": "120px" }
+            ],
+            aaSorting: [],
+            oLanguage: {
+                sSearch: '<i class="fa fa-search pull-right"></i>',
+                sSearchPlaceholder: 'Search',
+                sLengthMenu: 'Records per page: _MENU_',
+
+                oPaginate: {
+                    sFirst: '«',
+                    sLast: '»',
+                    sPrevious: '‹',
+                    sNext: '›'
+                }
+            },
+            "pagingType": "full_numbers"
+            
+        });
+    }
+
 
 	$(document).on('click', '.btn-add-div', function () {
 		var main_parent = $(this).parents(".dashboard-settings-wrapper");
@@ -290,8 +317,141 @@ $(document).ready(function(){
     	$(".btn-save").prop("disabled",false);
     });
 
+  // REPORT JQUERY
+  function checkdoubledate(classname){
+       var valid = false;
+        $("."+classname).each(function(){
+            if($(this).is(":visible")){
+                var value = $(this).val();
+                if(value !== ''){
+                    valid = true;
+                }else{
+                    valid = false;
+                    return false;
+                }
+            }
+        });
+        return valid;
+    }
   
-	
+ 
+  $("#showReport").on("click",function(){
+    var value = $("#select_report").val();
+    var enable = false;
+    var enable2 = false;
+    var enable3 = false;
+    var dropdownCount = 0;
+    var dpickerCount = 0;
+    var multiselectCount = 0;
 
+    $("[data-report-id]").addClass("hide");
+    $("[data-report-id='"+value+"']").removeClass("hide");
+    $(".btn-group-report").find(".btn").prop("disabled",true);
+    setTimeout(function(){
+        
+        $("[data-report-form]").each(function(){
+            if($(this).is(":visible")){
+                if($(this).hasClass("dpicker")){
+                    $(this).on("dp.change", function(e) {
+                       enable = checkdoubledate("dpicker");
+                       if(dropdownCount > 0){
+                            if(enable2 == true && enable == true){
+                                $(".btn-group-report").find(".btn").prop("disabled",false);
+                            }else{
+                                $(".btn-group-report").find(".btn").prop("disabled",true);
+                            }
+                        }else{
+                             if(enable == true){
+                                $(".btn-group-report").find(".btn").prop("disabled",false);
+                            }else{
+                                $(".btn-group-report").find(".btn").prop("disabled",true);
+                            }
+                        }
+                        
+
+                    });
+                    dpickerCount++;
+                }
+
+                $(this).on("change",function(){
+                    dropdownCount++;
+                    if($(this).val() !== '' && $(this).val()!== null){
+                        enable2 = true;
+                        enable2 = checkdoubledate("selectpicker");
+                    }else{
+                         enable2 = false;
+                    }
+                    if(dpickerCount > 0){
+                        if(enable2 == true && enable == true){
+                            $(".btn-group-report").find(".btn").prop("disabled",false);
+                        }else{
+                            $(".btn-group-report").find(".btn").prop("disabled",true);
+                        }
+                    }else if(multiselectCount > 0){
+                        if(enable2 == true && enable3 == true){
+                            $(".btn-group-report").find(".btn").prop("disabled",false);
+                        }else{
+                            $(".btn-group-report").find(".btn").prop("disabled",true);
+                        }
+                    }else{
+                        if(enable2 == true){
+                            $(".btn-group-report").find(".btn").prop("disabled",false);
+                        }else{
+                            $(".btn-group-report").find(".btn").prop("disabled",true);
+                        }
+                    }
+                  
+
+                });
+            }
+            if($(this).hasClass("multipleselect")){
+                $(".multipleselect").each(function(){
+                    if($(this).next(".ms-options-wrap").is(":visible")){
+                        multiselectCount++;
+                        var e = $(this);
+                        e.multiselect( 'unload' );
+                        e.multiselect({
+                            "search": true,
+                            "columns": 2,
+                            "placeholder": 'Select Value',
+                            "selectAll": true,
+                            onOptionClick: function(element, option) {
+                                if(e.val()){
+                                    enable3 = true;
+                                }else{
+                                    enable3 = false;
+                                }
+                                if(dpickerCount > 0){
+                                    if(enable2 == true && enable == true){
+                                        $(".btn-group-report").find(".btn").prop("disabled",false);
+                                    }else{
+                                        $(".btn-group-report").find(".btn").prop("disabled",true);
+                                    }
+                                }else if(multiselectCount > 0){
+                                    if(enable2 == true && enable3 == true){
+                                        $(".btn-group-report").find(".btn").prop("disabled",false);
+                                    }else{
+                                        $(".btn-group-report").find(".btn").prop("disabled",true);
+                                    }
+                                }else{
+                                    if(enable2 == true){
+                                        $(".btn-group-report").find(".btn").prop("disabled",false);
+                                    }else{
+                                        $(".btn-group-report").find(".btn").prop("disabled",true);
+                                    }
+                                }
+                            }
+                        });
+                        e.multiselect( 'reload' );
+                        e.addClass('hide');
+                                                    
+                    }
+                });
+                    
+            }
+        });
+    },500);
+  });
+	
 });
 //# sourceMappingURL=maps/app.js.map

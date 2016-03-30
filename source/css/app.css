@@ -6153,6 +6153,10 @@ textarea {
 .topnav {
   margin-bottom: 0;
   background-color: #242527; }
+  .topnav .dropdown-menu {
+    right: 20px;
+    padding: 0;
+    border-radius: 0; }
   @media only screen and (max-width: 991px) {
     .topnav .navbar-header {
       position: relative !important; }
@@ -6179,7 +6183,8 @@ textarea {
     background-color: #F7DD2B;
     color: #242527; }
   .mainnav .navbar-nav .dropdown-menu {
-    width: 100%;
+    min-width: 100%;
+    width: auto;
     background-color: #3D3F43;
     border: none; }
     .mainnav .navbar-nav .dropdown-menu li > a {
@@ -6348,7 +6353,6 @@ textarea {
   .navbar-inverse .navbar-nav.navbar-right {
     margin-right: 0; }
   .navbar-inverse .navbar-nav .dropdown-menu {
-    right: 20px;
     padding: 0;
     border-radius: 0; }
     .navbar-inverse .navbar-nav .dropdown-menu:before {
@@ -6549,9 +6553,9 @@ textarea {
   .nav-tabs > li.active > a:focus {
     border-top: 3px solid #FF441F; }
 
-.datatables, .datatables-project {
+.datatables, .datatables-project, .datatables-history {
   width: 100% !important; }
-  .datatables > thead > tr > th:not(.sorting_disabled):after, .datatables-project > thead > tr > th:not(.sorting_disabled):after {
+  .datatables > thead > tr > th:not(.sorting_disabled):after, .datatables-project > thead > tr > th:not(.sorting_disabled):after, .datatables-history > thead > tr > th:not(.sorting_disabled):after {
     bottom: 12px !important;
     font-family: FontAwesome !important;
     content: "" !important;
@@ -6559,30 +6563,30 @@ textarea {
     font-size: 0.8em;
     padding-top: 0.12em;
     opacity: 1 !important; }
-  .datatables > thead > tr > th:not(.sorting_disabled).sorting_asc:after, .datatables-project > thead > tr > th:not(.sorting_disabled).sorting_asc:after {
+  .datatables > thead > tr > th:not(.sorting_disabled).sorting_asc:after, .datatables-project > thead > tr > th:not(.sorting_disabled).sorting_asc:after, .datatables-history > thead > tr > th:not(.sorting_disabled).sorting_asc:after {
     font-family: FontAwesome !important;
     content: "" !important; }
-  .datatables > thead > tr > th:not(.sorting_disabled).sorting_desc:after, .datatables-project > thead > tr > th:not(.sorting_disabled).sorting_desc:after {
+  .datatables > thead > tr > th:not(.sorting_disabled).sorting_desc:after, .datatables-project > thead > tr > th:not(.sorting_disabled).sorting_desc:after, .datatables-history > thead > tr > th:not(.sorting_disabled).sorting_desc:after {
     font-family: FontAwesome !important;
     content: "" !important; }
-  .datatables > thead > tr > th:last-child.sorting_disabled, .datatables-project > thead > tr > th:last-child.sorting_disabled {
+  .datatables > thead > tr > th:last-child.sorting_disabled, .datatables-project > thead > tr > th:last-child.sorting_disabled, .datatables-history > thead > tr > th:last-child.sorting_disabled {
     width: 120px !important; }
 
-.datatables-project > thead > tr > th {
+.datatables-project > thead > tr > th, .datatables-history > thead > tr > th {
   padding-right: 15px !important;
   vertical-align: middle; }
-  .datatables-project > thead > tr > th.no-sort:after {
+  .datatables-project > thead > tr > th.no-sort:after, .datatables-history > thead > tr > th.no-sort:after {
     content: "" !important; }
-  .datatables-project > thead > tr > th:not(.sorting_disabled):after {
+  .datatables-project > thead > tr > th:not(.sorting_disabled):after, .datatables-history > thead > tr > th:not(.sorting_disabled):after {
     top: 0;
     bottom: 0px !important;
     margin: auto;
     height: 13px; }
 
-.datatables-project > thead > tr.spanned > th {
+.datatables-project > thead > tr.spanned > th, .datatables-history > thead > tr.spanned > th {
   border-left-width: 1px !important;
   border-right-width: 1px !important; }
-  .datatables-project > thead > tr.spanned > th:last-child {
+  .datatables-project > thead > tr.spanned > th:last-child, .datatables-history > thead > tr.spanned > th:last-child {
     width: auto !important; }
 
 .dataTables_info {
@@ -6661,6 +6665,9 @@ textarea {
   border-color: #3D3F43; }
   .input-group-addon .btn[disabled] {
     border-color: #C2C2C2; }
+
+.input-group--short {
+  width: 75%; }
 
 .navbar-toggle.mainnav {
   margin: 25px 15px 0 0;
@@ -8928,7 +8935,11 @@ textarea {
       .ms-options-wrap > .ms-options .ms-selectall:hover {
         text-decoration: underline; }
     .ms-options-wrap > .ms-options > .ms-selectall.global {
-      margin: 4px 5px; }
+      margin: 10px 5px;
+      padding-left: 15px;
+      font-size: 14px;
+      text-transform: capitalize;
+      text-decoration: underline; }
     .ms-options-wrap > .ms-options > ul {
       margin-bottom: 0; }
       .ms-options-wrap > .ms-options > ul > li {

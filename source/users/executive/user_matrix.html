@@ -31,7 +31,7 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle user-profile" data-toggle="dropdown" role="button" aria-expanded="false"><img class="img-circle" src="../../img/profile_user.jpg" alt="">John Smith <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#"><i class="fa fa-user fa-fw"></i>&nbsp;My profile</a></li>
+                                <li><a href="../../profile.html"><i class="fa fa-user fa-fw"></i>&nbsp;My profile</a></li>
                                 <li class="divider" role="separator"></li>
                                 <li><a href="#"><i class="fa fa-sign-out fa-fw"></i>&nbsp;Logout</a></li>
                             </ul>
@@ -79,7 +79,7 @@
                                     </li>
                                 </div>
                                 <li class="divider" role="separator"></li>
-                                <li><a href="#"><b>See all notifications&nbsp;<i class="fa fa-chevron-right fa-fw"></i></b></a></li>
+                                <li><a href="../../notifications.html"><b>See all notifications&nbsp;<i class="fa fa-chevron-right fa-fw"></i></b></a></li>
                             </ul>
                         </li>
                     </ul>
@@ -91,8 +91,8 @@
             <nav class="navbar navbar-inverse mainnav">
                 <div class="container-fluid">
                     <ul class="nav navbar-nav">
-                        <li><a href="#"><i class="fa fa-desktop fa-fw"></i>&nbsp;Dashboard</a></li>
-                        <li class="active">
+                        <li ><a href="#"><i class="fa fa-desktop fa-fw"></i>&nbsp;Dashboard</a></li>
+                        <li class="dropdown active">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-stack-overflow fa-fw"></i>&nbsp;User Management</a>
                             <ul class="dropdown-menu">
                                 <li><a href="user_accounts.html">User Account</a></li>
@@ -102,18 +102,31 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-film fa-fw"></i>&nbsp;Production Management</a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Projects</a></li>
-                                <li><a href="#">Episode</a></li>
-                                <li><a href="#">Scene</a></li>
-                                <li><a href="#">Library</a></li>
-                                <li><a href="#">Lead Sheet</a></li>
+                                <li><a href="projects.html">Projects</a></li>
+                                <li><a href="episode.html">Episode</a></li>
+                                <li><a href="scene.html">Scene</a></li>
+                                <li><a href="library.html">Library</a></li>
+                                <li><a href="leadsheet.html">Lead Sheet</a></li>
                                 <li><a href="#">In-Out Tracker</a></li>
-                                <li><a href="#">Project History</a></li>
+                                <li><a href="project-history.html">Project History</a></li>
                             </ul>
                         </li>
-                        <li><a href="#"><i class="fa fa-files-o fa-fw"></i>&nbsp;Reports</a></li>
-                        <li><a href="#"><i class="fa fa-gears fa-fw"></i>&nbsp;CMS</a></li>
-                        <li><a href="#"><i class="fa fa-inbox fa-fw"></i>&nbsp;Data Archive</a></li>
+                        <li><a href="reports.html"><i class="fa fa-files-o fa-fw"></i>&nbsp;Reports</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-gears fa-fw"></i>&nbsp;CMS</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="cms-dropdown.html">Dropdown Selection Settings</a></li>
+                                <li><a href="cms-calendar.html">Calendar Settings</a></li>
+                                <li><a href="cms-targetoutput.html">Departmental Daily Target Output</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-inbox fa-fw"></i>&nbsp;Data Archive</a>
+                          <ul class="dropdown-menu">
+                              <li><a href="data-archive.html">Data Archive</a></li>
+                              <li><a href="data-restore.html">Data Backup</a></li>
+                          </ul>
+                        </li>
                     </ul>
                 </div>
             </nav>

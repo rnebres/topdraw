@@ -136,13 +136,9 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
-                    <div class="page-title page-title-container page-title-container--breadcrumb clearfix">
-                        <h1 class="page-title__title">Scene Masterlist</h1>
+                    <div class="page-title page-title-container clearfix">
+                        <h1 class="page-title__title">Project History</h1>
                     </div>
-                    <ol class="breadcrumb">
-                        <li><a href="#">Dashboard</a></li>
-                        <li class="active">Scene Masterlist</li>
-                    </ol>
                 </div>
             </div>
         </div>
@@ -152,10 +148,10 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="row">
-                        <div class="col-xs-4">
+                        <div class="col-xs-3">
                             <div class="form-group p-l-sm">
-                                <label for="user_role">Select Project</label>
-                                <select name="" id="user_role" data-enable-btn-target="#showEpisode" class="form-control selectpicker" data-editdisable>
+                                <label for="select_project">Select Project</label>
+                                <select name="" id="select_project" data-enable-btn-target="#showHistory" class="form-control selectpicker" data-editdisable>
                                     <option value> Select Project</option>
                                     <option value="1">Project 1</option>
                                     <option value="2">Project 2</option>
@@ -165,10 +161,10 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-xs-4">
+                        <div class="col-xs-3">
                             <div class="form-group p-l-sm">
-                                <label for="user_role">Select Episode</label>
-                                <select name="" id="user_role" data-enable-btn-target="#showEpisode" class="form-control selectpicker" data-editdisable>
+                                <label for="select_episode">Select Episode</label>
+                                <select name="" id="select_episode" data-enable-btn-target="#showHistory" class="form-control selectpicker" data-editdisable>
                                     <option value> Select Episode</option>
                                     <option value="1">Episode 1</option>
                                     <option value="2">Episode 2</option>
@@ -178,59 +174,59 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-xs-2">
-                            <button type="button" class="btn btn--primary m-t-md2" id="showEpisode" disabled data-show-target="#system_admin_matrix" data-editdisable><i class="fa fa-print fa-check-square-o"></i>&nbsp;Submit</button>
+                        <div class="col-xs-3">
+                            <div class="form-group p-l-sm">
+                                <label for="select_scene">Select Scene</label>
+                                <select name="" id="select_scene" data-enable-btn-target="#showHistory" class="form-control selectpicker" data-editdisable>
+                                    <option value> Select Scene</option>
+                                    <option value="1">Scene 1</option>
+                                    <option value="2">Scene 2</option>
+                                    <option value="3">Scene 3</option>
+                                    <option value="4">Scene 4</option>
+                                    <option value="5">Scene 5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-3">
+                            <button type="button" class="btn btn--primary m-t-md2" id="showHistory" disabled data-show-target="#project-history" data-editdisable><i class="fa fa-print fa-check-square-o"></i>&nbsp;Submit</button>
                         </div>
                     </div>
-                    <div class="row hide" id="system_admin_matrix">
+                    <div class="row hide" id="project-history">
                         <div class="col-xs-12">
                             <hr>
                             <div class="clearfix">
                                 <div class="btn-group-action m-t-md m-b-sm">
-                                    <a href="create-scene.html" class="btn btn--primary"><i class="fa fa-file-o fa-fw"></i>&nbsp;Create</a>
                                     <button class="btn btn--action--negative"><i class="fa fa-print fa-fw"></i>&nbsp;Print</button>
                                 </div>
                             </div>
                             <form action="" name="user-matrix-form">
                                 <div class="panel panel-default">
-                                    <div class="panel-heading"><span class="btn-target-value-text"></span> / Scene Masterlist</div>
+                                    <div class="panel-heading">Project History Table</div>
                                     <div class="panel-body">
-                                        <table class="table table-striped table-bordered m-t-md datatables">
+                                        <table class="table table-striped table-bordered m-t-md datatables-history">
                                           <thead>
                                             <tr>
-                                              <th>Scene No.</th>
-                                              <th>Seconds</th>
-                                              <th>Frames</th>
-                                              <th>Season</th>
-                                              <th>Time of Day</th>
-                                              <th>INT / EXT</th>
-                                              <th class="text-center">Action</th>
+                                              <th rowspan="2">Artist</th>
+                                              <th rowspan="2">Department</th>
+                                              <th colspan="2" class="text-center no-sort">Period of Assignment</th>
+                                            </tr>
+                                            <tr class="spanned">
+                                              <th class="text-center">Start Date</th>
+                                              <th class="text-center">End Date</th>
                                             </tr>
                                           </thead>
                                           <tbody>
                                             <tr>
-                                              <td>1</td>
-                                              <td>13</td>
-                                              <td>Ipsum</td>
+                                              <td>Project 1</td>
                                               <td>Lorem</td>
-                                              <td>1800</td>
-                                              <td>INT</td>
-                                              <td class="text-center">
-                                                <a href="view-scene.html"><i class="fa fa-search-plus fa-fw fa-lg orange"></i></a>
-                                                <a href="view-scene.html"><i class="fa fa-pencil-square-o fa-fw fa-lg orange"></i></a>
-                                              </td>
+                                              <td>March 10, 2016</td>
+                                              <td>March 15, 2016</td>
                                             </tr>
                                             <tr>
-                                              <td>1</td>
-                                              <td>3</td>
-                                              <td>Ipsum</td>
+                                              <td>Project 2</td>
                                               <td>Lorem</td>
-                                              <td>1800</td>
-                                              <td>INT</td>
-                                              <td class="text-center">
-                                                <a href="view-scene.html"><i class="fa fa-search-plus fa-fw fa-lg orange"></i></a>
-                                                <a href="view-scene.html"><i class="fa fa-pencil-square-o fa-fw fa-lg orange"></i></a>
-                                              </td>
+                                              <td>March 10, 2016</td>
+                                              <td>March 16, 2016</td>
                                             </tr>
                                           </tbody>
                                         </table>

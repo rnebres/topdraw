@@ -8,7 +8,7 @@
 			margin-right: 0;
 		}
 		.dropdown-menu {
-		    right: 20px;
+		    // right: 20px;
 			padding: 0;
 			border-radius: 0;
 			
@@ -415,7 +415,9 @@
 		}
 	}
 }
-
+.datatables-history{
+	@extend .datatables-project;
+}
 .dataTables_info {
 	font-size: 0.9em;
 	font-weight: bold;
@@ -540,7 +542,11 @@
 	    }
 	}
 }
-
+.input-group{
+	&--short{
+		width: 75%;
+	}
+}
 .navbar-toggle{
 	&.mainnav{
 		margin: 25px 15px 0 0;
