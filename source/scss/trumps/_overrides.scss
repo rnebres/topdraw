@@ -415,9 +415,11 @@
 		}
 	}
 }
-.datatables-history{
+.datatables-history,
+.datatables-assigned{
 	@extend .datatables-project;
 }
+
 .dataTables_info {
 	font-size: 0.9em;
 	font-weight: bold;

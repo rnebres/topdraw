@@ -50,5 +50,30 @@
 			font-weight: bold;
 		}
 	}
+	
+	&--full{
+		> li{
+			padding: 10px 0;
+			border-bottom: 1px solid $grey;
 
+			&:last-child{
+				border-bottom: 0;
+			}
+			.notif-status{
+				display: inline-block;
+				width: 150px;
+				
+				label{
+				    padding: 5px;
+					font-weight: normal;
+
+					&.update { background-color: $cyan; }
+					&.delay { background-color: $yellowLight; }
+					&.assigned { background-color: $skyblue; }
+					&.approved { background-color: $oliveGreen; }
+				}
+				
+			}
+		}
+	}
 }

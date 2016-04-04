@@ -412,13 +412,13 @@
                                         <div class="form-group">
                                             <label for="start_date">*Start Date</label>
                                             <div class='input-group datetimepicker'>
-                                                <input type='text' class="form-control dpicker" id="start_date" disabled value="03/22/2016" data-minimodal-target="#start_date-1"/>
+                                                <input type='text' class="form-control dpicker" id="start_date" disabled value="2016-03-22" data-minimodal-target="#start_date_modal-1"/>
                                                 <span class="input-group-addon">
                                                 <span class="glyphicon glyphicon-calendar"></span>
                                                 </span>
                                             </div>
                                         </div>
-                                        <div class="modal-custom" id="start_date-1">
+                                        <div class="modal-custom" id="start_date_modal-1">
                                             <div class="modal-header">
                                                 <button type="button" class="close" data-minimodal-dismiss>&times;</button>
                                                 <h5 class="modal-title">Change of Schedule</h5>
@@ -439,13 +439,13 @@
                                         <div class="form-group">
                                             <label for="end_date">*End Date</label>
                                             <div class='input-group datetimepicker'>
-                                                <input type='text' class="form-control dpicker" id="end_date" disabled value="03/25/2016" data-minimodal-target="#end_date-1"/>
+                                                <input type='text' class="form-control dpicker" id="end_date" disabled value="2016-04-01" data-minimodal-target="#end_date_modal-1"/>
                                                 <span class="input-group-addon">
                                                 <span class="glyphicon glyphicon-calendar"></span>
                                                 </span>
                                             </div>
                                         </div>
-                                        <div class="modal-custom" id="end_date-1">
+                                        <div class="modal-custom" id="end_date_modal-1">
                                             <div class="modal-header">
                                                 <button type="button" class="close" data-minimodal-dismiss>&times;</button>
                                                 <h5 class="modal-title">Change of Schedule</h5>
@@ -460,6 +460,109 @@
                                                 <button class="btn btn--primary">Submit</a>
                                                 <button type="button" class="btn btn--action--negative" data-minimodal-dismiss>Cancel</button>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        
+                                        <div class="edit-note text-danger">
+                                            Change of Schedule: Pending for Approval <br>
+                                            <small><i>Start Date: <time>March 11, 2015</time></i></small>
+                                            <small class="p-l-sm"><i>End Date: <time>March 11, 2015</time></i></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <div class="form-group has-feedback">
+                                    <label for="department_daily_target">Departmental Daily Target</label>
+                                    <input type="text" id="department_daily_target" class="form-control" disabled value="3">
+                                    <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                    <small class="form-group__message">Please supply Departmental Daily Target</small>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-2 m-t-md text-right">
+                                <button type="button" class="btn--no-property btn-add-div" disabled><i class="fa fa-plus fa-lg fa-fw"></i></button>
+                                <button type="button" class="btn--no-property btn-remove-div" disabled><i class="fa fa-minus fa-lg fa-fw"></i></button>
+                            </div>
+                        </div>
+                        <div class="row dashboard-settings-content">
+                            <div class="col-sm-6 col-md-3">
+                                <div class="form-group">
+                                    <label for="dropdown">Deparment</label>
+                                    <select name="" id="dropdown" class="form-control selectpicker" disabled>
+                                        <option value> Select Department</option>
+                                        <option value="1">Department 1</option>
+                                        <option value="2" selected>Department 2</option>
+                                        <option value="3">Department 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="start_date">*Start Date</label>
+                                            <div class='input-group datetimepicker'>
+                                                <input type='text' class="form-control dpicker" id="start_date-2" disabled value="2016-03-22" data-minimodal-target="#start_date_modal-2"/>
+                                                <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="modal-custom" id="start_date_modal-2">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-minimodal-dismiss>&times;</button>
+                                                <h5 class="modal-title">Change of Schedule</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <textarea name="" id="" rows="8" class="form-control"></textarea>
+
+                                                <p class="text-right"><small><i>Pending for Approval. Changes will reflect upon approval</i></small></p>
+
+                                            </div>
+                                            <div class="modal-footer text-right">
+                                                <button class="btn btn--primary">Submit</a>
+                                                <button type="button" class="btn btn--action--negative" data-minimodal-dismiss>Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="end_date">*End Date</label>
+                                            <div class='input-group datetimepicker'>
+                                                <input type='text' class="form-control dpicker" id="end_date-2" disabled value="2016-04-01" data-minimodal-target="#end_date_modal-2"/>
+                                                <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="modal-custom" id="end_date_modal-2">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-minimodal-dismiss>&times;</button>
+                                                <h5 class="modal-title">Change of Schedule</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <textarea name="" id="" rows="8" class="form-control"></textarea>
+
+                                                <p class="text-right"><small><i>Pending for Approval. Changes will reflect upon approval</i></small></p>
+
+                                            </div>
+                                            <div class="modal-footer text-right">
+                                                <button class="btn btn--primary">Submit</a>
+                                                <button type="button" class="btn btn--action--negative" data-minimodal-dismiss>Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        
+                                        <div class="edit-note text-danger">
+                                            Change of Schedule: Pending for Approval <br>
+                                            <small><i>Start Date: <time>March 11, 2015</time></i></small>
+                                            <small class="p-l-sm"><i>End Date: <time>March 11, 2015</time></i></small>
                                         </div>
                                     </div>
                                 </div>

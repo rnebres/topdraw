@@ -91,7 +91,7 @@
             <nav class="navbar navbar-inverse mainnav">
                 <div class="container-fluid">
                     <ul class="nav navbar-nav">
-                        <li><a href="#"><i class="fa fa-desktop fa-fw"></i>&nbsp;Dashboard</a></li>
+                        <li><a href="dashboard.html"><i class="fa fa-desktop fa-fw"></i>&nbsp;Dashboard</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-stack-overflow fa-fw"></i>&nbsp;User Management</a>
                             <ul class="dropdown-menu">
@@ -137,7 +137,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="page-title page-title-container clearfix">
-                        <h1 class="page-title__title">Project History</h1>
+                        <h1 class="page-title__title">Reports</h1>
                     </div>
                 </div>
             </div>
@@ -148,9 +148,9 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="row">
-                        <div class="col-xs-8">
-                            <div class="form-group p-l-sm">
-                                <label for="select_report">Select Report</label>
+                        <div class="col-sm-8">
+                            <div class="form-group p-l-sm no-p-xs">
+                                <label for="select_report" class="hidden-xs">Report</label>
                                 <select name="" id="select_report" data-enable-btn-target="#showReport" class="form-control selectpicker" data-editdisable>
                                     <option value> Select Report</option>
                                     <option value="1">Weekly Take 1 Output by Department</option>
@@ -163,8 +163,8 @@
                                     <option value="8">Scene Delays by Employee</option>
                                     <option value="9">Ongoing Scenes List/Views List</option>
                                     <option value="10">Where is Scene</option>
-                                    <option value="11">13 Week Output Report &#47; Take 1&#39;s</option>
-                                    <option value="12">13 Week Output Report &#47; Total Claimable</option>
+                                    <option value="11">13 Week Output Report - Take 1&#39;s</option>
+                                    <option value="12">13 Week Output Report - Total Claimable</option>
                                     <option value="13">13 Week Output Report - Unclaimable Fix-ups&#47;Retakes Percentages</option>
                                     <option value="14">Fix-ups and Retakes Statistics per Employee</option>
                                     <option value="15">Fix-ups and Retakes Statistics per Episode</option>
@@ -174,7 +174,7 @@
                                     <option value="19">Piecework Statistics - Take 1</option>
                                     <option value="20">Payroll Output &#40;Take 1&#39;s/Fix-ups and Retakes&#41;</option>
                                     <option value="21">Payroll Output per Project &#40;Take 1&#39;s/Fix-ups and Retakes&#41;</option>
-                                    <option value="22">Claimable Fix&#47;ups &#40;In Detail&#41;</option>
+                                    <option value="22">Claimable Fix-ups &#40;In Detail&#41;</option>
                                     <option value="23">No. of Registered Artists by Project per Department</option>
                                     <option value="24">No. of Registered Artists by Project</option>
                                     <option value="25">Work Ongoing per Employee</option>
@@ -185,18 +185,18 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="col-xs-3">
-                            <button type="button" class="btn btn--primary m-t-md2" id="showReport" disabled data-show-target="#reports" data-editdisable><i class="fa fa-print fa-check-square-o"></i>&nbsp;Submit</button>
+                        <div class="col-sm-3">
+                            <button type="button" class="btn btn--primary m-t-md2 no-m-xs pull-right-xs" id="showReport" disabled data-show-target="#reports" data-editdisable><i class="fa fa-print fa-check-square-o"></i>&nbsp;Submit</button>
                         </div>
                     </div>
                     <div class="row hide" id="reports">
                         <div class="col-xs-12">
                             <hr>
                             <div class="clearfix">
-                                <div class="btn-group-action m-t-md m-b-sm btn-group-report">
+                                <div class="btn-group-action m-t-md m-b-sm btn-group-report hidden-xs">
                                     <button class="btn btn--primary" disabled><i class="fa fa-share-square"></i>&nbsp;Export Excel</button>
                                     <button class="btn btn--primary" disabled><i class="fa fa-share-square"></i>&nbsp;Export PDF</button>
-                                    <button class="btn btn--primary" disabled><i class="fa fa-file-text-o"></i>&nbsp;View Report</button>
+                                    <button class="btn btn--primary " disabled><i class="fa fa-file-text-o"></i>&nbsp;View Report</button>
                                 </div>
                             </div>
                             <form action="" name="user-matrix-form">
@@ -207,7 +207,7 @@
                                             <div class="col-sm-12 col-md-6">
                                                 <label>Time Range</label>
                                                 <div class="form-inline row">
-                                                    <div class="form-group col-xs-6">
+                                                    <div class="form-group col-sm-6">
                                                         <label for="exampleInputName2">From:</label>
                                                         <div class='input-group datetimepicker input-group--short'>
                                                             <input type='text' class="form-control dpicker" id="start_date_1" data-report-form/>
@@ -216,7 +216,7 @@
                                                             </span>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group col-xs-6">
+                                                    <div class="form-group col-sm-6">
                                                         <label for="exampleInputEmail2">To:</label>
                                                         <div class='input-group datetimepicker input-group--short'>
                                                             <input type='text' class="form-control dpicker" id="end_date_1" data-report-form />
@@ -606,7 +606,7 @@
                                             <div class="col-sm-12 col-md-5">
                                                 <label>Time Range</label>
                                                 <div class="form-inline row">
-                                                    <div class="form-group col-xs-6">
+                                                    <div class="form-group col-sm-6">
                                                         <label for="exampleInputName2">From:</label>
                                                         <div class='input-group datetimepicker input-group--short'>
                                                             <input type='text' class="form-control dpicker" id="start_date_14" data-report-form/>
@@ -615,7 +615,7 @@
                                                             </span>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group col-xs-6">
+                                                    <div class="form-group col-sm-6">
                                                         <label for="exampleInputEmail2">To:</label>
                                                         <div class='input-group datetimepicker input-group--short'>
                                                             <input type='text' class="form-control dpicker" id="end_date_14" data-report-form />
@@ -665,7 +665,7 @@
                                             <div class="col-sm-12 col-md-5">
                                                 <label>Time Range</label>
                                                 <div class="form-inline row">
-                                                    <div class="form-group col-xs-6">
+                                                    <div class="form-group col-sm-6">
                                                         <label for="exampleInputName2">From:</label>
                                                         <div class='input-group datetimepicker input-group--short'>
                                                             <input type='text' class="form-control dpicker" id="start_date_15" data-report-form/>
@@ -674,7 +674,7 @@
                                                             </span>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group col-xs-6">
+                                                    <div class="form-group col-sm-6">
                                                         <label for="exampleInputEmail2">To:</label>
                                                         <div class='input-group datetimepicker input-group--short'>
                                                             <input type='text' class="form-control dpicker" id="end_date_15" data-report-form />
@@ -701,7 +701,7 @@
                                             <div class="col-sm-12 col-md-5">
                                                 <label>Time Range</label>
                                                 <div class="form-inline row">
-                                                    <div class="form-group col-xs-6">
+                                                    <div class="form-group col-sm-6">
                                                         <label for="exampleInputName2">From:</label>
                                                         <div class='input-group datetimepicker input-group--short'>
                                                             <input type='text' class="form-control dpicker" id="start_date_16" data-report-form/>
@@ -710,7 +710,7 @@
                                                             </span>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group col-xs-6">
+                                                    <div class="form-group col-sm-6">
                                                         <label for="exampleInputEmail2">To:</label>
                                                         <div class='input-group datetimepicker input-group--short'>
                                                             <input type='text' class="form-control dpicker" id="end_date_16" data-report-form />
@@ -737,7 +737,7 @@
                                             <div class="col-sm-12 col-md-5">
                                                 <label>Time Range</label>
                                                 <div class="form-inline row">
-                                                    <div class="form-group col-xs-6">
+                                                    <div class="form-group col-sm-6">
                                                         <label for="start_date_17">From:</label>
                                                         <div class='input-group datetimepicker input-group--short'>
                                                             <input type='text' class="form-control dpicker" id="start_date_17" data-report-form/>
@@ -746,7 +746,7 @@
                                                             </span>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group col-xs-6">
+                                                    <div class="form-group col-sm-6">
                                                         <label for="end_date_17">To:</label>
                                                         <div class='input-group datetimepicker input-group--short'>
                                                             <input type='text' class="form-control dpicker" id="end_date_17" data-report-form />
@@ -784,7 +784,7 @@
                                             <div class="col-sm-12 col-md-5">
                                                 <label>Time Range</label>
                                                 <div class="form-inline row">
-                                                    <div class="form-group col-xs-6">
+                                                    <div class="form-group col-sm-6">
                                                         <label for="start_date_18">From:</label>
                                                         <div class='input-group datetimepicker input-group--short'>
                                                             <input type='text' class="form-control dpicker" id="start_date_18" data-report-form/>
@@ -793,7 +793,7 @@
                                                             </span>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group col-xs-6">
+                                                    <div class="form-group col-sm-6">
                                                         <label for="end_date_18">To:</label>
                                                         <div class='input-group datetimepicker input-group--short'>
                                                             <input type='text' class="form-control dpicker" id="end_date_18" data-report-form />
@@ -843,7 +843,7 @@
                                             <div class="col-sm-12 col-md-5">
                                                 <label>Time Range</label>
                                                 <div class="form-inline row">
-                                                    <div class="form-group col-xs-6">
+                                                    <div class="form-group col-sm-6">
                                                         <label for="start_date_19">From:</label>
                                                         <div class='input-group datetimepicker input-group--short'>
                                                             <input type='text' class="form-control dpicker" id="start_date_19" data-report-form/>
@@ -852,7 +852,7 @@
                                                             </span>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group col-xs-6">
+                                                    <div class="form-group col-sm-6">
                                                         <label for="end_date_19">To:</label>
                                                         <div class='input-group datetimepicker input-group--short'>
                                                             <input type='text' class="form-control dpicker" id="end_date_19" data-report-form />
@@ -1119,7 +1119,7 @@
                                             <div class="col-sm-12 col-md-6">
                                                 <label>Time Range</label>
                                                 <div class="form-inline row">
-                                                    <div class="form-group col-xs-6">
+                                                    <div class="form-group col-sm-6">
                                                         <label for="start_date_28">From:</label>
                                                         <div class='input-group datetimepicker input-group--short'>
                                                             <input type='text' class="form-control dpicker" id="start_date_28" data-report-form/>
@@ -1128,7 +1128,7 @@
                                                             </span>
                                                         </div>
                                                     </div>
-                                                    <div class="form-group col-xs-6">
+                                                    <div class="form-group col-sm-6">
                                                         <label for="end_date_28">To:</label>
                                                         <div class='input-group datetimepicker input-group--short'>
                                                             <input type='text' class="form-control dpicker" id="end_date_28" data-report-form />
@@ -1190,6 +1190,14 @@
                                     </div>
                                 </div>
                             </form>
+                            <div class="row visible-xs-block">
+                                <div class="col-xs-6">
+                                    <button class="btn btn--primary btn--block" disabled><i class="fa fa-share-square"></i>&nbsp;Export Excel</button>
+                                </div>
+                                <div class="col-xs-6">
+                                    <button class="btn btn--primary btn--block" disabled><i class="fa fa-share-square"></i>&nbsp;Export PDF</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
