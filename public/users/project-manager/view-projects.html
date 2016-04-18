@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Top Draw Animation</title>
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/app.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse topnav">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed mainnav" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand"><img src="../../img/topdrawlogo.png" alt="Top-Draw-Animation-Logo" class="login__logo"></a>
+                    <button type="button" class="navbar-toggle collapsed topnav" data-toggle="collapse" data-target="#top-nav" aria-expanded="false" id="topnav-button">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse topnav-toggle" id="top-nav">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle user-profile" data-toggle="dropdown" role="button" aria-expanded="false"><img class="img-circle" src="../../img/profile_user.jpg" alt="">John Smith <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../../profile.html"><i class="fa fa-user fa-fw"></i>&nbsp;My profile</a></li>
+                                <li class="divider" role="separator"></li>
+                                <li><a href="#"><i class="fa fa-sign-out fa-fw"></i>&nbsp;Logout</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle notification-info" data-toggle="dropdown" role="button" aria-expanded="false">
+                                <i class="fa fa-bell-o fa-lg fa-fw"></i>
+                                <span class="badge">99</span>
+                                <span class="visible-xs-inline-block notiflabel">Notification</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href=""><b>Your notifications</b></a></li>
+                                <div class="notifications-list">
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color update"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color delay"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color approved"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color assigned"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt, consectetur adipiscing elit.
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                </div>
+                                <li class="divider" role="separator"></li>
+                                <li><a href="../../notifications.html"><b>See all notifications&nbsp;<i class="fa fa-chevron-right fa-fw"></i></b></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </nav>
+        <div class="collapse navbar-collapse mainnav-toggle" id="main-nav">
+            <nav class="navbar navbar-inverse mainnav">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#"><i class="fa fa-desktop fa-fw"></i>&nbsp;Dashboard</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-stack-overflow fa-fw"></i>&nbsp;User Management</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="user_accounts.html">User Account</a></li>
+                                <li><a href="user_matrix.html">User Matrix</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-film fa-fw"></i>&nbsp;Production Management</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="projects.html">Projects</a></li>
+                                <li><a href="episode.html">Episode</a></li>
+                                <li><a href="scene.html">Scene</a></li>
+                                <li><a href="library.html">Library</a></li>
+                                <li><a href="leadsheet.html">Lead Sheet</a></li>
+                                <li><a href="#">In-Out Tracker</a></li>
+                                <li><a href="project-history.html">Project History</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="reports.html"><i class="fa fa-files-o fa-fw"></i>&nbsp;Reports</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-gears fa-fw"></i>&nbsp;CMS</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="cms-dropdown.html">Dropdown Selection Settings</a></li>
+                                <li><a href="cms-calendar.html">Calendar Settings</a></li>
+                                <li><a href="cms-targetoutput.html">Departmental Daily Target Output</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-inbox fa-fw"></i>&nbsp;Data Archive</a>
+                          <ul class="dropdown-menu">
+                              <li><a href="data-archive.html">Data Archive</a></li>
+                              <li><a href="data-restore.html">Data Backup</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="screen-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="page-title page-title-container page-title-container--breadcrumb clearfix">
+                        <h1 class="page-title__title">View Project</h1>
+                    </div>
+                    <ol class="breadcrumb">
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Project Masterlist</a></li>
+                        <li class="active">View Project</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="screen-content">
+        <div class="container-fluid">
+            <form action="" name="project-form">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a href="#" class="text-uppercase" data-toggle="modal" data-target="#backModal"><i class="fa fa-chevron-left fa-fw"></i>&nbsp;Back</a>
+                        <div class="btn-group-action" data-edithide>
+                            <button class="btn btn--primary btn-edit" type="button" data-formtarget="project-form"><i class="fa fa-print fa-pencil-square-o"></i>&nbsp;Edit</button>
+                        </div>
+                        <div class="btn-group-action hide" data-editshow>
+                            <button class="btn btn--primary btn-save"><i class="fa fa-print fa-check-square-o"></i>&nbsp;Save</button>
+                            <button class="btn btn--action--negative"><i class="fa fa-share-square-o fa-fw"></i>&nbsp;Cancel</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group-container">
+                    <label class="m-b-md">*Required Fields</label>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group has-feedback">
+                                <!-- add "has-error" class to show the validation -->
+                                <label for="projectname">*Project Name</label>
+                                <input type="text" id="projectname" class="form-control" placeholder="Enter Project Name" disabled value="Lorem Ipsum">
+                                <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                <small class="form-group__message">Please supply Project Name</small>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group has-feedback">
+                                <label for="projectcode">*Project Code</label>
+                                <input type="text" id="projectcode" class="form-control" placeholder="Enter Project Code" disabled value="Lorem Ipsum">
+                                <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                <small class="form-group__message">Please supply Project Code</small>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group has-feedback">
+                                <label for="client">*Client</label>
+                                <input type="text" id="client" class="form-control" placeholder="Enter Client Name" disabled value="Lorem Ipsum">
+                                <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                <small class="form-group__message">Please supply Client Name</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="project_type">*Project Type</label>
+                                <select name="" id="project_type" class="form-control selectpicker" disabled>
+                                    <option value> Select Project Type</option>
+                                    <option value="1" selected>Type 1</option>
+                                    <option value="2">Type 2</option>
+                                    <option value="3">Type 3</option>
+                                    <option value="4">Type 4</option>
+                                    <option value="5">Type 5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="software_type">*Software Type</label>
+                                <select name="" id="software_type" class="form-control selectpicker" disabled>
+                                    <option value> Select Software Type</option>
+                                    <option value="1">Type 1</option>
+                                    <option value="2" selected>Type 2</option>
+                                    <option value="3">Type 3</option>
+                                    <option value="4">Type 4</option>
+                                    <option value="5">Type 5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="project_desc">*Project Description</label>
+                                <select name="" id="project_desc" class="form-control selectpicker" disabled>
+                                    <option value> Select Project Description</option>
+                                    <option value="1">Description 1</option>
+                                    <option value="2">Description 2</option>
+                                    <option value="3">Description 3</option>
+                                    <option value="4">Description 4</option>
+                                    <option value="5" selected>Description 5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="project_block">*Project Blocked</label>
+                                <select name="" id="project_block" class="form-control selectpicker" disabled>
+                                    <option value> Select Project Blocked</option>
+                                    <option value="1" selected>Yes</option>
+                                    <option value="2">No</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group has-feedback">
+                                <label for="no_of_episode">*No. of Episode/s</label>
+                                <input type="text" id="no_of_episode" class="form-control" disabled value="Lorem Ipsum">
+                                <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                <small class="form-group__message">Please supply No. of Episode/s</small>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-md-4">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="start_date">*Schedule: Start Date</label>
+                                        <div class='input-group datetimepicker'>
+                                            <input type='text' class="form-control dpicker" id="start_date" disabled value="03/22/2016" />
+                                            <span class="input-group-addon">
+                                          <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="end_date">*Schedule: End Date</label>
+                                        <div class='input-group datetimepicker'>
+                                            <input type='text' class="form-control dpicker" id="end_date" disabled value="03/25/2016"/>
+                                            <span class="input-group-addon">
+                                          <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="project_status">*Project Status</label>
+                                <select name="" id="project_status" class="form-control selectpicker" disabled>
+                                    <option value> Select Project Status</option>
+                                    <option value="1" selected>Delayed</option>
+                                    <option value="2">On-going</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="m-b-md m-t-lg">List of Manpower</h4>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="form-group">
+                                <label for="project_manager">*Project Manager</label>
+                                <select name="" id="project_manager" class="form-control selectpicker" disabled>
+                                    <option value> Select Project Manager</option>
+                                    <option value="1" selected>Project Manager 1</option>
+                                    <option value="2">Project Manager 2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="form-group">
+                                <label for="senior_coordinator">Senior Coordinator</label>
+                                <select name="" id="senior_coordinator" class="form-control selectpicker" disabled>
+                                    <option value> Select Senior Coordinator</option>
+                                    <option value="1" selected>Senior Coordinator 1</option>
+                                    <option value="2">Senior Coordinator 2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="form-group">
+                                <label for="director">*Director/s</label>
+                                <select name="" id="director" class="form-control" multiple disabled>
+                                    <option value> Select Director/s</option>
+                                    <option value="1" selected>Director 1</option>
+                                    <option value="2">Director 2</option>
+                                    <option value="3" selected>Director 3</option>
+                                    <option value="4">Director 4</option>
+                                    <option value="5">Director 5</option>
+                                    <option value="6">Director 6</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="form-group">
+                                <label for="supervisor">*Supervisor/s</label>
+                                <select name="" id="supervisor" class="form-control" multiple disabled>
+                                    <option value> Select Supervisor/s</option>
+                                    <option value="1" selected>Supervisor 1</option>
+                                    <option value="2">Supervisor 2</option>
+                                    <option value="3">Supervisor 3</option>
+                                    <option value="4">Supervisor 4</option>
+                                    <option value="5" selected>Supervisor 5</option>
+                                    <option value="6">Supervisor 6</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="form-group">
+                                <label for="trainor">Trainor</label>
+                                <select name="" id="trainor" class="form-control selectpicker" disabled>
+                                    <option value> Select Trainor</option>
+                                    <option value="1" selected>Trainor 1</option>
+                                    <option value="2">Trainor 2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="form-group">
+                                <label for="artist">*Artist</label>
+                                <select name="" id="artist" class="form-control" multiple disabled>
+                                    <option value> Select Artist</option>
+                                    <option value="1" selected>Artist 1</option>
+                                    <option value="2">Artist 2</option>
+                                    <option value="3">Artist 3</option>
+                                    <option value="4" selected>Artist 4</option>
+                                    <option value="5">Artist 5</option>
+                                    <option value="6">Artist 6</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="form-group">
+                                <label for="production_assistant">*Production Assistant</label>
+                                <select name="" id="production_assistant" class="form-control" multiple disabled>
+                                    <option value> Select Production Assistant</option>
+                                    <option value="1" selected>Production Assistant 1</option>
+                                    <option value="2" selected>Production Assistant 2</option>
+                                    <option value="3">Production Assistant 3</option>
+                                    <option value="4">Production Assistant 4</option>
+                                    <option value="5">Production Assistant 5</option>
+                                    <option value="6">Production Assistant 6</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="m-t-lg">Department and Schedule</h4>
+                    <div class="panel-body dashboard-settings-wrapper">
+                        <div class="row dashboard-settings-content">
+                            <div class="col-sm-6 col-md-3">
+                                <div class="form-group">
+                                    <label for="dropdown">Deparment</label>
+                                    <select name="" id="dropdown" class="form-control selectpicker" disabled>
+                                        <option value> Select Department</option>
+                                        <option value="1">Department 1</option>
+                                        <option value="2" selected>Department 2</option>
+                                        <option value="3">Department 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="start_date">*Start Date</label>
+                                            <div class='input-group datetimepicker'>
+                                                <input type='text' class="form-control dpicker custom" id="start_date" disabled value="2016-03-22" data-minimodal-target="#start_date_modal-1"  data-note-target="#start_date_note-1"/>
+                                                <input type="hidden" class="truevalue" value="2016-03-22">
+                                                <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="modal-custom" id="start_date_modal-1">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-minimodal-dismiss>&times;</button>
+                                                <h5 class="modal-title">Change of Schedule</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <textarea name="" id="" rows="8" class="form-control"></textarea>
+
+                                                <p class="text-right"><small><i>Pending for Approval. Changes will reflect upon approval</i></small></p>
+
+                                            </div>
+                                            <div class="modal-footer text-right">
+                                                <button class="btn btn--primary" type="button" data-show="#note-1">Submit</a>
+                                                <button type="button" class="btn btn--action--negative" data-minimodal-dismiss>Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="end_date">*End Date</label>
+                                            <div class='input-group datetimepicker'>
+                                                <input type='text' class="form-control dpicker custom" id="end_date" disabled value="2016-04-01" data-minimodal-target="#end_date_modal-1"  data-note-target="#end_date_note-1"/>
+                                                <input type="hidden" class="truevalue" value="2016-04-01">
+                                                <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="modal-custom" id="end_date_modal-1">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-minimodal-dismiss>&times;</button>
+                                                <h5 class="modal-title">Change of Schedule</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <textarea name="" id="" rows="8" class="form-control"></textarea>
+
+                                                <p class="text-right"><small><i>Pending for Approval. Changes will reflect upon approval</i></small></p>
+
+                                            </div>
+                                            <div class="modal-footer text-right">
+                                                <button class="btn btn--primary" type="button" data-show="#note-1">Submit</a>
+                                                <button type="button" class="btn btn--action--negative" data-minimodal-dismiss>Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row note hide" id="note-1">
+                                    <div class="col-xs-12">
+                                        <div class="edit-note text-danger" >
+                                            Change of Schedule: Pending for Approval <br>
+                                            <small class="p-r-sm hide"><i>Start Date: <time id="start_date_note-1">March 11, 2015</time></i></small>
+                                            <small class=" hide"><i>End Date: <time id="end_date_note-1">March 11, 2015</time></i></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <div class="form-group has-feedback">
+                                    <label for="department_daily_target">Departmental Daily Target</label>
+                                    <input type="text" id="department_daily_target" class="form-control" disabled value="3">
+                                    <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                    <small class="form-group__message">Please supply Departmental Daily Target</small>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-2 m-t-md text-right">
+                                <button type="button" class="btn--no-property btn-add-div" disabled><i class="fa fa-plus fa-lg fa-fw"></i></button>
+                                <button type="button" class="btn--no-property btn-remove-div" disabled><i class="fa fa-minus fa-lg fa-fw"></i></button>
+                            </div>
+                        </div>
+                        <div class="row dashboard-settings-content">
+                            <div class="col-sm-6 col-md-3">
+                                <div class="form-group">
+                                    <label for="dropdown">Deparment</label>
+                                    <select name="" id="dropdown" class="form-control selectpicker" disabled>
+                                        <option value> Select Department</option>
+                                        <option value="1">Department 1</option>
+                                        <option value="2" selected>Department 2</option>
+                                        <option value="3">Department 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="start_date">*Start Date</label>
+                                            <div class='input-group datetimepicker'>
+                                                <input type='text' class="form-control dpicker custom" id="start_date-2" disabled value="2016-03-22" data-minimodal-target="#start_date_modal-2"  data-note-target="#start_date_note-2"/>
+                                                <input type="hidden" class="truevalue" value="2016-03-22">
+                                                <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="modal-custom" id="start_date_modal-2">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-minimodal-dismiss>&times;</button>
+                                                <h5 class="modal-title">Change of Schedule</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <textarea name="" id="" rows="8" class="form-control"></textarea>
+
+                                                <p class="text-right"><small><i>Pending for Approval. Changes will reflect upon approval</i></small></p>
+
+                                            </div>
+                                            <div class="modal-footer text-right">
+                                                <button class="btn btn--primary" type="button" data-show="#note-2">Submit</a>
+                                                <button type="button" class="btn btn--action--negative" data-minimodal-dismiss>Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="end_date">*End Date</label>
+                                            <div class='input-group datetimepicker'>
+                                                <input type='text' class="form-control dpicker custom" id="end_date-2" disabled value="2016-04-01" data-minimodal-target="#end_date_modal-2"  data-note-target="#end_date_note-2"/>
+                                                <input type="hidden" class="truevalue" value="2016-04-01">
+                                                <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="modal-custom" id="end_date_modal-2">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-minimodal-dismiss>&times;</button>
+                                                <h5 class="modal-title">Change of Schedule</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <textarea name="" id="" rows="8" class="form-control"></textarea>
+
+                                                <p class="text-right"><small><i>Pending for Approval. Changes will reflect upon approval</i></small></p>
+
+                                            </div>
+                                            <div class="modal-footer text-right">
+                                                <button class="btn btn--primary" type="button" data-show="#note-2">Submit</a>
+                                                <button type="button" class="btn btn--action--negative" data-minimodal-dismiss>Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row note hide" id="note-2">
+                                    <div class="col-xs-12">
+                                        <div class="edit-note text-danger" >
+                                            Change of Schedule: Pending for Approval <br>
+                                            <small class="p-r-sm hide"><i>Start Date: <time id="start_date_note-2">March 11, 2015</time></i></small>
+                                            <small class=" hide"><i>End Date: <time id="end_date_note-2">March 11, 2015</time></i></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <div class="form-group has-feedback">
+                                    <label for="department_daily_target">Departmental Daily Target</label>
+                                    <input type="text" id="department_daily_target" class="form-control" disabled value="3">
+                                    <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                    <small class="form-group__message">Please supply Departmental Daily Target</small>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-2 m-t-md text-right">
+                                <button type="button" class="btn--no-property btn-add-div" disabled><i class="fa fa-plus fa-lg fa-fw"></i></button>
+                                <button type="button" class="btn--no-property btn-remove-div" disabled><i class="fa fa-minus fa-lg fa-fw"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a href="#" class="text-uppercase" data-toggle="modal" data-target="#backModal"><i class="fa fa-chevron-left fa-fw" ></i>&nbsp;Back</a>
+                        <div class="btn-group-action" data-edithide>
+                            <button class="btn btn--primary btn-edit" type="button" data-formtarget="project-form"><i class="fa fa-print fa-pencil-square-o"></i>&nbsp;Edit</button>
+                        </div>
+                        <div class="btn-group-action hide" data-editshow>
+                            <button class="btn btn--primary btn-save"><i class="fa fa-print fa-check-square-o"></i>&nbsp;Save</button>
+                            <button class="btn btn--action--negative"><i class="fa fa-share-square-o fa-fw"></i>&nbsp;Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container-fluid">2016 &copy; TopDraw. All Rights Reserved.</div>
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="backModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title" id="myModalLabel">Alert</h5>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to exit without saving?
+                </div>
+                <div class="modal-footer">
+                    <a href="projects.html" class="btn btn--primary">Yes</a>
+                    <button type="button" class="btn btn--action--negative" data-dismiss="modal">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+    <script src="../../js/bootstrap-select.js"></script>
+    <script src="../../js/jquery.multiselect.js"></script>
+    <script src="../../js/datatables.min.js"></script>
+    <script src="../../js/moment.min.js"></script>
+    <script src="../../js/bootstrap-datetimepicker.js"></script>
+    <script src="../../js/app.js"></script>
+</body>
+
+</html>

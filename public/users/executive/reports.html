@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Top Draw Animation</title>
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/app.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse topnav">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed mainnav" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand"><img src="../../img/topdrawlogo.png" alt="Top-Draw-Animation-Logo" class="login__logo"></a>
+                    <button type="button" class="navbar-toggle collapsed topnav" data-toggle="collapse" data-target="#top-nav" aria-expanded="false" id="topnav-button">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse topnav-toggle" id="top-nav">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle user-profile" data-toggle="dropdown" role="button" aria-expanded="false"><img class="img-circle" src="../../img/profile_user.jpg" alt="">John Smith <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../../profile.html"><i class="fa fa-user fa-fw"></i>&nbsp;My profile</a></li>
+                                <li class="divider" role="separator"></li>
+                                <li><a href="#"><i class="fa fa-sign-out fa-fw"></i>&nbsp;Logout</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle notification-info" data-toggle="dropdown" role="button" aria-expanded="false">
+                                <i class="fa fa-bell-o fa-lg fa-fw"></i>
+                                <span class="badge">99</span>
+                                <span class="visible-xs-inline-block notiflabel">Notification</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href=""><b>Your notifications</b></a></li>
+                                <div class="notifications-list">
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color update"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color delay"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color approved"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color assigned"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt, consectetur adipiscing elit.
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                </div>
+                                <li class="divider" role="separator"></li>
+                                <li><a href="../../notifications.html"><b>See all notifications&nbsp;<i class="fa fa-chevron-right fa-fw"></i></b></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </nav>
+        <div class="collapse navbar-collapse mainnav-toggle" id="main-nav">
+            <nav class="navbar navbar-inverse mainnav">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav">
+                        <li><a href="dashboard.html"><i class="fa fa-desktop fa-fw"></i>&nbsp;Dashboard</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-stack-overflow fa-fw"></i>&nbsp;User Management</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="user_accounts.html">User Account</a></li>
+                                <li><a href="user_matrix.html">User Matrix</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-film fa-fw"></i>&nbsp;Production Management</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="projects.html">Projects</a></li>
+                                <li><a href="episode.html">Episode</a></li>
+                                <li><a href="scene.html">Scene</a></li>
+                                <li><a href="library.html">Library</a></li>
+                                <li><a href="leadsheet.html">Lead Sheet</a></li>
+                                <li><a href="#">In-Out Tracker</a></li>
+                                <li><a href="project-history.html">Project History</a></li>
+                            </ul>
+                        </li>
+                        <li class="active"><a href="reports.html"><i class="fa fa-files-o fa-fw"></i>&nbsp;Reports</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-gears fa-fw"></i>&nbsp;CMS</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="cms-dropdown.html">Dropdown Selection Settings</a></li>
+                                <li><a href="cms-calendar.html">Calendar Settings</a></li>
+                                <li><a href="cms-targetoutput.html">Departmental Daily Target Output</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-inbox fa-fw"></i>&nbsp;Data Archive</a>
+                          <ul class="dropdown-menu">
+                              <li><a href="data-archive.html">Data Archive</a></li>
+                              <li><a href="data-restore.html">Data Backup</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="screen-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="page-title page-title-container clearfix">
+                        <h1 class="page-title__title">Reports</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="screen-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="form-group p-l-sm no-p-xs">
+                                <label for="select_report" class="hidden-xs">Report</label>
+                                <select name="" id="select_report" data-enable-btn-target="#showReport" class="form-control selectpicker" data-editdisable>
+                                    <option value> Select Report</option>
+                                    <option value="1">Weekly Take 1 Output by Department</option>
+                                    <option value="2">Daily Output by Department</option>
+                                    <option value="3">Daily Output by Employee</option>
+                                    <option value="4">Internal Status Report - Take 1&#39;s</option>
+                                    <option value="5">Client Status Report (Percentage of Completion)</option>
+                                    <option value="6">Episodic Delays by Department</option>
+                                    <option value="7">Episodic Delays by Employee</option>
+                                    <option value="8">Scene Delays by Employee</option>
+                                    <option value="9">Ongoing Scenes List/Views List</option>
+                                    <option value="10">Where is Scene</option>
+                                    <option value="11">13 Week Output Report - Take 1&#39;s</option>
+                                    <option value="12">13 Week Output Report - Total Claimable</option>
+                                    <option value="13">13 Week Output Report - Unclaimable Fix-ups&#47;Retakes Percentages</option>
+                                    <option value="14">Fix-ups and Retakes Statistics per Employee</option>
+                                    <option value="15">Fix-ups and Retakes Statistics per Episode</option>
+                                    <option value="16">Retakes Statistics by Department</option>
+                                    <option value="17">Scenes with Multiple Fix&#47;ups and Retakes - Episode</option>
+                                    <option value="18">Multiple Fix-ups and Retakes by Employee per Episode</option>
+                                    <option value="19">Piecework Statistics - Take 1</option>
+                                    <option value="20">Payroll Output &#40;Take 1&#39;s/Fix-ups and Retakes&#41;</option>
+                                    <option value="21">Payroll Output per Project &#40;Take 1&#39;s/Fix-ups and Retakes&#41;</option>
+                                    <option value="22">Claimable Fix-ups &#40;In Detail&#41;</option>
+                                    <option value="23">No. of Registered Artists by Project per Department</option>
+                                    <option value="24">No. of Registered Artists by Project</option>
+                                    <option value="25">Work Ongoing per Employee</option>
+                                    <option value="26">Registered Employees by Project</option>
+                                    <option value="27">Non-Active Employees</option>
+                                    <option value="28">Audit Trail Report</option>
+                                    <option value="29">Client Status Report</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <button type="button" class="btn btn--primary m-t-md2 no-m-xs pull-right-xs" id="showReport" disabled data-show-target="#reports" data-editdisable><i class="fa fa-print fa-check-square-o"></i>&nbsp;Submit</button>
+                        </div>
+                    </div>
+                    <div class="row hide" id="reports">
+                        <div class="col-xs-12">
+                            <hr>
+                            <div class="clearfix">
+                                <div class="btn-group-action m-t-md m-b-sm btn-group-report hidden-xs">
+                                    <button class="btn btn--primary" disabled><i class="fa fa-share-square"></i>&nbsp;Export Excel</button>
+                                    <button class="btn btn--primary" disabled><i class="fa fa-share-square"></i>&nbsp;Export PDF</button>
+                                    <button class="btn btn--primary " disabled><i class="fa fa-file-text-o"></i>&nbsp;View Report</button>
+                                </div>
+                            </div>
+                            <form action="" name="user-matrix-form">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading"><span class="btn-target-value-text"></span></div>
+                                    <div class="panel-body">
+                                        <div class="row hide" data-report-id="1">
+                                            <div class="col-sm-12 col-md-6">
+                                                <label>Time Range</label>
+                                                <div class="form-inline row">
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="exampleInputName2">From:</label>
+                                                        <div class='input-group datetimepicker input-group--short'>
+                                                            <input type='text' class="form-control dpicker" id="start_date_1" data-report-form/>
+                                                            <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="exampleInputEmail2">To:</label>
+                                                        <div class='input-group datetimepicker input-group--short'>
+                                                            <input type='text' class="form-control dpicker" id="end_date_1" data-report-form />
+                                                            <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-4">
+                                                <div class="form-group">
+                                                    <label for="project_1">Project</label>
+                                                    <select name="" id="project_1" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Project</option>
+                                                        <option value="1">Project 1</option>
+                                                        <option value="2">Project 2</option>
+                                                        <option value="3">Project 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row hide" data-report-id="2">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="project_2">Project</label>
+                                                    <select name="" id="project_2" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Project</option>
+                                                        <option value="1">Project 1</option>
+                                                        <option value="2">Project 2</option>
+                                                        <option value="3">Project 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="cut_off_2">Weekly Cut-Off Period</label>
+                                                    <select name="" id="cut_off_2" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Cut-Off Period</option>
+                                                        <option value="1">Cut-Off Period 1</option>
+                                                        <option value="2">Cut-Off Period 2</option>
+                                                        <option value="3">Cut-Off Period 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row hide" data-report-id="3">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="project_3">Project</label>
+                                                    <select name="" id="project_3" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Project</option>
+                                                        <option value="1">Project 1</option>
+                                                        <option value="2">Project 2</option>
+                                                        <option value="3">Project 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="department_3">Department</label>
+                                                    <select name="" id="department_3" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Department</option>
+                                                        <option value="1">Department 1</option>
+                                                        <option value="2">Department 2</option>
+                                                        <option value="3">Department 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="cut_off_3">Weekly Cut-Off Period</label>
+                                                    <select name="" id="cut_off_3" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Cut-Off Period</option>
+                                                        <option value="1">Cut-Off Period 1</option>
+                                                        <option value="2">Cut-Off Period 2</option>
+                                                        <option value="3">Cut-Off Period 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row hide" data-report-id="4">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="project_4">Project</label>
+                                                    <select name="" id="project_4" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Project</option>
+                                                        <option value="1">Project 1</option>
+                                                        <option value="2">Project 2</option>
+                                                        <option value="3">Project 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row hide" data-report-id="5">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="project_5">Project</label>
+                                                    <select name="" id="project_5" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Project</option>
+                                                        <option value="1">Project 1</option>
+                                                        <option value="2">Project 2</option>
+                                                        <option value="3">Project 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="cut_off_5">Weekly Cut-Off Period</label>
+                                                    <select name="" id="cut_off_5" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Cut-Off Period</option>
+                                                        <option value="1">Cut-Off Period 1</option>
+                                                        <option value="2">Cut-Off Period 2</option>
+                                                        <option value="3">Cut-Off Period 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row hide" data-report-id="6">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="project_6">Project</label>
+                                                    <select name="" id="project_6" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Project</option>
+                                                        <option value="1">Project 1</option>
+                                                        <option value="2">Project 2</option>
+                                                        <option value="3">Project 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="department_6">Department/s</label>
+                                                    <select name="" id="department_6" class="form-control multipleselect" multiple data-report-form>
+                                                        <option value="1">Department 1</option>
+                                                        <option value="2">Department 2</option>
+                                                        <option value="3">Department 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row hide" data-report-id="7">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="project_7">Project</label>
+                                                    <select name="" id="project_7" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Project</option>
+                                                        <option value="1">Project 1</option>
+                                                        <option value="2">Project 2</option>
+                                                        <option value="3">Project 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                 <div class="form-group">
+                                                    <label for="department_7">Department</label>
+                                                    <select name="" id="department_7" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Department</option>
+                                                        <option value="1">Department 1</option>
+                                                        <option value="2">Department 2</option>
+                                                        <option value="3">Department 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row hide" data-report-id="8">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="project_8">Project</label>
+                                                    <select name="" id="project_8" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Project</option>
+                                                        <option value="1">Project 1</option>
+                                                        <option value="2">Project 2</option>
+                                                        <option value="3">Project 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                 <div class="form-group">
+                                                    <label for="department_8">Department</label>
+                                                    <select name="" id="department_8" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Department</option>
+                                                        <option value="1">Department 1</option>
+                                                        <option value="2">Department 2</option>
+                                                        <option value="3">Department 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="employee_8">Employee/s</label>
+                                                    <select name="" id="employee_8" class="form-control multipleselect" multiple data-report-form>
+                                                        <option value="1">Employee 1</option>
+                                                        <option value="2">Employee 2</option>
+                                                        <option value="3">Employee 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row hide" data-report-id="9">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="project_9">Project</label>
+                                                    <select name="" id="project_9" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Project</option>
+                                                        <option value="1">Project 1</option>
+                                                        <option value="2">Project 2</option>
+                                                        <option value="3">Project 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                 <div class="form-group">
+                                                    <label for="department_9">Department</label>
+                                                    <select name="" id="department_9" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Department</option>
+                                                        <option value="1">Department 1</option>
+                                                        <option value="2">Department 2</option>
+                                                        <option value="3">Department 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                 <div class="form-group">
+                                                    <label for="takes_9">Takes</label>
+                                                    <select name="" id="takes_9" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Takes</option>
+                                                        <option value="1">Take 1</option>
+                                                        <option value="2">Fix-up</option>
+                                                        <option value="3">Retake</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="employee_9">Employee/s</label>
+                                                    <select name="" id="employee_9" class="form-control multipleselect" multiple data-report-form>
+                                                        <option value="1">Employee 1</option>
+                                                        <option value="2">Employee 2</option>
+                                                        <option value="3">Employee 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row hide" data-report-id="10">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="project_10">Project</label>
+                                                    <select name="" id="project_10" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Project</option>
+                                                        <option value="1">Project 1</option>
+                                                        <option value="2">Project 2</option>
+                                                        <option value="3">Project 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                 <div class="form-group">
+                                                    <label for="episode_10">Episode</label>
+                                                    <select name="" id="episode_10" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Episode</option>
+                                                        <option value="1">Episode 1</option>
+                                                        <option value="2">Episode 2</option>
+                                                        <option value="3">Episode 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row hide" data-report-id="11">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="project_11">Project</label>
+                                                    <select name="" id="project_11" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Project</option>
+                                                        <option value="1">Project 1</option>
+                                                        <option value="2">Project 2</option>
+                                                        <option value="3">Project 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                 <div class="form-group">
+                                                    <label for="department_11">Department</label>
+                                                    <select name="" id="department_11" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Department</option>
+                                                        <option value="1">Department 1</option>
+                                                        <option value="2">Department 2</option>
+                                                        <option value="3">Department 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                             <div class="col-sm-4">
+                                                 <div class="form-group">
+                                                    <label for="cutoff_11">13-Week Cut-Off Period </label>
+                                                    <select name="" id="cutoff_11" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Period</option>
+                                                        <option value="1">Period 1</option>
+                                                        <option value="2">Period 2</option>
+                                                        <option value="3">Period 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row hide" data-report-id="12">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="project_12">Project</label>
+                                                    <select name="" id="project_12" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Project</option>
+                                                        <option value="1">Project 1</option>
+                                                        <option value="2">Project 2</option>
+                                                        <option value="3">Project 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                 <div class="form-group">
+                                                    <label for="department_12">Department</label>
+                                                    <select name="" id="department_12" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Department</option>
+                                                        <option value="1">Department 1</option>
+                                                        <option value="2">Department 2</option>
+                                                        <option value="3">Department 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                             <div class="col-sm-4">
+                                                 <div class="form-group">
+                                                    <label for="cutoff_12">13-Week Cut-Off Period </label>
+                                                    <select name="" id="cutoff_12" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Period</option>
+                                                        <option value="1">Period 1</option>
+                                                        <option value="2">Period 2</option>
+                                                        <option value="3">Period 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row hide" data-report-id="13">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="project_13">Project</label>
+                                                    <select name="" id="project_13" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Project</option>
+                                                        <option value="1">Project 1</option>
+                                                        <option value="2">Project 2</option>
+                                                        <option value="3">Project 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                 <div class="form-group">
+                                                    <label for="department_13">Department</label>
+                                                    <select name="" id="department_13" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Department</option>
+                                                        <option value="1">Department 1</option>
+                                                        <option value="2">Department 2</option>
+                                                        <option value="3">Department 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                             <div class="col-sm-4">
+                                                 <div class="form-group">
+                                                    <label for="cutoff_13">13-Week Cut-Off Period </label>
+                                                    <select name="" id="cutoff_13" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Period</option>
+                                                        <option value="1">Period 1</option>
+                                                        <option value="2">Period 2</option>
+                                                        <option value="3">Period 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row hide" data-report-id="14">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="project_14">Project</label>
+                                                    <select name="" id="project_14" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Project</option>
+                                                        <option value="1">Project 1</option>
+                                                        <option value="2">Project 2</option>
+                                                        <option value="3">Project 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-5">
+                                                <label>Time Range</label>
+                                                <div class="form-inline row">
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="exampleInputName2">From:</label>
+                                                        <div class='input-group datetimepicker input-group--short'>
+                                                            <input type='text' class="form-control dpicker" id="start_date_14" data-report-form/>
+                                                            <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="exampleInputEmail2">To:</label>
+                                                        <div class='input-group datetimepicker input-group--short'>
+                                                            <input type='text' class="form-control dpicker" id="end_date_14" data-report-form />
+                                                            <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                             <div class="col-sm-3">
+                                                 <div class="form-group">
+                                                    <label for="artistlevel_14">Artist Level </label>
+                                                    <select name="" id="artistlevel_14" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Artist Level</option>
+                                                        <option value="1">Level 1</option>
+                                                        <option value="2">Level 2</option>
+                                                        <option value="3">Level 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="col-sm-4">
+                                                 <div class="form-group">
+                                                    <label for="department_14">Department</label>
+                                                    <select name="" id="department_14" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Department</option>
+                                                        <option value="1">Department 1</option>
+                                                        <option value="2">Department 2</option>
+                                                        <option value="3">Department 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row hide" data-report-id="15">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="project_15">Project</label>
+                                                    <select name="" id="project_15" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Project</option>
+                                                        <option value="1">Project 1</option>
+                                                        <option value="2">Project 2</option>
+                                                        <option value="3">Project 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-5">
+                                                <label>Time Range</label>
+                                                <div class="form-inline row">
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="exampleInputName2">From:</label>
+                                                        <div class='input-group datetimepicker input-group--short'>
+                                                            <input type='text' class="form-control dpicker" id="start_date_15" data-report-form/>
+                                                            <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="exampleInputEmail2">To:</label>
+                                                        <div class='input-group datetimepicker input-group--short'>
+                                                            <input type='text' class="form-control dpicker" id="end_date_15" data-report-form />
+                                                            <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row hide" data-report-id="16">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="project_16">Project</label>
+                                                    <select name="" id="project_16" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Project</option>
+                                                        <option value="1">Project 1</option>
+                                                        <option value="2">Project 2</option>
+                                                        <option value="3">Project 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-5">
+                                                <label>Time Range</label>
+                                                <div class="form-inline row">
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="exampleInputName2">From:</label>
+                                                        <div class='input-group datetimepicker input-group--short'>
+                                                            <input type='text' class="form-control dpicker" id="start_date_16" data-report-form/>
+                                                            <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="exampleInputEmail2">To:</label>
+                                                        <div class='input-group datetimepicker input-group--short'>
+                                                            <input type='text' class="form-control dpicker" id="end_date_16" data-report-form />
+                                                            <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row hide" data-report-id="17">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="project_17">Project</label>
+                                                    <select name="" id="project_17" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Project</option>
+                                                        <option value="1">Project 1</option>
+                                                        <option value="2">Project 2</option>
+                                                        <option value="3">Project 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-5">
+                                                <label>Time Range</label>
+                                                <div class="form-inline row">
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="start_date_17">From:</label>
+                                                        <div class='input-group datetimepicker input-group--short'>
+                                                            <input type='text' class="form-control dpicker" id="start_date_17" data-report-form/>
+                                                            <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="end_date_17">To:</label>
+                                                        <div class='input-group datetimepicker input-group--short'>
+                                                            <input type='text' class="form-control dpicker" id="end_date_17" data-report-form />
+                                                            <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                 <div class="form-group">
+                                                    <label for="department_17">Department</label>
+                                                    <select name="" id="department_17" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Department</option>
+                                                        <option value="1">Department 1</option>
+                                                        <option value="2">Department 2</option>
+                                                        <option value="3">Department 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row hide" data-report-id="18">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="project_18">Project</label>
+                                                    <select name="" id="project_18" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Project</option>
+                                                        <option value="1">Project 1</option>
+                                                        <option value="2">Project 2</option>
+                                                        <option value="3">Project 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-5">
+                                                <label>Time Range</label>
+                                                <div class="form-inline row">
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="start_date_18">From:</label>
+                                                        <div class='input-group datetimepicker input-group--short'>
+                                                            <input type='text' class="form-control dpicker" id="start_date_18" data-report-form/>
+                                                            <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="end_date_18">To:</label>
+                                                        <div class='input-group datetimepicker input-group--short'>
+                                                            <input type='text' class="form-control dpicker" id="end_date_18" data-report-form />
+                                                            <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                             <div class="col-sm-3">
+                                                 <div class="form-group">
+                                                    <label for="artistlevel_18">Artist Level </label>
+                                                    <select name="" id="artistlevel_18" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Artist Level</option>
+                                                        <option value="1">Level 1</option>
+                                                        <option value="2">Level 2</option>
+                                                        <option value="3">Level 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="col-sm-4">
+                                                 <div class="form-group">
+                                                    <label for="department_18">Department</label>
+                                                    <select name="" id="department_18" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Department</option>
+                                                        <option value="1">Department 1</option>
+                                                        <option value="2">Department 2</option>
+                                                        <option value="3">Department 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row hide" data-report-id="19">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="project_19">Project</label>
+                                                    <select name="" id="project_19" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Project</option>
+                                                        <option value="1">Project 1</option>
+                                                        <option value="2">Project 2</option>
+                                                        <option value="3">Project 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-5">
+                                                <label>Time Range</label>
+                                                <div class="form-inline row">
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="start_date_19">From:</label>
+                                                        <div class='input-group datetimepicker input-group--short'>
+                                                            <input type='text' class="form-control dpicker" id="start_date_19" data-report-form/>
+                                                            <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="end_date_19">To:</label>
+                                                        <div class='input-group datetimepicker input-group--short'>
+                                                            <input type='text' class="form-control dpicker" id="end_date_19" data-report-form />
+                                                            <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row hide" data-report-id="20">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="project_20">Project</label>
+                                                    <select name="" id="project_20" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Project</option>
+                                                        <option value="1">Project 1</option>
+                                                        <option value="2">Project 2</option>
+                                                        <option value="3">Project 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="cutoff_20">Cut-Off Period</label>
+                                                    <select name="" id="cutoff_20" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Cut-Off Period</option>
+                                                        <option value="1">Cut-Off Period 1</option>
+                                                        <option value="2">Cut-Off Period 2</option>
+                                                        <option value="3">Cut-Off Period 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="takes_20">Takes</label>
+                                                    <select name="" id="takes_20" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Takes</option>
+                                                        <option value="1">Take 1's</option>
+                                                        <option value="2">Fix-ups</option>
+                                                        <option value="3">Retakes</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="department_20">Department</label>
+                                                    <select name="" id="department_20" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Project</option>
+                                                        <option value="1">Project 1</option>
+                                                        <option value="2">Project 2</option>
+                                                        <option value="3">Project 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row hide" data-report-id="21">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="project_21">Project</label>
+                                                    <select name="" id="project_21" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Project</option>
+                                                        <option value="1">Project 1</option>
+                                                        <option value="2">Project 2</option>
+                                                        <option value="3">Project 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="cutoff_21">Cut-Off Period</label>
+                                                    <select name="" id="cutoff_21" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Cut-Off Period</option>
+                                                        <option value="1">Cut-Off Period 1</option>
+                                                        <option value="2">Cut-Off Period 2</option>
+                                                        <option value="3">Cut-Off Period 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="takes_21">Takes</label>
+                                                    <select name="" id="takes_21" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Takes</option>
+                                                        <option value="1">Take 1's</option>
+                                                        <option value="2">Fix-ups</option>
+                                                        <option value="3">Retakes</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row hide" data-report-id="22">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="project_22">Project</label>
+                                                    <select name="" id="project_22" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Project</option>
+                                                        <option value="1">Project 1</option>
+                                                        <option value="2">Project 2</option>
+                                                        <option value="3">Project 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="department_22">Department</label>
+                                                    <select name="" id="department_22" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Department</option>
+                                                        <option value="1">Department 1</option>
+                                                        <option value="2">Department 2</option>
+                                                        <option value="3">Department</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="cutoff_22">Cut-Off Period</label>
+                                                    <select name="" id="cutoff_22" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Cut-Off Period</option>
+                                                        <option value="1">Cut-Off Period 1</option>
+                                                        <option value="2">Cut-Off Period 2</option>
+                                                        <option value="3">Cut-Off Period 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row hide" data-report-id="23">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="department_23">Department</label>
+                                                    <select name="" id="department_23" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Department</option>
+                                                        <option value="1">Department 1</option>
+                                                        <option value="2">Department 2</option>
+                                                        <option value="3">Department 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <label for="start_date_23">Date</label>
+                                                <div class='input-group datetimepicker input-group--short'>
+                                                    <input type='text' class="form-control dpicker" id="start_date_23" data-report-form/>
+                                                    <span class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row hide" data-report-id="24">
+                                            <div class="col-sm-4">
+                                                <label for="start_date_24">Date</label>
+                                                <div class='input-group datetimepicker input-group--short'>
+                                                    <input type='text' class="form-control dpicker" id="start_date_24" data-report-form/>
+                                                    <span class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row hide" data-report-id="25">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="project_25">Project</label>
+                                                    <select name="" id="project_25" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Project</option>
+                                                        <option value="1">Project 1</option>
+                                                        <option value="2">Project 2</option>
+                                                        <option value="3">Project 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="department_25">Department</label>
+                                                    <select name="" id="department_25" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Department</option>
+                                                        <option value="1">Department 1</option>
+                                                        <option value="2">Department 2</option>
+                                                        <option value="3">Department 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <label for="start_date_25">Date</label>
+                                                <div class='input-group datetimepicker input-group--short'>
+                                                    <input type='text' class="form-control dpicker" id="start_date_25" data-report-form/>
+                                                    <span class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row hide" data-report-id="26">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="project_26">Project</label>
+                                                    <select name="" id="project_26" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Project</option>
+                                                        <option value="1">Project 1</option>
+                                                        <option value="2">Project 2</option>
+                                                        <option value="3">Project 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="department_26">Department</label>
+                                                    <select name="" id="department_26" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Department</option>
+                                                        <option value="1">Department 1</option>
+                                                        <option value="2">Department 2</option>
+                                                        <option value="3">Department 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <label for="start_date_26">Date</label>
+                                                <div class='input-group datetimepicker input-group--short'>
+                                                    <input type='text' class="form-control dpicker" id="start_date_26" data-report-form/>
+                                                    <span class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row hide" data-report-id="27">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="project_27">Project</label>
+                                                    <select name="" id="project_27" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Project</option>
+                                                        <option value="1">Project 1</option>
+                                                        <option value="2">Project 2</option>
+                                                        <option value="3">Project 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="department_27">Department</label>
+                                                    <select name="" id="department_27" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Department</option>
+                                                        <option value="1">Department 1</option>
+                                                        <option value="2">Department 2</option>
+                                                        <option value="3">Department 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="cutoff_27">Cut-Off Period</label>
+                                                    <select name="" id="cutoff_27" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Cut-Off Period</option>
+                                                        <option value="1">Cut-Off Period 1</option>
+                                                        <option value="2">Cut-Off Period 2</option>
+                                                        <option value="3">Cut-Off Period 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row hide" data-report-id="28">
+                                            <div class="col-sm-12 col-md-6">
+                                                <label>Time Range</label>
+                                                <div class="form-inline row">
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="start_date_28">From:</label>
+                                                        <div class='input-group datetimepicker input-group--short'>
+                                                            <input type='text' class="form-control dpicker" id="start_date_28" data-report-form/>
+                                                            <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group col-sm-6">
+                                                        <label for="end_date_28">To:</label>
+                                                        <div class='input-group datetimepicker input-group--short'>
+                                                            <input type='text' class="form-control dpicker" id="end_date_28" data-report-form />
+                                                            <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row hide" data-report-id="29">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="project_29">Project</label>
+                                                    <select name="" id="project_29" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Project</option>
+                                                        <option value="1">Project 1</option>
+                                                        <option value="2">Project 2</option>
+                                                        <option value="3">Project 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="takes_29">Takes</label>
+                                                    <select name="" id="takes_29" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Takes</option>
+                                                        <option value="1">Take 1</option>
+                                                        <option value="2">Fix-up</option>
+                                                        <option value="3">Retake</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="cutoff_29">Cut-Off Period</label>
+                                                    <select name="" id="cutoff_29" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Cut-Off Period</option>
+                                                        <option value="1">Cut-Off Period 1</option>
+                                                        <option value="2">Cut-Off Period 2</option>
+                                                        <option value="3">Cut-Off Period 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="department_29">Department</label>
+                                                    <select name="" id="department_29" class="form-control selectpicker" data-report-form>
+                                                        <option value> Select Department</option>
+                                                        <option value="1">Department 1</option>
+                                                        <option value="2">Department 2</option>
+                                                        <option value="3">Department 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="row visible-xs-block">
+                                <div class="col-xs-6">
+                                    <button class="btn btn--primary btn--block" disabled><i class="fa fa-share-square"></i>&nbsp;Export Excel</button>
+                                </div>
+                                <div class="col-xs-6">
+                                    <button class="btn btn--primary btn--block" disabled><i class="fa fa-share-square"></i>&nbsp;Export PDF</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container-fluid">2016 &copy; TopDraw. All Rights Reserved.</div>
+    </footer>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+    <script src="../../js/bootstrap-select.js"></script>
+    <script src="../../js/jquery.multiselect.js"></script>
+    <script src="../../js/datatables.min.js"></script>
+    <script src="../../js/moment.min.js"></script>
+    <script src="../../js/bootstrap-datetimepicker.js"></script>
+    <script src="../../js/app.js"></script>
+</body>
+
+</html>

@@ -4,11 +4,17 @@
 .m-t-md2 { margin-top: 23px!important; }
 .m-b-md { margin-bottom: 20px!important; }
 .m-t-lg { margin-top: 30px!important; }
+.m-t-lg2 { margin-top: 40px!important; }
 .m-b-lg { margin-bottom: 30px!important; }
 
 .p-l-sm{ padding-left: 15px!important; }
 .p-l-md{ padding-left: 25px!important; }
 .p-l-lg{ padding-left: 30px!important; }
+
+.p-r-sm{ padding-right: 15px!important; }
+.p-r-md{ padding-right: 25px!important; }
+.p-r-lg{ padding-right: 30px!important; }
+
 
 .p-t-sm{ padding-top: 15px!important; }
 .p-t-md{ padding-top: 25px!important; }
@@ -19,9 +25,26 @@
 	padding-right: 0!important;
 }
 
-
 .table-no-border {
 	> tbody > tr > td { border: none !important; }
+}
+
+.no-p-xs{
+	@media only screen and (max-width : 480px) {
+		padding: 0!important;
+    }
+}
+.no-m-xs{
+	@media only screen and (max-width : 480px) {
+		margin: 0!important;
+    }
+}
+.pull-right{
+	&-xs{
+		@media only screen and (max-width : 480px) {
+			float: right!important;
+	    }
+	}
 }
 
 body{
@@ -81,4 +104,7 @@ body{
 	.form-group{
 		margin-bottom: 25px;
 	}
+}
+.edit-note{
+	margin-top: -15px;
 }

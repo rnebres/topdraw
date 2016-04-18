@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Top Draw Animation</title>
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/app.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse topnav">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed mainnav" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand"><img src="../../img/topdrawlogo.png" alt="Top-Draw-Animation-Logo" class="login__logo"></a>
+                    <button type="button" class="navbar-toggle collapsed topnav" data-toggle="collapse" data-target="#top-nav" aria-expanded="false" id="topnav-button">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse topnav-toggle" id="top-nav">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle user-profile" data-toggle="dropdown" role="button" aria-expanded="false"><img class="img-circle" src="../../img/profile_user.jpg" alt="">John Smith <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../../profile.html"><i class="fa fa-user fa-fw"></i>&nbsp;My profile</a></li>
+                                <li class="divider" role="separator"></li>
+                                <li><a href="#"><i class="fa fa-sign-out fa-fw"></i>&nbsp;Logout</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle notification-info" data-toggle="dropdown" role="button" aria-expanded="false">
+                                <i class="fa fa-bell-o fa-lg fa-fw"></i>
+                                <span class="badge">99</span>
+                                <span class="visible-xs-inline-block notiflabel">Notification</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href=""><b>Your notifications</b></a></li>
+                                <div class="notifications-list">
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color update"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color delay"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color approved"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color assigned"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt, consectetur adipiscing elit.
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                </div>
+                                <li class="divider" role="separator"></li>
+                                <li><a href="../../notifications.html"><b>See all notifications&nbsp;<i class="fa fa-chevron-right fa-fw"></i></b></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </nav>
+        <div class="collapse navbar-collapse mainnav-toggle" id="main-nav">
+            <nav class="navbar navbar-inverse mainnav">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav">
+                        <li><a href="dashboard.html"><i class="fa fa-desktop fa-fw"></i>&nbsp;Dashboard</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-stack-overflow fa-fw"></i>&nbsp;User Management</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="user_accounts.html">User Account</a></li>
+                                <li><a href="user_matrix.html">User Matrix</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-film fa-fw"></i>&nbsp;Production Management</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="projects.html">Projects</a></li>
+                                <li><a href="episode.html">Episode</a></li>
+                                <li><a href="scene.html">Scene</a></li>
+                                <li><a href="library.html">Library</a></li>
+                                <li><a href="leadsheet.html">Lead Sheet</a></li>
+                                <li><a href="#">In-Out Tracker</a></li>
+                                <li><a href="project-history.html">Project History</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="reports.html"><i class="fa fa-files-o fa-fw"></i>&nbsp;Reports</a></li>
+                        <li class="dropdown active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-list-alt fa-fw"></i>&nbsp;My Task</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="my-task-forapproval.html">For Approval</a></li>
+                                <li><a href="my-task-approved.html">Approved</a></li>
+                                <li><a href="my-task-disapproved.html">Disapproved</a></li>
+                            </ul>
+                        </li>
+    
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="screen-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="page-title page-title-container page-title-container--breadcrumb clearfix">
+                        <h1 class="page-title__title">Project 1</h1>
+                    </div>
+                    <ol class="breadcrumb">
+                        <li><a href="#">My Task</a></li>
+                        <li><a href="#">For Approval</a></li>
+                        <li class="active">Project 1</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="screen-content">
+        <div class="container-fluid">
+            <form action="" name="internal-user-form">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <a href="#" class="text-uppercase" data-toggle="modal" data-target="#backModal"><i class="fa fa-chevron-left fa-fw"></i>&nbsp;Back</a>
+                        <div class="btn-group-action">
+                            <button class="btn btn--primary"><i class="fa fa-check-circle"></i>&nbsp;Approve</button>
+                            <button class="btn btn--action--negative"><i class="fa fa-times-circle fa-fw"></i>&nbsp;Disapprove</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group-container">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <label for="">Block No.:</label>
+                                </div>
+                                <div class="col-xs-8">
+                                    <p>1</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <label for="">Episode Name:</label>
+                                </div>
+                                <div class="col-xs-8">
+                                    <p>Episode 23</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <label for="">Total No. of Scenes:</label>
+                                </div>
+                                <div class="col-xs-8">
+                                    <p>38</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <label for="">Scene Status:</label>
+                                </div>
+                                <div class="col-xs-8">
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <label for="">View No.:</label>
+                                </div>
+                                <div class="col-xs-8">
+                                   <p>Lorem Ipsum</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <label for="">View Type:</label>
+                                </div>
+                                <div class="col-xs-8">
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <label for="">Remarks:</label>
+                                </div>
+                                <div class="col-xs-8">
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <label>Total No. of Libraries:</label>
+                                </div>
+                                <div class="col-xs-8">
+                                    <p>34</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <label>Library No:</label>
+                                </div>
+                                <div class="col-xs-8">
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <label>Link to scene:</label>
+                                </div>
+                                <div class="col-xs-8">
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <label for="">Library Category:</label>
+                                </div>
+                                <div class="col-xs-8">
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <label for="">Claimable:</label>
+                                </div>
+                                <div class="col-xs-8">
+                                   <p>Lorem Ipsum</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <label for="">Multiplier:</label>
+                                </div>
+                                <div class="col-xs-8">
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="m-t-lg">Artist</h4>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <label>Artist:</label>
+                                </div>
+                                <div class="col-xs-8 m-b-sm">
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="m-t-lg">Schedule</h4>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <label>Start Date:</label>
+                                </div>
+                                <div class="col-xs-8 m-b-sm">
+                                    <time>December 25, 2015</time>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <label>End Date:</label>
+                                </div>
+                                <div class="col-xs-8 m-b-sm">
+                                    <time>December 25, 2015</time>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="grey m-t-lg2">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <label>Special Rate:</label>
+                                </div>
+                                <div class="col-xs-8 m-b-sm">
+                                    <time>December 25, 2015</time>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <label class="text-danger">New Special Rate:</label>
+                                </div>
+                                <div class="col-xs-8 m-b-sm">
+                                    <time>December 25, 2015</time>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <label class="m-t-lg">Reason for Change of Special Rate</label>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit consequatur hic, modi minima consectetur, officia quisquam fugit repellendus pariatur odio, accusamus, quae temporibus quidem nobis voluptates veniam iure facilis. Enim.</p>
+
+                    <label class="m-t-md">Reason for Disapproval</label>
+                    <textarea name="" id="" class="form-control" rows="6"></textarea>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <a href="#" class="text-uppercase" data-toggle="modal" data-target="#backModal"><i class="fa fa-chevron-left fa-fw"></i>&nbsp;Back</a>
+                        <div class="btn-group-action">
+                            <button class="btn btn--primary"><i class="fa fa-check-circle"></i>&nbsp;Approve</button>
+                            <button class="btn btn--action--negative"><i class="fa fa-times-circle fa-fw"></i>&nbsp;Disapprove</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container-fluid">2016 &copy; TopDraw. All Rights Reserved.</div>
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="backModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h5 class="modal-title" id="myModalLabel">Alert</h5>
+          </div>
+          <div class="modal-body">
+            Are you sure you want to exit without saving?
+          </div>
+          <div class="modal-footer">
+            <a href="my-task-forapproval.html" class="btn btn--primary">Yes</a>
+            <button type="button" class="btn btn--action--negative" data-dismiss="modal">No</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+    <script src="../../js/bootstrap-select.js"></script>
+    <script src="../../js/jquery.multiselect.js"></script>
+    <script src="../../js/datatables.min.js"></script>
+    <script src="../../js/app.js"></script>
+</body>
+
+</html>

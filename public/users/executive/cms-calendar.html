@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Top Draw Animation</title>
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/app.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse topnav">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed mainnav" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand"><img src="../../img/topdrawlogo.png" alt="Top-Draw-Animation-Logo" class="login__logo"></a>
+                    <button type="button" class="navbar-toggle collapsed topnav" data-toggle="collapse" data-target="#top-nav" aria-expanded="false" id="topnav-button">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse topnav-toggle" id="top-nav">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle user-profile" data-toggle="dropdown" role="button" aria-expanded="false"><img class="img-circle" src="../../img/profile_user.jpg" alt="">John Smith <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../../profile.html"><i class="fa fa-user fa-fw"></i>&nbsp;My profile</a></li>
+                                <li class="divider" role="separator"></li>
+                                <li><a href="#"><i class="fa fa-sign-out fa-fw"></i>&nbsp;Logout</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle notification-info" data-toggle="dropdown" role="button" aria-expanded="false">
+                                <i class="fa fa-bell-o fa-lg fa-fw"></i>
+                                <span class="badge">99</span>
+                                <span class="visible-xs-inline-block notiflabel">Notification</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href=""><b>Your notifications</b></a></li>
+                                <div class="notifications-list">
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color update"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color delay"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color approved"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color assigned"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt, consectetur adipiscing elit.
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                </div>
+                                <li class="divider" role="separator"></li>
+                                <li><a href="../../notifications.html"><b>See all notifications&nbsp;<i class="fa fa-chevron-right fa-fw"></i></b></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </nav>
+        <div class="collapse navbar-collapse mainnav-toggle" id="main-nav">
+            <nav class="navbar navbar-inverse mainnav">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#"><i class="fa fa-desktop fa-fw"></i>&nbsp;Dashboard</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-stack-overflow fa-fw"></i>&nbsp;User Management</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="user_accounts.html">User Account</a></li>
+                                <li><a href="user_matrix.html">User Matrix</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-film fa-fw"></i>&nbsp;Production Management</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="projects.html">Projects</a></li>
+                                <li><a href="episode.html">Episode</a></li>
+                                <li><a href="scene.html">Scene</a></li>
+                                <li><a href="library.html">Library</a></li>
+                                <li><a href="leadsheet.html">Lead Sheet</a></li>
+                                <li><a href="#">In-Out Tracker</a></li>
+                                <li><a href="project-history.html">Project History</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="reports.html"><i class="fa fa-files-o fa-fw"></i>&nbsp;Reports</a></li>
+                        <li class="dropdown active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-gears fa-fw"></i>&nbsp;CMS</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="cms-dropdown.html">Dropdown Selection Settings</a></li>
+                                <li><a href="cms-calendar.html">Calendar Settings</a></li>
+                                <li><a href="cms-targetoutput.html">Departmental Daily Target Output</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-inbox fa-fw"></i>&nbsp;Data Archive</a>
+                          <ul class="dropdown-menu">
+                              <li><a href="data-archive.html">Data Archive</a></li>
+                              <li><a href="data-restore.html">Data Backup</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="screen-header">
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="page-title page-title-container clearfix">
+                  <h1 class="page-title__title">Calendar Settings</h1>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <section class="screen-content">
+        <div class="container-fluid">
+        <form action="">
+            <div class="row p-l-sm">
+              <div class="col-xs-4">
+                  <div class="form-group has-feedback">
+                    <label for="year">Select Year</label>
+                    <select name="" id="year" class="form-control selectpicker">
+                        <option value="1" selected>2016</option>
+                        <option value="2">2015</option>
+                        <option value="3">2014</option>
+                    </select>
+                 </div>
+              </div>
+              <div class="col-xs-4">
+                 <button class="btn btn--primary m-t-md2">Submit</button>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-xs-12">
+                  <div class="clearfix">
+                    <div class="btn-group-action m-t-md">
+                        <button type="button" class="btn btn--primary" data-toggle="modal" data-target="#createModal"><i class="fa fa-file-o fa-fw"></i>&nbsp;Create</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="panel panel-default m-t-md">
+                  <div class="panel-heading">Holiday Calendar</div>
+                  <div class="panel-body">
+                    <table class="table table-striped table-bordered m-t-md datatables">
+                      <thead>
+                        <tr>
+                          <th>Date</th>
+                          <th>Type of Holiday</th>
+                          <th class="text-center">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Lorem Ipsum</td>
+                          <td>Lorem Ipsum</td>
+                          <td class="text-center">
+                            <a href="view-projects.html"><i class="fa fa-pencil-square-o fa-fw fa-lg orange"></i></a>
+                            <a href="#" data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash-o fa-fw fa-lg orange"></i></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Lorem Ipsum2</td>
+                          <td>Lorem Ipsum2</td>
+                          <td class="text-center">
+                            <a href="view-projects.html"><i class="fa fa-pencil-square-o fa-fw fa-lg orange"></i></a>
+                            <a href="#" data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash-o fa-fw fa-lg orange"></i></a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container-fluid">2016 &copy; TopDraw. All Rights Reserved.</div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <form action="">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h5 class="modal-title" id="myModalLabel">Create Calendary Entry</h5>
+            </div>
+            <div class="modal-body container-fluid">
+              <div class="row">
+                <div class="col-xs-6">
+                    <div class="form-group has-feedback">
+                        <label for="entry_date">Select Date</label>
+                        <div class='input-group datetimepicker'>
+                            <input type='text' class="form-control dpicker" id="entry_date" />
+                            <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                        <small class="form-group__message">Please supply Date</small>
+                    </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xs-12">
+                    <div class="form-group has-error has-feedback">
+                        <label for="entry_type">Type of Day</label>
+                        <select name="" id="entry_type" class="form-control selectpicker">
+                            <option value> Select Type of Day</option>
+                            <option value="1">Rest Day</option>
+                            <option value="2">Legal Holiday</option>
+                            <option value="3">Special Holiday</option>
+                        </select>
+                        <small class="form-group__message">Please supply Type of Day</small>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn--primary">Submit</button>
+              <button type="button" class="btn btn--action--negative" data-dismiss="modal">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <form action="">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h5 class="modal-title" id="myModalLabel">Alert</h5>
+            </div>
+            <div class="modal-body">
+              Are you sure you want to delete Calendar Entry?
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn--primary">Yes</button>
+              <button type="button" class="btn btn--action--negative" data-dismiss="modal">No</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+    <script src="../../js/bootstrap-select.js"></script>
+    <script src="../../js/jquery.multiselect.js"></script>
+    <script src="../../js/datatables.min.js"></script>
+    <script src="../../js/moment.min.js"></script>
+    <script src="../../js/bootstrap-datetimepicker.js"></script>
+    <script src="../../js/app.js"></script>
+</body>
+
+</html>

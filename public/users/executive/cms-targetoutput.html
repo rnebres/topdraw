@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Top Draw Animation</title>
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/app.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse topnav">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed mainnav" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand"><img src="../../img/topdrawlogo.png" alt="Top-Draw-Animation-Logo" class="login__logo"></a>
+                    <button type="button" class="navbar-toggle collapsed topnav" data-toggle="collapse" data-target="#top-nav" aria-expanded="false" id="topnav-button">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse topnav-toggle" id="top-nav">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle user-profile" data-toggle="dropdown" role="button" aria-expanded="false"><img class="img-circle" src="../../img/profile_user.jpg" alt="">John Smith <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../../profile.html"><i class="fa fa-user fa-fw"></i>&nbsp;My profile</a></li>
+                                <li class="divider" role="separator"></li>
+                                <li><a href="#"><i class="fa fa-sign-out fa-fw"></i>&nbsp;Logout</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle notification-info" data-toggle="dropdown" role="button" aria-expanded="false">
+                                <i class="fa fa-bell-o fa-lg fa-fw"></i>
+                                <span class="badge">99</span>
+                                <span class="visible-xs-inline-block notiflabel">Notification</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href=""><b>Your notifications</b></a></li>
+                                <div class="notifications-list">
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color update"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color delay"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color approved"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color assigned"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt, consectetur adipiscing elit.
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                </div>
+                                <li class="divider" role="separator"></li>
+                                <li><a href="../../notifications.html"><b>See all notifications&nbsp;<i class="fa fa-chevron-right fa-fw"></i></b></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </nav>
+        <div class="collapse navbar-collapse mainnav-toggle" id="main-nav">
+            <nav class="navbar navbar-inverse mainnav">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#"><i class="fa fa-desktop fa-fw"></i>&nbsp;Dashboard</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-stack-overflow fa-fw"></i>&nbsp;User Management</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="user_accounts.html">User Account</a></li>
+                                <li><a href="user_matrix.html">User Matrix</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-film fa-fw"></i>&nbsp;Production Management</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="projects.html">Projects</a></li>
+                                <li><a href="episode.html">Episode</a></li>
+                                <li><a href="scene.html">Scene</a></li>
+                                <li><a href="library.html">Library</a></li>
+                                <li><a href="leadsheet.html">Lead Sheet</a></li>
+                                <li><a href="#">In-Out Tracker</a></li>
+                                <li><a href="project-history.html">Project History</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="reports.html"><i class="fa fa-files-o fa-fw"></i>&nbsp;Reports</a></li>
+                        <li class="dropdown active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-gears fa-fw"></i>&nbsp;CMS</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="cms-dropdown.html">Dropdown Selection Settings</a></li>
+                                <li><a href="cms-calendar.html">Calendar Settings</a></li>
+                                <li><a href="cms-targetoutput.html">Departmental Daily Target Output</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-inbox fa-fw"></i>&nbsp;Data Archive</a>
+                          <ul class="dropdown-menu">
+                              <li><a href="data-archive.html">Data Archive</a></li>
+                              <li><a href="data-restore.html">Data Backup</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="screen-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="page-title page-title-container clearfix">
+                        <h1 class="page-title__title">Department Daily Target Output</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="screen-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <div class="form-group p-l-sm">
+                                <label for="user_role">Department</label>
+                                <select name="" id="user_role" data-enable-btn-target="#showDTO" class="form-control selectpicker" data-editdisable>
+                                    <option value> Select Department</option>
+                                    <option value="1">Department 1</option>
+                                    <option value="2">Department 2</option>
+                                    <option value="3">Department 3</option>
+                                    <option value="4">Department 4</option>
+                                    <option value="5">Department 5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-2">
+                            <button type="button" class="btn btn--primary m-t-md2" id="showDTO" disabled data-show-target="#target_output" data-editdisable><i class="fa fa-print fa-check-square-o"></i>&nbsp;Submit</button>
+                        </div>
+                    </div>
+                    <div class="row hide" id="target_output">
+                        <div class="col-xs-12">
+                            <hr>
+                            <div class="clearfix">
+                                <div class="btn-group-action m-t-md m-b-sm" data-edithide>
+                                    <button class="btn btn--primary btn-edit" type="button" data-formtarget="dto-form"><i class="fa fa-print fa-pencil-square-o"></i>&nbsp;Edit</button>
+                                </div>
+                                <div class="btn-group-action hide m-t-md m-b-sm" data-editshow>
+                                    <button class="btn btn--primary btn-save"><i class="fa fa-print fa-check-square-o"></i>&nbsp;Save</button>
+                                    <button class="btn btn--action--negative"><i class="fa fa-share-square-o fa-fw"></i>&nbsp;Cancel</button>
+                                </div>
+
+                            </div>
+                            <form action="" name="dto-form">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">Daily Target</div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-xs-4">
+                                                <div class="form-group has-feedback">
+                                                    <label for="supervisor">Supervisor</label>
+                                                    <input type="text" id="supervisor" class="form-control" placeholder="Enter Supervisor" disabled value="12">
+                                                    <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                                    <small class="form-group__message">Please supply Supervisor</small>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <div class="form-group has-feedback">
+                                                    <label for="director">Director</label>
+                                                    <input type="text" id="director" class="form-control" placeholder="Enter Director" disabled value="12">
+                                                    <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                                    <small class="form-group__message">Please supply Director</small>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <div class="form-group has-feedback">
+                                                    <label for="trainor">Trainor</label>
+                                                    <input type="text" id="trainor" class="form-control" placeholder="Enter Trainor" disabled value="12">
+                                                    <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                                    <small class="form-group__message">Please supply Trainor</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-4">
+                                                <div class="form-group has-feedback">
+                                                    <label for="topdrawer_plus">Artist Level: Top Drawer+</label>
+                                                    <input type="text" id="topdrawer_plus" class="form-control" placeholder="Enter Artist Level: Top Drawer+" disabled value="12">
+                                                    <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                                    <small class="form-group__message">Please supply Artist Level: Top Drawer+</small>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <div class="form-group has-feedback">
+                                                    <label for="topdrawer">Artist Level: Top Drawer</label>
+                                                    <input type="text" id="topdrawer" class="form-control" placeholder="Enter Artist Level: Top Drawer" disabled value="12">
+                                                    <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                                    <small class="form-group__message">Please supply Artist Level: Top Drawer</small>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <div class="form-group has-feedback">
+                                                    <label for="middrawer">Artist Level: Middle Drawer</label>
+                                                    <input type="text" id="middrawer" class="form-control" placeholder="Enter Artist Level: Middle Drawer" disabled value="12">
+                                                    <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                                    <small class="form-group__message">Please supply Artist Level: Middle Drawer</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-4">
+                                                <div class="form-group has-feedback">
+                                                    <label for="entrylevel">Artist Level: Entry Level</label>
+                                                    <input type="text" id="entrylevel" class="form-control" placeholder="Enter Artist Level: Entry Level" disabled value="12">
+                                                    <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                                    <small class="form-group__message">Please supply Artist Level: Entry Level</small>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <div class="form-group has-feedback">
+                                                    <label for="ojt">Artist Level: On the Job Trainee</label>
+                                                    <input type="text" id="ojt" class="form-control" placeholder="Enter Artist Level: On the Job Trainee" disabled value="12">
+                                                    <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                                    <small class="form-group__message">Please supply Artist Level: On the Job Trainee</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container-fluid">2016 &copy; TopDraw. All Rights Reserved.</div>
+    </footer>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+    <script src="../../js/bootstrap-select.js"></script>
+    <script src="../../js/jquery.multiselect.js"></script>
+    <script src="../../js/datatables.min.js"></script>
+    <script src="../../js/app.js"></script>
+</body>
+
+</html>

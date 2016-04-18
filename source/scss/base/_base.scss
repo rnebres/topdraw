@@ -40,6 +40,10 @@ h4 {
 	padding-bottom: 10px;
 	border-bottom: 1px solid $grey;
 	// font-size: $font-size-large;
+
+	&.no-border{
+		border-bottom: 0;
+	}
 }
 
 h5 {
@@ -48,6 +52,10 @@ h5 {
 
 hr {
 	border-bottom: 1px solid $greyDark;
+
+	&.grey{
+		border-bottom: 1px solid $grey;
+	}
 }
 
 ul {
