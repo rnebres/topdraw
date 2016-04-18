@@ -19,6 +19,11 @@
 	padding-right: 0!important;
 }
 
+
+.table-no-border {
+	> tbody > tr > td { border: none !important; }
+}
+
 body{
 	&.nav-open{
 		@media only screen and (max-width : 767px) {
@@ -45,7 +50,7 @@ body{
 	    margin-top: 20px;
 	    margin-bottom: 30px;
 		border-bottom: 1px solid $greyDark;
-		
+
 		&--breadcrumb{
 			margin-bottom: 10px;
 		}
@@ -54,7 +59,7 @@ body{
 		float: left;
 		margin: 0;
 	}
-	
+
 }
 .btn-group-action{
 	float: right;

@@ -11,7 +11,7 @@
 		    right: 20px;
 			padding: 0;
 			border-radius: 0;
-			
+
 			&:before{
 				position: absolute;
 				top: -21px;
@@ -29,7 +29,7 @@
 
 			li > a {
 				padding: 15px 20px;
-				
+
 				@media only screen and (max-width : 767px) {
 					color: $bootstrapNavTextColor;
 				}
@@ -75,7 +75,7 @@
 
 						padding: 25px 35px;
 
-						@media only screen and (max-width : 991px) { 
+						@media only screen and (max-width : 991px) {
 							padding: 23px 35px;
 						}
 
@@ -155,7 +155,7 @@
 
 			li > a {
 				padding: 10px 20px;
-			
+
 				&:hover,
 				&:focus {
 					background-color: $dark;
@@ -202,7 +202,7 @@
 .has-error {
 	&.login-group.form-group{
 		.form-group__message {
-			top: 44px;		
+			top: 44px;
 		}
 		.form-control-feedback {
 			top: 10px;
@@ -221,7 +221,7 @@
 			padding: 4px 10px;
 			background-color: $maroon;
 			color: $white;
-		
+
 
 			&:before {
 				position: absolute;
@@ -320,7 +320,7 @@
 				}
 			}
 		}
-	} 
+	}
 }
 
 .nav-tabs {
@@ -376,7 +376,7 @@
 				width: 120px!important;
 			}
 		}
-		
+
 	}
 
 }
@@ -487,7 +487,7 @@
 			&:nth-child(odd){
 				background: $white;
 			}
-			
+
 		}
 	}
 }
@@ -497,7 +497,7 @@
 		padding-left: 10px;
 		width: 170px;
 
-		@media only screen and (max-width : 991px) {  
+		@media only screen and (max-width : 991px) {
 			padding-top: 0;
 	    }
 
@@ -505,7 +505,7 @@
 			max-width: 100%;
 		}
 
-		
+
 
 	}
 	&-nav{
@@ -521,7 +521,7 @@
 	padding-left: 40px;
 	padding-right: 40px;
 
-	@media only screen and (max-width : 767px) {  
+	@media only screen and (max-width : 767px) {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
@@ -548,11 +548,11 @@
 		float: left;
 	    background: transparent;
 	    border: 0;
-	   
-	    @media only screen and (max-width : 991px) {  
+
+	    @media only screen and (max-width : 991px) {
 			display: inline-block;
 	    }
-	     @media only screen and (max-width : 767px) {  
+	     @media only screen and (max-width : 767px) {
 			display: none;
 	    }
 	}
@@ -575,13 +575,13 @@
 }
 .navbar-collapse{
 	&.collapse{
-		
+
 	    @media only screen and (max-width : 991px) {
 			position: absolute;
 			left: 0;
 			right: 0;
 			z-index: 5;
-	    	padding: 0; 
+	    	padding: 0;
 			display: none!important;
 			width: 100%;
 			.container-fluid{
@@ -590,7 +590,7 @@
 	    }
 	}
 	&.collapsing{
-		 @media only screen and (max-width : 991px) { 
+		 @media only screen and (max-width : 991px) {
 		 	position: absolute;
 			left: 0;
 			right: 0;
@@ -603,7 +603,7 @@
 	    }
 	}
 	&.in{
-		@media only screen and (max-width : 991px) {  
+		@media only screen and (max-width : 991px) {
 
 			display: inline-block!important;
 			overflow-y: auto!important;
@@ -612,7 +612,7 @@
 
 	&.topnav-toggle{
 		display: block!important;
-		@media only screen and (max-width : 767px) {  
+		@media only screen and (max-width : 767px) {
 			position: fixed;
 			right: -225px;
 	   		left: initial;
@@ -635,25 +635,25 @@
 
 			> li {
 				> a{
-					@media only screen and (max-width : 767px) {  
+					@media only screen and (max-width : 767px) {
 					    margin-bottom: 2px;
 						background-color: $topnavOptionBackground;
 						width: 100%;
 					}
 					&.user-profile{
 						padding: 23px 35px;
-						@media only screen and (max-width : 991px) {  
+						@media only screen and (max-width : 991px) {
 							padding: 21px 35px;
 						}
 
 						&+.dropdown-menu{
 							> li {
 								> a{
-									@media only screen and (max-width : 767px) { 
+									@media only screen and (max-width : 767px) {
 										padding-left: 37px;
 									}
 									>.fa{
-										@media only screen and (max-width : 767px) { 
+										@media only screen and (max-width : 767px) {
 										    margin-right: 10px;
 										}
 									}
@@ -672,7 +672,7 @@
 }
 .collapse{
 	padding: 0;
-	 @media only screen and (max-width : 991px) {  
+	 @media only screen and (max-width : 991px) {
 		display: none;
     }
 }

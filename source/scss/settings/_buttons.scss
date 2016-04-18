@@ -1,7 +1,7 @@
 .btn{
 	border-radius: 0;
-	min-width: 100px;
-	
+	// min-width: 100px;
+
 	@include transition(.3s);
 
 	.fa{
@@ -76,7 +76,7 @@
 		}
 	}
 
-	
+
 	&[disabled]{
 		background-color: $grey;
 		color: $white;
@@ -98,7 +98,7 @@
 		font-size: $font-size-small;
 		padding: 4px;
 	}
-	
+
 	&--login{
 		background-color: $yellow;
 		color: $dark2;

@@ -5832,7 +5832,6 @@ button.close {
 
 .btn {
   border-radius: 0;
-  min-width: 100px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -6009,8 +6008,7 @@ button.close {
   margin: 0; }
 
 .btn-group-action {
-  float: right;
-  margin-top: -8px; }
+  float: right; }
 
 .panel-title {
   margin: 0 0 30px;

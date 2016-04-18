@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Top Draw Animation</title>
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/app.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse topnav">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed mainnav" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand"><img src="../../img/topdrawlogo.png" alt="Top-Draw-Animation-Logo" class="login__logo"></a>
+                    <button type="button" class="navbar-toggle collapsed topnav" data-toggle="collapse" data-target="#top-nav" aria-expanded="false" id="topnav-button">
+                        <i class="fa fa-ellipsis-v"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse topnav-toggle" id="top-nav">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle user-profile" data-toggle="dropdown" role="button" aria-expanded="false"><img class="img-circle" src="../../img/profile_user.jpg" alt="">John Smith <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><i class="fa fa-user fa-fw"></i>&nbsp;My profile</a></li>
+                                <li class="divider" role="separator"></li>
+                                <li><a href="#"><i class="fa fa-sign-out fa-fw"></i>&nbsp;Logout</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle notification-info" data-toggle="dropdown" role="button" aria-expanded="false">
+                                <i class="fa fa-bell-o fa-lg fa-fw"></i>
+                                <span class="badge">99</span>
+                                <span class="visible-xs-inline-block notiflabel">Notification</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href=""><b>Your notifications</b></a></li>
+                                <div class="notifications-list">
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color update"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color delay"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color approved"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#" class="notif-item">
+                                            <span class="notif-color assigned"></span>
+                                            <h6>Project Name</h6> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt, consectetur adipiscing elit.
+                                            <em class="notif-date">December 25, 1999 00:00:00</em>
+                                        </a>
+                                    </li>
+                                </div>
+                                <li class="divider" role="separator"></li>
+                                <li><a href="#"><b>See all notifications&nbsp;<i class="fa fa-chevron-right fa-fw"></i></b></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </nav>
+        <div class="collapse navbar-collapse mainnav-toggle" id="main-nav">
+            <nav class="navbar navbar-inverse mainnav">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#"><i class="fa fa-desktop fa-fw"></i>&nbsp;Dashboard</a></li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-stack-overflow fa-fw"></i>&nbsp;User Management</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="user_accounts.html">User Account</a></li>
+                                <li><a href="user_matrix.html">User Matrix</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="fa fa-film fa-fw"></i>&nbsp;Production Management</a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Projects</a></li>
+                              <li><a href="#">Episode</a></li>
+                              <li><a href="#">Scene</a></li>
+                              <li><a href="#">Library</a></li>
+                              <li><a href="#">Lead Sheet</a></li>
+                              <li><a href="#">In-Out Tracker</a></li>
+                              <li><a href="#">Project History</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><i class="fa fa-files-o fa-fw"></i>&nbsp;Reports</a></li>
+                        <li><a href="#"><i class="fa fa-gears fa-fw"></i>&nbsp;CMS</a></li>
+                        <li><a href="#"><i class="fa fa-inbox fa-fw"></i>&nbsp;Data Archive</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="screen-header">
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="page-title page-title-container page-title-container--breadcrumb clearfix">
+                  <h1 class="page-title__title">Create In-Out Tracker</h1>
+                </div>
+                <ol class="breadcrumb">
+                  <li><a href="#">Dashboard</a></li>
+                  <li><a href="#">In-Out Tracker Masterlist</a></li>
+                  <li class="active">In-Out Tracker</li>
+                </ol>
+
+              </div>
+            </div>
+        </div>
+    </section>
+    <section class="screen-content">
+        <div class="container-fluid">
+        <form action="">
+            <div class="row">
+                <div class="col-xs-12">
+                    <a href="#" class="text-uppercase" data-toggle="modal" data-target="#backModal"><i class="fa fa-chevron-left fa-fw"></i>&nbsp;Back</a>
+                    <hr>
+                </div>
+                <div class="col-xs-12">
+                  <div class="form-horizontal">
+
+                    <div class="form-group col-sm-6">
+                      <label class="col-md-6 col-lg-4 control-label">Block number</label>
+                      <div class="col-md6 col-lg-8">
+                        <p class="form-control-static">1</p>
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <label class="col-md-6 col-lg-4 control-label">Supervisor</label>
+                      <div class="col-md6 col-lg-8">
+                        <p class="form-control-static">Lorem ipsum</p>
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <label class="col-md-6 col-lg-4 control-label">Episode name</label>
+                      <div class="col-md6 col-lg-8">
+                        <p class="form-control-static">Lorem ipsum</p>
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <label class="col-md-6 col-lg-4 control-label">Director</label>
+                      <div class="col-md6 col-lg-8">
+                        <p class="form-control-static">Lorem ipsum</p>
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <label class="col-md-6 col-lg-4 control-label">Total no. of scenes</label>
+                      <div class="col-md6 col-lg-8">
+                        <p class="form-control-static">2</p>
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <label class="col-md-6 col-lg-4 control-label">Production assistant</label>
+                      <div class="col-md6 col-lg-8">
+                        <p class="form-control-static">Lorem ipsum</p>
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-6">
+                      <label class="col-md-6 col-lg-4 control-label">Total no. of libraries</label>
+                      <div class="col-md6 col-lg-8">
+                        <p class="form-control-static">4</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 m-t-md">
+                    <div class="btn-group-action">
+                        <a href="#" data-target="#createTrackerModal" data-toggle="modal" class="btn btn--primary"><i class="fa fa-file-o fa-fw"></i>&nbsp;Create</a>
+                        <button class="btn btn--action"><i class="fa fa-check-square-o fa-fw"></i>&nbsp;Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="panel panel-default m-t-md">
+                  <div class="panel-heading">In-Out Tracker Table</div>
+                  <div class="panel-body">
+                    <table class="table table-striped table-bordered m-t-md datatables-project  ">
+                      <thead>
+                        <tr>
+                          <th rowspan="2">Library No.</th>
+                          <th rowspan="2">Library Category</th>
+                          <th rowspan="2">Link to Scene</th>
+                          <th rowspan="2">View No.</th>
+                          <th rowspan="2">Artist</th>
+                          <th colspan="2" class="text-center no-sort">Schedule</th>
+                          <th rowspan="2" class="text-center">Action</th>
+                        </tr>
+                        <tr class="spanned">
+                          <th class="text-center">Start Date</th>
+                          <th class="text-center">End Date</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Lorem</td>
+                          <td>Ipsum</td>
+                          <td>2</td>
+                          <td>Lorem</td>
+                          <td>March 10, 2016</td>
+                          <td>March 15, 2016</td>
+                          <td class="text-center">
+                            <a href="#" data-toggle="modal" data-target="#editTrackerModal"><i class="fa fa-search-plus fa-fw fa-lg orange"></i></a>
+                            <a href="#" data-toggle="modal" data-target="#editTrackerModal"><i class="fa fa-pencil-square-o fa-fw fa-lg orange"></i></a>
+                            <button class="btn btn--primary btn--smaller">FU</button>
+                            <button class="btn btn--primary btn--smaller">RTK</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>Ipsum</td>
+                          <td>Lorem</td>
+                          <td>3</td>
+                          <td>Lore  m</td>
+                          <td>March 10, 2016</td>
+                          <td>March 15, 2016</td>
+                          <td class="text-center">
+                            <a href="#" data-toggle="modal" data-target="#editTrackerModal"><i class="fa fa-search-plus fa-fw fa-lg orange"></i></a>
+                            <a href="#" data-toggle="modal" data-target="#editTrackerModal"><i class="fa fa-pencil-square-o fa-fw fa-lg orange"></i></a>
+                            <button class="btn btn--primary btn--smaller">FU</button>
+                            <button class="btn btn--primary btn--smaller">RTK</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12">
+                  <a href="#" class="text-uppercase" data-toggle="modal" data-target="#backModal"><i class="fa fa-chevron-left fa-fw"></i>&nbsp;Back</a>
+              </div>
+            </div>
+        </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container-fluid">2016 &copy; TopDraw. All Rights Reserved.</div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="backModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h5 class="modal-title" id="myModalLabel">Alert</h5>
+          </div>
+          <div class="modal-body">
+            Are you sure you want to exit without saving?
+          </div>
+          <div class="modal-footer">
+            <a href="projects.html" class="btn btn--primary">Yes</a>
+            <button type="button" class="btn btn--action--negative" data-dismiss="modal">No</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="createTrackerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h5 class="modal-title" id="myModalLabel">In-Out Tracker Details</h5>
+                    <hr>
+
+                    <div class="form-group">
+                        <label class="m-b-md">*Required Fields</label>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group has-feedback">
+                                    <label for="lib_no">Library No.</label>
+                                    <select name="" id="lib_no" data-enable-btn-target="#lib_category" class="form-control selectpicker" data-editdisable>
+                                        <option value> Select Library</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                    <small class="form-group__message">Please supply Library</small>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group has-feedback">
+                                    <label for="lib_category">*Library Category</label>
+                                    <input type="text" id="lib_category" class="form-control" placeholder="Enter Library Category" value="" disabled>
+                                    <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                    <small class="form-group__message">Please supply Library Category</small>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group has-feedback">
+                                    <label for="link_to_scene">*Link to Scene</label>
+                                    <input type="text" id="link_to_scene" class="form-control" placeholder="Enter Link to Scene" value="" disabled>
+                                    <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                    <small class="form-group__message">Please supply Link to Scene</small>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group has-feedback">
+                                            <label for="start_date">*Start Date</label>
+                                            <div class='input-group datetimepicker'>
+                                                <input type='text' class="form-control dpicker" id="start_date" />
+                                                <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group has-feedback">
+                                            <label for="end_date">*End Date</label>
+                                            <div class='input-group datetimepicker'>
+                                                <input type='text' class="form-control dpicker" id="end_date" />
+                                                <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <h4 class="m-t-lg">Views</h4>
+                        <div class="dashboard-settings-wrapper">
+                          <div class="row dashboard-settings-content">
+                            <div class="col-sm-6">
+                                <table class="table">
+                                  <thead>
+                                    <tr>
+                                      <th>View No.</th>
+                                      <th>View Type</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>1</td>
+                                      <td>Lorem Ipsum</td>
+                                    </tr>
+                                    <tr>
+                                      <td>21</td>
+                                      <td>Lorem Ipsum</td>
+                                    </tr>
+                                    <tr>
+                                      <td>3</td>
+                                      <td>Lorem Ipsum</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <h4 class="m-t-lg">Artist</h4>
+                        <div class="dashboard-settings-wrapper">
+                            <div class="row dashboard-settings-content">
+                                <div class="col-sm-4 ">
+                                    <div class="form-group has-feedback">
+                                        <label for="artist">*Artist</label>
+                                        <select name="artist" id="artist" data-enable-btn-target="#actual_output" class="form-control selectpicker">
+                                            <option value> Select Artist</option>
+                                            <option value="1">Artist 1</option>
+                                            <option value="2">Artist 2</option>
+                                            <option value="3">Artist 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 ">
+                                    <div class="form-group has-feedback">
+                                        <label for="actual_output">*Actual Output</label>
+                                        <input type="text" id="actual_output" class="form-control" placeholder="Enter Actual Output" disabled>
+                                        <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                        <small class="form-group__message ">Please supply Actual Output</small>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4 m-t-md text-right">
+                                    <button type="button" class="btn--no-property btn-add-div"><i class="fa fa-plus fa-lg fa-fw"></i></button>
+                                    <button type="button" class="btn--no-property btn-remove-div"><i class="fa fa-minus fa-lg fa-fw"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <h4 class="m-t-lg"></h4>
+                        <div class="dashboard-settings-wrapper">
+                            <div class="row dashboard-settings-content">
+                                <div class="col-sm-4">
+                                    <div class="form-group has-feedback">
+                                        <label for="dropdown">*Claimable</label>
+                                        <select name="" id="dropdown" class="form-control selectpicker">
+                                            <option value="1">Yes</option>
+                                            <option value="2">No</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 ">
+                                    <div class="form-group has-feedback">
+                                        <label for="multiplier">*Multiplier</label>
+                                        <input type="text" id="multiplier" class="form-control" placeholder="Enter Multiplier">
+                                        <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                        <small class="form-group__message ">Please supply Multiplier</small>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 ">
+                                    <div class="form-group has-feedback">
+                                        <label for="special_rate">*Special Rate</label>
+                                        <input type="text" id="special_rate" class="form-control" placeholder="Enter Special Rate">
+                                        <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                        <small class="form-group__message ">Please supply Special Rate</small>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 ">
+                                    <div class="form-group has-feedback">
+                                        <label for="partial_claim">*Partial Claim</label>
+                                        <input type="text" id="partial_claim" class="form-control" placeholder="Enter Partial Claim">
+                                        <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                        <small class="form-group__message ">Please supply Partial Claim</small>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 ">
+                                    <div class="form-group">
+                                        <label for="remarks">Remarks</label>
+                                        <input type="text" id="remarks" class="form-control" placeholder="Enter Remarks">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn--action"><i class="fa fa-check-square-o fa-fw"></i>&nbsp;Save</button>
+                    <button class="btn btn--action--negative"><i class="fa fa-share-square-o"></i>&nbsp;Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="editTrackerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <form action="" name="edit-tracker-form">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h5 class="modal-title" id="myModalLabel">In-Out Tracker Details</h5>
+                        <hr>
+
+                        <label class="m-b-md">*Required Fields</label>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group has-feedback">
+                                    <label for="lib_no">Library No.</label>
+                                    <select name="" id="lib_no" data-enable-btn-target="#lib_category" class="form-control selectpicker" disabled>
+                                        <option value> Select Library</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                    <small class="form-group__message">Please supply Library</small>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group has-feedback">
+                                    <label for="lib_category">*Library Category</label>
+                                    <input type="text" id="lib_category" class="form-control" placeholder="Enter Library Category" value="" disabled>
+                                    <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                    <small class="form-group__message">Please supply Library Category</small>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group has-feedback">
+                                    <label for="link_to_scene">*Link to Scene</label>
+                                    <input type="text" id="link_to_scene" class="form-control" placeholder="Enter Link to Scene" value="" disabled>
+                                    <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                    <small class="form-group__message">Please supply Link to Scene</small>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group has-feedback">
+                                    <label for="link_to_scene">*Scene Status</label>
+                                    <input type="text" id="link_to_scene" class="form-control" placeholder="Enter Scene Status" value="" disabled>
+                                    <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                    <small class="form-group__message">Please supply Scene Status</small>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group has-feedback">
+                                            <label for="start_date">*Start Date</label>
+                                            <div class='input-group datetimepicker'>
+                                                <input type='text' class="form-control dpicker" id="start_date" disabled />
+                                                <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group has-feedback">
+                                            <label for="end_date">*End Date</label>
+                                            <div class='input-group datetimepicker'>
+                                                <input type='text' class="form-control dpicker" id="end_date"  disabled/>
+                                                <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <h4 class="m-t-lg">Views</h4>
+                        <div class="dashboard-settings-wrapper">
+                            <div class="row dashboard-settings-content">
+                                <div class="col-sm-6">
+                                    <table class="table table-no-border">
+                                      <thead>
+                                        <tr>
+                                          <th>View No.</th>
+                                          <th>View Type</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>1</td>
+                                          <td>Lorem Ipsum</td>
+                                        </tr>
+                                        <tr>
+                                          <td>21</td>
+                                          <td>Lorem Ipsum</td>
+                                        </tr>
+                                        <tr>
+                                          <td>3</td>
+                                          <td>Lorem Ipsum</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <h4 class="m-t-lg">Artist</h4>
+                        <div class="dashboard-settings-wrapper">
+                            <div class="row dashboard-settings-content">
+                                <div class="col-sm-4 ">
+                                    <div class="form-group has-feedback">
+                                        <label for="artist">*Artist</label>
+                                        <select name="artist" id="artist" data-enable-btn-target="#actual_output" class="form-control selectpicker" disabled>
+                                            <option value> Select Artist</option>
+                                            <option value="1">Artist 1</option>
+                                            <option value="2">Artist 2</option>
+                                            <option value="3">Artist 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 ">
+                                    <div class="form-group has-feedback">
+                                        <label for="actual_output">*Actual Output</label>
+                                        <input type="text" id="actual_output" class="form-control" placeholder="Enter Actual Output" disabled>
+                                        <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                        <small class="form-group__message ">Please supply Actual Output</small>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4 m-t-md text-right">
+                                    <button type="button" class="btn--no-property btn-add-div" disabled><i class="fa fa-plus fa-lg fa-fw"></i></button>
+                                    <button type="button" class="btn--no-property btn-remove-div" disabled><i class="fa fa-minus fa-lg fa-fw"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4 class="m-t-lg">Date</h4>
+                        <div class="dashboard-settings-wrapper">
+                            <div class="row dashboard-settings-content">
+                                <div class="col-sm-3">
+                                    <div class="form-group has-feedback">
+                                        <label for="handout_date">*For Handout</label>
+                                        <div class='input-group datetimepicker'>
+                                            <input type='text' class="form-control dpicker" id="handout_date" disabled />
+                                            <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group has-feedback">
+                                        <label for="ongoing_date">Ongoing</label>
+                                        <div class='input-group datetimepicker'>
+                                            <input type='text' class="form-control dpicker" id="ongoing_date" disabled />
+                                            <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group has-feedback">
+                                        <label for="checking_date">For Checking</label>
+                                        <div class='input-group datetimepicker'>
+                                            <input type='text' class="form-control dpicker" id="checking_date" disabled />
+                                            <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group has-feedback">
+                                        <label for="preapproved_date">Pre-Approved</label>
+                                        <div class='input-group datetimepicker'>
+                                            <input type='text' class="form-control dpicker" id="preapproved_date" disabled />
+                                            <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group has-feedback">
+                                        <label for="approved_date">Approved</label>
+                                        <div class='input-group datetimepicker'>
+                                            <input type='text' class="form-control dpicker" id="approved_date" disabled />
+                                            <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group has-feedback">
+                                        <label for="fixup_date">For Fixup</label>
+                                        <div class='input-group datetimepicker'>
+                                            <input type='text' class="form-control dpicker" id="fixup_date" disabled />
+                                            <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group has-feedback">
+                                        <label for="retake_date">For Retake</label>
+                                        <div class='input-group datetimepicker'>
+                                            <input type='text' class="form-control dpicker" id="retake_date" disabled />
+                                            <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <h4 class="m-t-lg"></h4>
+                        <div class="dashboard-settings-wrapper">
+                            <div class="row dashboard-settings-content">
+                                <div class="col-sm-4">
+                                    <div class="form-group has-feedback">
+                                        <label for="dropdown">*Claimable</label>
+                                        <select name="" id="dropdown" class="form-control selectpicker" disabled>
+                                            <option value="1">Yes</option>
+                                            <option value="2">No</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 ">
+                                    <div class="form-group has-feedback">
+                                        <label for="multiplier">*Multiplier</label>
+                                        <input type="text" id="multiplier" class="form-control" placeholder="Enter Multiplier" disabled>
+                                        <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                        <small class="form-group__message ">Please supply Multiplier</small>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 ">
+                                    <div class="form-group has-feedback">
+                                        <label for="special_rate">*Special Rate</label>
+                                        <input type="text" id="special_rate" class="form-control" placeholder="Enter Special Rate" disabled>
+                                        <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                        <small class="form-group__message ">Please supply Special Rate</small>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 ">
+                                    <div class="form-group has-feedback">
+                                        <label for="partial_claim">*Partial Claim</label>
+                                        <input type="text" id="partial_claim" class="form-control" placeholder="Enter Partial Claim" disabled>
+                                        <i class="fa fa-exclamation-circle form-control-feedback"></i>
+                                        <small class="form-group__message ">Please supply Partial Claim</small>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 ">
+                                    <div class="form-group">
+                                        <label for="remarks">Remarks</label>
+                                        <input type="text" id="remarks" class="form-control" placeholder="Enter Remarks" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 ">
+                                    <div class="form-group">
+                                        <label for="download_attachment">Output</label>
+                                        <div class="row">
+                                            <div class="col-sm-3"><img class="img-responsive" src="../../img/cityscape-945432_960_720.jpg" alt=""></div>
+                                            <div class="col-sm-9"><a href="#"><i class="fa fa-download"></i>&nbsp;Download Attachment</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="btn-group-action" data-edithide>
+                                    <button class="btn btn--primary btn-edit" type="button" data-formtarget="edit-tracker-form"><i class="fa fa-print fa-pencil-square-o"></i>&nbsp;Edit</button>
+                                </div>
+                                <div class="btn-group-action hide" data-editshow>
+                                    <button class="btn btn--primary btn-save"><i class="fa fa-print fa-check-square-o"></i>&nbsp;Save</button>
+                                    <button class="btn btn--action--negative"><i class="fa fa-share-square-o fa-fw"></i>&nbsp;Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/bootstrap.js"></script>
+    <script src="../../js/bootstrap-select.js"></script>
+    <script src="../../js/jquery.multiselect.js"></script>
+    <script src="../../js/datatables.min.js"></script>
+    <script src="../../js/moment.min.js"></script>
+    <script src="../../js/bootstrap-datetimepicker.js"></script>
+    <script src="../../js/app.js"></script>
+</body>
+
+</html>
